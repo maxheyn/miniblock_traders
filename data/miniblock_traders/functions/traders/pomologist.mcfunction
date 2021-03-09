@@ -13,7 +13,7 @@ kill @e[type=item,nbt={Item:{id:"minecraft:apple"}},distance=..0.5]
 execute at @s run particle minecraft:happy_villager ~ ~ ~ 0.3 1 0.3 100 250
 playsound minecraft:entity.experience_orb.pickup ambient @a[distance=..8] ~ ~ ~ 30
 
-# The below command split into mines to make it easier to read. It will not run unless it is a single line.
+# The below command split into lines to make it easier to read. It will not run unless it is a single line.
 # data merge entity @s {VillagerData:{profession:nitwit,level:5,type:jungle},PersistenceRequired:1,CustomName:"\"Pomologist\"",Offers:{Recipes:[
 #     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Apple\"}"},SkullOwner:{Id:[I;224385475,-800831601,-1217080453,1602681386],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTJiMzViZGE1ZWJkZjEzNWY0ZTcxY2U0OTcyNmZiZWM1NzM5ZjBhZGVkZjAxYzUxOWUyYWVhN2Y1MTk1MWVhMiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
 #     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Orange\"}"},SkullOwner:{Id:[I;1563798500,263729188,-701290142,1167978918],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZkMGUzMzBhNjg4ZDhiYjk1MTliZWZlMWJmYzM0MzM3YjM3MWFjNzUxNTAyMTZmZGQwMzk1OWViN2I0NCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
