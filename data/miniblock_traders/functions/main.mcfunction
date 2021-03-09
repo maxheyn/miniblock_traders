@@ -18,3 +18,27 @@ execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{t
 
 # /give @p spruce_sapling{display:{Name:'[{"text":"Cultivated Spruce Sapling","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_sapling"} 1
 execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_sapling}}},distance=..0.5] run function miniblock_traders:traders/arboriculturalist
+
+# /give @p carrot{display:{Name:'[{"text":"Overgrown Carrot","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_carrot"} 1
+execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_carrot}}},distance=..0.5] run function miniblock_traders:traders/olericulturist
+
+# /give @p peony{display:{Name:'[{"text":"Fragrant Peony","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_flower"} 1
+execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_flower}}},distance=..0.5] run function miniblock_traders:traders/horticulturist
+
+# /give @p gold_ingot{display:{Name:'[{"text":"24-Karat Gold","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_mineral"} 1
+execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_mineral}}},distance=..0.5] run function miniblock_traders:traders/mineralogist
+
+# /give @p cobblestone{display:{Name:'[{"text":"Dense Cobblestone","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_rock"} 1
+execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_rock}}},distance=..0.5] run function miniblock_traders:traders/petrologist
+
+# /give @p blaze_powder{display:{Name:'[{"text":"Sparkling Blaze Powder","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_nether"} 1
+execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_nether}}},distance=..0.5] run function miniblock_traders:traders/netherographer
+
+# /give @p nautilus_shell{display:{Name:'[{"text":"Ancient Shell","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_ocean"} 1
+execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_ocean}}},distance=..0.5] run function miniblock_traders:traders/oceanographer
+
+# /give @p cactus{display:{Name:'[{"text":"Budding Cactus","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_desert"} 1
+execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_desert}}},distance=..0.5] run function miniblock_traders:traders/eremologist
+
+# /give @p ender_eye{display:{Name:'[{"text":"Blinking Ender Eye","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_end"} 1
+execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_end}}},distance=..0.5] run function miniblock_traders:traders/endologist
