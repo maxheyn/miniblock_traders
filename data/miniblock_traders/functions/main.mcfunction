@@ -17,4 +17,4 @@ execute as @a if score @s mt_help matches 1.. run function miniblock_traders:uti
 execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_apple}}},distance=..0.5] run function miniblock_traders:traders/pomologist
 
 # /give @p spruce_sapling{display:{Name:'[{"text":"Cultivated Spruce Sapling","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_sapling"} 1
-execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_sapling}}},distance=..0.5] run function miniblock_traders:traders/arborculturalist
+execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_sapling}}},distance=..0.5] run function miniblock_traders:traders/arboriculturalist
