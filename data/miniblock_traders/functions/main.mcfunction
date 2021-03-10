@@ -40,5 +40,5 @@ execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{t
 # /give @p cactus{display:{Name:'[{"text":"Budding Cactus","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_desert"} 1
 execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_desert}}},distance=..0.5] run function miniblock_traders:traders/eremologist
 
-# /give @p ender_eye{display:{Name:'[{"text":"Blinking Ender Eye","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_end"} 1
-execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_end}}},distance=..0.5] run function miniblock_traders:traders/endologist
+# /give @p bookshelf{display:{Name:'[{"text":"Endless Bookshelf","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_furnish"} 1
+execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_furnish}}},distance=..0.5] run function miniblock_traders:traders/furnisher
