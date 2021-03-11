@@ -1,0 +1,60 @@
+{
+"type": "minecraft:entity",
+"pools": [
+    {
+    "rolls": 1,
+    "entries": [
+        {
+        "type": "minecraft:item",
+        "functions": [
+            {
+            "function": "minecraft:set_count",
+            "count": {
+                "min": 0.0,
+                "max": 2.0,
+                "type": "minecraft:uniform"
+            }
+            }
+        ],
+        "name": "minecraft:poppy"
+        }
+    ]
+    },
+    {
+        "rolls": 1,
+        "entries": [{
+                "type": "item",
+                "weight": 1,
+                "name": "minecraft:iron_ingot",
+                "functions": [{
+                    "function": "set_nbt",
+                    "tag": "{display:{Name:'[{\"text\":\"Mastercrafted Iron\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_smithy\"}"
+                }]
+            },
+            {
+                "type": "empty",
+                "weight": 511
+            }
+        ]
+    },
+    {
+    "rolls": 1,
+    "entries": [
+        {
+        "type": "minecraft:item",
+        "functions": [
+            {
+            "function": "minecraft:set_count",
+            "count": {
+                "min": 3.0,
+                "max": 5.0,
+                "type": "minecraft:uniform"
+            }
+            }
+        ],
+        "name": "minecraft:iron_ingot"
+        }
+    ]
+    }
+]
+}
