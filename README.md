@@ -36,6 +36,9 @@ Datapack for Minecraft 1.16.2+! Get unique decorative miniblocks from special tr
 <img src=".github\resources\SpecialItem.PNG">
 <p align="center">When adventuring you may stumble across some special items that seem like they might be of interest to Villagers... </p>
 
+<img src=".github\resources\Converting.gif">
+<p align="center">Conversion happens instantly - all trades are 1 emerald!</p>
+
 <details>
     <summary>
       [Potential Spoilers - Click to Expand] All Conversion Items with Source and Drop Rate
