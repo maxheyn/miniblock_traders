@@ -1,3 +1,11 @@
+# --------------------------------------------------------------- #
+#                   MINIBLOCK TRADERS DATAPACK                    #
+# --------------------------------------------------------------- #
+#                                                                 #
+#              Author: https://github.com/maxheyn                 #
+#                                                                 #
+# --------------------------------------------------------------- #
+
 # Multi-line chest command for easier viewing, datapack only runs single-line commands.
 # give @p minecraft:chest{display:{Lore:["Miniblock Traders Conversion Chest"]},tag:"mt_creativeChest",BlockEntityTag:{Items:[
 #     {Slot:0b,id:"minecraft:apple",Count:64b,tag:{display:{Name:'[{"text":"Enchanted Red Delicious","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_apple"}},
