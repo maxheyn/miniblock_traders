@@ -16,7 +16,7 @@ Datapack for Minecraft 1.16.2+! Get unique decorative miniblocks from special tr
     - Not all items have the same drop chance
     - [Throw the conversion item at the villager to change their trades](https://gyazo.com/73013fe4dc6a5d0042a4ca1019ec43b1)
       - WARNING!! This will override their current trades!!!
-- 7 Different Miniblock Categories (Click some to preview)
+- 7 Different Miniblock Categories)
    1. Garden (Fruits/Veggies/Plants)
    2. Rocks (Ore/Minerals/Stone Variants)
    3. Regional (Nether/Ocean/Desert)
