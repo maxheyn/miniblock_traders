@@ -59,7 +59,7 @@ Datapack for Minecraft 1.16.2+! Get unique decorative miniblocks from special tr
       11. Steampunker - Forgotten Scrap Metal (1/16 chance when fishing up a Treasure)<br>
       12. Engineer - Radiating Redstone (1/256 from mining redstone ore)<br>
       13. Alchemist - Crystal Phial (1/64 drop from Witches)<br>
-      14. Sculptor - Sculpting Clay (1/512 from harvesting clay)<br>
+      14. Sculptor - Sculpting Clay (1/128 from harvesting clay)<br>
       15. Tailor - Fine Thread (1/128 drop from Spiders (not Cave Spiders))<br>
       16. Beekeeper - Prismatic Honeycomb (1/5 from Jungle Temple chests)<br>
       17. Blacksmith - Mastercrafted Iron (1/512 drop from Iron Golems)<br>
