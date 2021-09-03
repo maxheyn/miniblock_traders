@@ -48,3 +48,4 @@ execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{t
 # Food Traders
 execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_chef}}},distance=..0.5] run function miniblock_traders:traders/chef
 execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_bake}}},distance=..0.5] run function miniblock_traders:traders/baker
+execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_bartender}}},distance=..0.5] run function miniblock_traders:traders/bartender
