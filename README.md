@@ -30,7 +30,7 @@ Datapack for Minecraft 1.16.2+! Get unique decorative miniblocks from special tr
 
 <h3>All Traders</h3>
 <img src=".github\resources\VillagersList.png">
-<p align="center">There are 20 different traders and over 400 unique miniblocks that they can trade you!</p>
+<p align="center">There are 22 (only 20 pictured) different traders and over 400 unique miniblocks that they can trade you!</p>
 
 <h3>Villager Conversion Items</h3>
 <img src=".github\resources\SpecialItem.PNG">
@@ -65,7 +65,7 @@ Datapack for Minecraft 1.16.2+! Get unique decorative miniblocks from special tr
       17. Blacksmith - Mastercrafted Iron (1/512 drop from Iron Golems)<br>
       18. Ritualist - Book of Rituals (1/16 drop from Vexes)<br>
       19. Baker - Shimmering Wheat (1/512 from harvesting wheat)<br>
-      20. Chef - Wagyu Beef (1/128 drop from Cows)
+      20. Chef - Wagyu Beef (1/128 drop from Cows)<br>
       21. Bartender - Mixology Station (1/64 drop from Witches)<br>
       22. Astronomer - Galilean Spyglass (1/2 from Igloo chests)
 </details>
