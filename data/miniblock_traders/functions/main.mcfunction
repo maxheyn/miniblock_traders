@@ -30,6 +30,7 @@ execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{t
 execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_nether}}},distance=..0.5] run function miniblock_traders:traders/netherographer
 execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_ocean}}},distance=..0.5] run function miniblock_traders:traders/oceanographer
 execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_desert}}},distance=..0.5] run function miniblock_traders:traders/eremologist
+execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_astronomy}}},distance=..0.5] run function miniblock_traders:traders/astronomer
 
 # Household Decorations Traders
 execute as @e[type=minecraft:villager] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_furnish}}},distance=..0.5] run function miniblock_traders:traders/furnisher
