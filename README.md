@@ -56,7 +56,7 @@ Datapack for Minecraft 1.16.2+! Get unique decorative miniblocks from special tr
       8. Oceanographer - Ancient Shell (1/4 from Big Underwater Ruin chests)<br>
       9. Eremologist - Budding Cactus (1/24 from Desert Pyramid chests)<br>
       10. Furnisher - Endless Bookshelf (1/4 from Stronghold Library chests)<br>
-      11. Steampunker - Forgotten Scrap Metal (1/16 chance when fishing up a Treasure)<br>
+      11. Steampunker - Forgotten Scrap (1/16 chance when fishing up a Treasure)<br>
       12. Engineer - Radiating Redstone (1/256 from mining redstone ore)<br>
       13. Alchemist - Crystal Phial (1/64 drop from Witches)<br>
       14. Sculptor - Sculpting Clay (1/128 from harvesting clay)<br>
