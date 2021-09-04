@@ -7,7 +7,7 @@
 # --------------------------------------------------------------- #
 
 # Destroy the item used to convert the villager.
-kill @e[type=item,nbt={Item:{tag:{tag:mt_astronomer}}},distance=..0.5]
+kill @e[type=item,nbt={Item:{tag:{tag:mt_astronomy}}},distance=..0.5]
 
 # Fun effects to give user feedback that the transformation worked.
 execute at @s run particle minecraft:happy_villager ~ ~ ~ 0.3 1 0.3 100 250
