@@ -10,7 +10,7 @@
 <h1>Miniblock Traders</h1>
 Datapack for Minecraft 1.16.2+! Get unique decorative miniblocks from special traders!<br>
 
-- 20 Unique Miniblock Traders trading over 350 different Miniblocks
+- 22 Unique Miniblock Traders trading over 400 different Miniblocks
    - Loot tables for all trader conversion items
     - Each item drops from a different source (from a block, treasure chest, or killing a mob)
     - Not all items have the same drop chance
@@ -19,11 +19,11 @@ Datapack for Minecraft 1.16.2+! Get unique decorative miniblocks from special tr
 - 7 Different Miniblock Categories)
    1. Garden (Fruits/Veggies/Plants)
    2. Rocks (Ore/Minerals/Stone Variants)
-   3. Regional (Nether/Ocean/Desert)
+   3. Regional (Nether/Ocean/Desert/Space)
    4. Household Decorations (Furniture/Clothes)
    5. Medieval (Smithing/Alchemy)
    6. Futuristic/Fantasy (Steampunk/Ritualist)
-   7. Food (Pastries/Desserts/Meals)
+   7. Food (Pastries/Desserts/Meals/Drinks)
 
 
 <h2 id="screenshots">Screenshots</h2>
