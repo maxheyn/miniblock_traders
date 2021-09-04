@@ -3,18 +3,21 @@
     "pools": [
         {
             "rolls": 1,
-            "entries": [{
+            "entries": [
+                {
                     "type": "item",
                     "weight": 1,
                     "name": "minecraft:book",
-                    "functions": [{
-                        "function": "set_nbt",
-                        "tag": "{display:{Name:'[{\"text\":\"Book of Rituals\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_ritual\"}"
-                    }]
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'[{\"text\":\"Book of Rituals\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_ritual\"}"
+                        }
+                    ]
                 },
                 {
                     "type": "empty",
-                    "weight": 15
+                    "weight": 11
                 }
             ]
         }

@@ -2,78 +2,81 @@
     "type": "minecraft:entity",
     "pools": [
         {
-        "rolls": 1,
-        "entries": [
-            {
-            "type": "minecraft:item",
-            "functions": [
-                {
-                "function": "minecraft:set_count",
-                "count": {
-                    "min": 0.0,
-                    "max": 2.0,
-                    "type": "minecraft:uniform"
-                }
-                },
-                {
-                "function": "minecraft:looting_enchant",
-                "count": {
-                    "min": 0.0,
-                    "max": 1.0
-                }
-                }
-            ],
-            "name": "minecraft:string"
-            }
-        ]
-        },
-        {
             "rolls": 1,
-            "entries": [{
-                    "type": "item",
-                    "weight": 1,
-                    "name": "minecraft:string",
-                    "functions": [{
-                        "function": "set_nbt",
-                        "tag": "{display:{Name:'[{\"text\":\"Fine Thread\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_clothes\"}"
-                    }]
-                },
+            "entries": [
                 {
-                    "type": "empty",
-                    "weight": 127
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 0.0,
+                                "max": 2.0,
+                                "type": "minecraft:uniform"
+                            }
+                        },
+                        {
+                            "function": "minecraft:looting_enchant",
+                            "count": {
+                                "min": 0.0,
+                                "max": 1.0
+                            }
+                        }
+                    ],
+                    "name": "minecraft:string"
                 }
             ]
         },
         {
-        "rolls": 1,
-        "entries": [
-            {
-            "type": "minecraft:item",
-            "functions": [
+            "rolls": 1,
+            "entries": [
                 {
-                "function": "minecraft:set_count",
-                "count": {
-                    "min": -1.0,
-                    "max": 1.0,
-                    "type": "minecraft:uniform"
-                }
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:string",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'[{\"text\":\"Fine Thread\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_clothes\"}"
+                        }
+                    ]
                 },
                 {
-                "function": "minecraft:looting_enchant",
-                "count": {
-                    "min": 0.0,
-                    "max": 1.0
+                    "type": "empty",
+                    "weight": 95
                 }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": -1.0,
+                                "max": 1.0,
+                                "type": "minecraft:uniform"
+                            }
+                        },
+                        {
+                            "function": "minecraft:looting_enchant",
+                            "count": {
+                                "min": 0.0,
+                                "max": 1.0
+                            }
+                        }
+                    ],
+                    "name": "minecraft:spider_eye"
                 }
             ],
-            "name": "minecraft:spider_eye"
-            }
-        ],
-        "conditions": [
-            {
-            "condition": "minecraft:killed_by_player"
-            }
-        ]
+            "conditions": [
+                {
+                    "condition": "minecraft:killed_by_player"
+                }
+            ]
         }
     ]
 }

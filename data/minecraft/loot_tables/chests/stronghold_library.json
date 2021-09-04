@@ -1,81 +1,84 @@
 {
-    "type": "minecraft:chest",
-    "pools": [
-      {
-        "rolls": {
-          "min": 2.0,
-          "max": 10.0,
-          "type": "minecraft:uniform"
-        },
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "weight": 20,
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 1.0,
-                  "max": 3.0,
-                  "type": "minecraft:uniform"
-                }
-              }
-            ],
-            "name": "minecraft:book"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 20,
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 2.0,
-                  "max": 7.0,
-                  "type": "minecraft:uniform"
-                }
-              }
-            ],
-            "name": "minecraft:paper"
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:map"
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:compass"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 10,
-            "functions": [
-              {
-                "function": "minecraft:enchant_with_levels",
-                "levels": 30,
-                "treasure": true
-              }
-            ],
-            "name": "minecraft:book"
-          }
-        ]
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 2.0,
+        "max": 10.0,
+        "type": "minecraft:uniform"
       },
-      {
-        "rolls": 1,
-        "entries": [{
-                "type": "item",
-                "weight": 1,
-                "name": "minecraft:bookshelf",
-                "functions": [{
-                    "function": "set_nbt",
-                    "tag": "{display:{Name:'[{\"text\":\"Endless Bookshelf\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_furnish\"}"
-                }]
-            },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "functions": [
             {
-                "type": "empty",
-                "weight": 3
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 3.0,
+                "type": "minecraft:uniform"
+              }
             }
-        ]
+          ],
+          "name": "minecraft:book"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2.0,
+                "max": 7.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:paper"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:map"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:compass"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30,
+              "treasure": true
+            }
+          ],
+          "name": "minecraft:book"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:bookshelf",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{display:{Name:'[{\"text\":\"Endless Bookshelf\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_furnish\"}"
+            }
+          ]
+        },
+        {
+          "type": "empty",
+          "weight": 2
+        }
+      ]
     }
-    ]
-  }
+  ]
+}
