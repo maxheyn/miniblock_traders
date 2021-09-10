@@ -80,6 +80,7 @@ Datapack for Minecraft 1.16.2+! Get unique decorative miniblocks from special tr
 <img src=".github\resources\Ritualist.PNG">
 <img src=".github\resources\Steampunker.PNG">
 
+<p>Uninstall the datapack with <code>/function miniblock_traders:utility/uninstall</code>.</p>
 
 [release]:https://github.com/maxheyn/miniblock_traders/releases/latest "Latest Release (external link)"
 [issues]:https://github.com/maxheyn/miniblock_traders/issues "Issues (external link)"

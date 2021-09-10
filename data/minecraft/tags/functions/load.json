@@ -1,5 +1,5 @@
 {
     "values": [
-        "miniblock_traders:utility/reload"
+        "miniblock_traders:utility/init"
     ]
 }
