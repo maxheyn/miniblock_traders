@@ -13,6 +13,13 @@ kill @e[type=item,nbt={Item:{tag:{tag:mt_bees}}},distance=..0.5]
 execute at @s run particle minecraft:happy_villager ~ ~ ~ 0.3 1 0.3 100 250
 playsound minecraft:entity.experience_orb.pickup ambient @a[distance=..8] ~ ~ ~ 30
 
+# Relevant Tags for utility and compatibility
+tag @s add mt_trader
+tag @s add global.ignore
+tag @s add global.ignore.pos
+tag @s add global.ignore.gui
+tag @s add global.ignore.kill
+
 # The below command split into lines to make it easier to read. It will not run unless it is a single line.
 # data merge entity @s {VillagerData:{profession:weaponsmith,level:5,type:jungle},PersistenceRequired:1,CustomName:"\"Beekeeper\"",Offers:{Recipes:[
 #     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Honey\"}"},SkullOwner:{Id:[I;-1353968602,-2075572998,-1764666166,-524272984],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7ImlkIjoiMGMwOGJiNmIyZWMzNDI2MjhhYmRkYjRkYmVhZWU1MDMiLCJ0eXBlIjoiU0tJTiIsInVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDA3ZTQ1MDE5MjhlYThkYjUzZWM4MGVjY2ZhMzgzNjQ0OTY3YTAwZDhjZTViODczNWZiOWRmOGU2ODYwM2RhYiIsInByb2ZpbGVJZCI6IjgwMThhYjAwYjJhZTQ0Y2FhYzliZjYwZWY5MGY0NWU1IiwidGV4dHVyZUlkIjoiNDA3ZTQ1MDE5MjhlYThkYjUzZWM4MGVjY2ZhMzgzNjQ0OTY3YTAwZDhjZTViODczNWZiOWRmOGU2ODYwM2RhYiJ9fSwic2tpbiI6eyJpZCI6IjBjMDhiYjZiMmVjMzQyNjI4YWJkZGI0ZGJlYWVlNTAzIiwidHlwZSI6IlNLSU4iLCJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzQwN2U0NTAxOTI4ZWE4ZGI1M2VjODBlY2NmYTM4MzY0NDk2N2EwMGQ4Y2U1Yjg3MzVmYjlkZjhlNjg2MDNkYWIiLCJwcm9maWxlSWQiOiI4MDE4YWIwMGIyYWU0NGNhYWM5YmY2MGVmOTBmNDVlNSIsInRleHR1cmVJZCI6IjQwN2U0NTAxOTI4ZWE4ZGI1M2VjODBlY2NmYTM4MzY0NDk2N2EwMGQ4Y2U1Yjg3MzVmYjlkZjhlNjg2MDNkYWIiLCJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifX0sImNhcGUiOm51bGx9"}]}}},Count:1},rewardExp:0b,maxUses:9999999},

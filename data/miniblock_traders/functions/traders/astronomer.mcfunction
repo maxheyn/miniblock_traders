@@ -13,6 +13,13 @@ kill @e[type=item,nbt={Item:{tag:{tag:mt_astronomy}}},distance=..0.5]
 execute at @s run particle minecraft:happy_villager ~ ~ ~ 0.3 1 0.3 100 250
 playsound minecraft:entity.experience_orb.pickup ambient @a[distance=..8] ~ ~ ~ 30
 
+# Relevant Tags for utility and compatibility
+tag @s add mt_trader
+tag @s add global.ignore
+tag @s add global.ignore.pos
+tag @s add global.ignore.gui
+tag @s add global.ignore.kill
+
 # The below command split into lines to make it easier to read. It will not run unless it is a single line.
 # data merge entity @s {VillagerData:{profession:cartographer,level:5,type: snow},PersistenceRequired:1,CustomName:"\"Astronomer\"",Offers:{Recipes:[
 #     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Spyglass\"}"},SkullOwner:{Id:[I;-1054666174,-1656598702,-1876453964,-461724679],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZlM2JjYmE1N2M3YjdmOGQ0NjJiMzAwNTQzZDEzMmVjZWE5YmYyZWQ1ODdjYzlkOTk0YTM5NWFjOTU5MmVhYSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
