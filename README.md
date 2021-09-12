@@ -64,7 +64,7 @@ Datapack for Minecraft 1.16.2+! Get unique decorative miniblocks from special tr
       16. Beekeeper - Prismatic Honeycomb (1/3 from Jungle Temple chests)<br>
       17. Blacksmith - Mastercrafted Iron (1/256 drop from Iron Golems)<br>
       18. Ritualist - Book of Rituals (1/12 drop from Vexes)<br>
-      19. Baker - Shimmering Wheat (1/2048 from harvesting wheat)<br>
+      19. Baker - Shimmering Wheat (1/512 from harvesting wheat)<br>
       20. Chef - Wagyu Beef (1/128 drop from Cows)<br>
       21. Bartender - Mixology Station (1/64 drop from Witches)<br>
       22. Astronomer - Galilean Spyglass (100% from Igloo chests)<br>
