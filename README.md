@@ -67,7 +67,8 @@ Datapack for Minecraft 1.16.2+! Get unique decorative miniblocks from special tr
       19. Baker - Shimmering Wheat (1/512 from harvesting wheat)<br>
       20. Chef - Wagyu Beef (1/128 drop from Cows)<br>
       21. Bartender - Mixology Station (1/64 drop from Witches)<br>
-      22. Astronomer - Galilean Spyglass (100% from Igloo chests)
+      22. Astronomer - Galilean Spyglass (100% from Igloo chests)<br>
+      11. Plushie Maniac - Soaked Villager Plushie (1/12 chance when fishing up a Treasure)
 </details>
 
 <h3>Sample Trades</h3>
