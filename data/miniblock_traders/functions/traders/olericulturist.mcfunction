@@ -7,18 +7,18 @@
 # --------------------------------------------------------------- #
 
 # Destroy the item used to convert the villager.
-kill @e[type=item,nbt={Item:{tag:{tag:mt_carrot}}},distance=..0.5]
+execute if entity @e[type=player,distance=..2] run kill @e[type=item,nbt={Item:{tag:{tag:mt_carrot}}},distance=..0.5]
 
 # Fun effects to give user feedback that the transformation worked.
-execute at @s run particle minecraft:happy_villager ~ ~ ~ 0.3 1 0.3 100 250
-playsound minecraft:entity.experience_orb.pickup ambient @a[distance=..8] ~ ~ ~ 30
+execute if entity @e[type=player,distance=..2] run execute at @s run particle minecraft:happy_villager ~ ~ ~ 0.3 1 0.3 100 250
+execute if entity @e[type=player,distance=..2] run playsound minecraft:entity.experience_orb.pickup ambient @a[distance=..8] ~ ~ ~ 30
 
 # Relevant Tags for utility and compatibility
-tag @s add mt_trader
-tag @s add global.ignore
-tag @s add global.ignore.pos
-tag @s add global.ignore.gui
-tag @s add global.ignore.kill
+execute if entity @e[type=player,distance=..2] run tag @s add mt_trader
+execute if entity @e[type=player,distance=..2] run tag @s add global.ignore
+execute if entity @e[type=player,distance=..2] run tag @s add global.ignore.pos
+execute if entity @e[type=player,distance=..2] run tag @s add global.ignore.gui
+execute if entity @e[type=player,distance=..2] run tag @s add global.ignore.kill
 
 # The below command split into lines to make it easier to read. It will not run unless it is a single line.
 # data merge entity @s {VillagerData:{profession:farmer,level:5,type:swamp},PersistenceRequired:1,CustomName:"\"Olericulturist\"",Offers:{Recipes:[
