@@ -46,7 +46,7 @@ Datapack for Minecraft 1.16.2+! Get unique decorative miniblocks from special tr
     <summary>
       [Potential Spoilers - Click to Expand] All Conversion Items with Source and Drop Rate
     </summary>
-      1. Pomologist - Enchanted Red Delicious (1/2048 from oak leaves)<br>
+      1. Pomologist - Enchanted Red Delicious (1/8192 from oak leaves)<br>
       2. Olericulturist - Overgrown Carrot (1/512 from harvesting carrots)<br>
       3. Horticulturist - Fragrant Flower (1/3 from Pillager Outpost chests)<br>
       4. Arboriculturalist - Cultivated Sapling (1/2048 from spruce leaves)<br>
@@ -64,7 +64,7 @@ Datapack for Minecraft 1.16.2+! Get unique decorative miniblocks from special tr
       16. Beekeeper - Prismatic Honeycomb (1/3 from Jungle Temple chests)<br>
       17. Blacksmith - Mastercrafted Iron (1/256 drop from Iron Golems)<br>
       18. Ritualist - Book of Rituals (1/12 drop from Vexes)<br>
-      19. Baker - Shimmering Wheat (1/512 from harvesting wheat)<br>
+      19. Baker - Extra-Sweet Sugar Cane (1/2048 from harvesting sugar cane)<br>
       20. Chef - Wagyu Beef (1/128 drop from Cows)<br>
       21. Bartender - Mixology Station (1/64 drop from Witches)<br>
       22. Astronomer - Galilean Spyglass (100% from Igloo chests)<br>
