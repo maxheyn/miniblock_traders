@@ -31,6 +31,7 @@ execute as @e[type=minecraft:villager,tag=!global.ignore] at @s if entity @e[typ
 execute as @e[type=minecraft:villager,tag=!global.ignore] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_sculpt}}},distance=..0.5] run function miniblock_traders:traders/sculptor
 execute as @e[type=minecraft:villager,tag=!global.ignore] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_clothes}}},distance=..0.5] run function miniblock_traders:traders/tailor
 execute as @e[type=minecraft:villager,tag=!global.ignore] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_plush}}},distance=..0.5] run function miniblock_traders:traders/plushie_maniac
+execute as @e[type=minecraft:villager,tag=!global.ignore] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_game}}},distance=..0.5] run function miniblock_traders:traders/gamemaster
 
 # Medieval Traders
 execute as @e[type=minecraft:villager,tag=!global.ignore] at @s if entity @e[type=item,nbt={Item:{tag:{tag:mt_smithy}}},distance=..0.5] run function miniblock_traders:traders/smithy

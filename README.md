@@ -10,7 +10,7 @@
 <h1>Miniblock Traders</h1>
 Datapack for Minecraft 1.16.2+! Get unique decorative miniblocks from special traders!<br>
 
-- 22 Unique Miniblock Traders trading over 400 different Miniblocks
+- 20+ Unique Miniblock Traders trading over 400 different Miniblocks
    - Loot tables for all trader conversion items
     - Each item drops from a different source (from a block, treasure chest, or killing a mob)
     - Not all items have the same drop chance
@@ -20,7 +20,7 @@ Datapack for Minecraft 1.16.2+! Get unique decorative miniblocks from special tr
    1. Garden (Fruits/Veggies/Plants)
    2. Rocks (Ore/Minerals/Stone Variants)
    3. Regional (Nether/Ocean/Desert/Space)
-   4. Household Decorations (Furniture/Clothes)
+   4. Household Decorations (Furniture/Clothes/Plushies/Games)
    5. Medieval (Smithing/Alchemy)
    6. Futuristic/Fantasy (Steampunk/Ritualist)
    7. Food (Pastries/Desserts/Meals/Drinks)
@@ -68,7 +68,8 @@ Datapack for Minecraft 1.16.2+! Get unique decorative miniblocks from special tr
       20. Chef - Wagyu Beef (1/128 drop from Cows)<br>
       21. Bartender - Mixology Station (1/64 drop from Witches)<br>
       22. Astronomer - Galilean Spyglass (100% from Igloo chests)<br>
-      23. Plushie Maniac - Soaked Villager Plushie (1/12 chance when fishing up a Treasure)
+      23. Plushie Maniac - Soaked Villager Plushie (1/12 chance when fishing up a Treasure)<br>
+      23. Gamemaster - Drenched Score Sheet (1/12 chance when fishing up a Treasure)
 </details>
 
 <h3>Sample Trades</h3>
