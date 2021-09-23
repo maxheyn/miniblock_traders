@@ -42,6 +42,7 @@ Datapack for Minecraft 1.16.2+! Get unique decorative miniblocks from special tr
 <img src=".github\resources\AllItems.png">
 <p align="center">Creative mode players can access a special chest with the<br><code>/function miniblock_traders:creative/give_conversion_chest</code><br>command, giving them all of the conversion items for easy access.</p> 
 
+<h3>Conversion Item Locations and Drop Chances</h3>
 <details>
     <summary>
       [Potential Spoilers - Click to Expand] All Conversion Items with Source and Drop Rate
