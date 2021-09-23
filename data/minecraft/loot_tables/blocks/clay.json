@@ -2,61 +2,64 @@
     "type": "minecraft:block",
     "pools": [
         {
-        "rolls": 1,
-        "entries": [
-            {
-            "type": "minecraft:alternatives",
-            "children": [
+            "rolls": 1,
+            "entries": [
                 {
-                "type": "minecraft:item",
-                "conditions": [
-                    {
-                    "condition": "minecraft:match_tool",
-                    "predicate": {
-                        "enchantments": [
+                    "type": "minecraft:alternatives",
+                    "children": [
                         {
-                            "enchantment": "minecraft:silk_touch",
-                            "levels": {
-                            "min": 1
-                            }
+                            "type": "minecraft:item",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:match_tool",
+                                    "predicate": {
+                                        "enchantments": [
+                                            {
+                                                "enchantment": "minecraft:silk_touch",
+                                                "levels": {
+                                                    "min": 1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "name": "minecraft:clay"
+                        },
+                        {
+                            "type": "minecraft:item",
+                            "functions": [
+                                {
+                                    "function": "minecraft:set_count",
+                                    "count": 4
+                                },
+                                {
+                                    "function": "minecraft:explosion_decay"
+                                }
+                            ],
+                            "name": "minecraft:clay_ball"
                         }
-                        ]
-                    }
-                    }
-                ],
-                "name": "minecraft:clay"
-                },
-                {
-                "type": "minecraft:item",
-                "functions": [
-                    {
-                    "function": "minecraft:set_count",
-                    "count": 4
-                    },
-                    {
-                    "function": "minecraft:explosion_decay"
-                    }
-                ],
-                "name": "minecraft:clay_ball"
+                    ]
                 }
             ]
-            }
-        ]
         },
         {
             "rolls": 1,
-            "entries": [{
+            "entries": [
+                {
                     "type": "item",
                     "weight": 1,
                     "name": "minecraft:clay_ball",
-                    "functions": [{
-                        "function": "set_nbt",
-                        "tag": "{display:{Name:'[{\"text\":\"Sculpting Clay\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_sculpt\"}"
-                    }]
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'[{\"text\":\"Sculpting Clay\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_sculpt\"}"
+                        }
+                    ]
                 },
                 {
                     "type": "empty",
-                    "weight": 127
+                    "weight": 255
                 }
             ]
         }

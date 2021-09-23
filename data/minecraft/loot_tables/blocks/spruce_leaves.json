@@ -147,7 +147,7 @@
         },
         {
           "type": "empty",
-          "weight": 8191
+          "weight": 4095
         }
       ]
     }

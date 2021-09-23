@@ -1,0 +1,295 @@
+{
+    "display": {
+        "title": {
+            "text": "Miniblock Tycoon",
+            "italic": false
+        },
+        "description": {
+            "text": "Obtain ALL Miniblock Traders conversion items!",
+            "color": "dark_purple"
+        },
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner:{Id:[I;-1044645433,1911244957,-1154653751,-282566737],Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmQwYmRmMzliNTRmNDk2OTJmYjM3OWI0ZWIwNGQxZWI0YTAwZTc4ZWQzOTExYWQzYjYzYTdlNWJmMzE3NjgzNyJ9fX0='}]}}}"
+        },
+        "frame": "challenge"
+    },
+    "parent": "global:items/obtain_conv",
+    "criteria": {
+        "conv1": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:player_head",
+                        "nbt": "{display:{Name:'[{\"text\":\"Soaked Villager Plushie\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_plush\",SkullOwner:{Id:[I;517903274,303778841,-1751461796,1896795803],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzkxNzc0ZThlNDNjZjUzNWUzMDk3MTZhMDNiNGE0YTgxMTA4NzkzZGU3NjhlYmQzZjEyMjRlNjgwMjFmZTk3ZSJ9fX0=\"}]}}}"
+                    }
+                ]
+            }
+        },
+        "conv2": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:carrot",
+                        "nbt": "{display:{Name:'[{\"text\":\"Overgrown Carrot\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_carrot\"}"
+                    }
+                ]
+            }
+        },
+        "conv3": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:clay_ball",
+                        "nbt": "{display:{Name:'[{\"text\":\"Sculpting Clay\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_sculpt\"}"
+                    }
+                ]
+            }
+        },
+        "conv4": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:apple",
+                        "nbt": "{display:{Name:'[{\"text\":\"Enchanted Red Delicious\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_apple\"}"
+                    }
+                ]
+            }
+        },
+        "conv5": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:redstone",
+                        "nbt": "{display:{Name:'[{\"text\":\"Radiating Redstone\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_engineer\"}"
+                    }
+                ]
+            }
+        },
+        "conv6": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:spruce_sapling",
+                        "nbt": "{display:{Name:'[{\"text\":\"Cultivated Sapling\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_sapling\"}"
+                    }
+                ]
+            }
+        },
+        "conv7": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:wheat",
+                        "nbt": "{display:{Name:'[{\"text\":\"Shimmering Wheat\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_bake\"}"
+                    }
+                ]
+            }
+        },
+        "conv8": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:cobblestone",
+                        "nbt": "{display:{Name:'[{\"text\":\"Unusually Dense Rock\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_rock\"}"
+                    }
+                ]
+            }
+        },
+        "conv9": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:cactus",
+                        "nbt": "{display:{Name:'[{\"text\":\"Budding Cactus\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_desert\"}"
+                    }
+                ]
+            }
+        },
+        "conv10": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:spyglass",
+                        "nbt": "{display:{Name:'[{\"text\":\"Galilean Telescope\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_astronomy\"}"
+                    }
+                ]
+            }
+        },
+        "conv11": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:honeycomb",
+                        "nbt": "{display:{Name:'[{\"text\":\"Prismatic Honeycomb\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_bees\"}"
+                    }
+                ]
+            }
+        },
+        "conv12": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:peony",
+                        "nbt": "{display:{Name:'[{\"text\":\"Fragrant Flower\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_flower\"}"
+                    }
+                ]
+            }
+        },
+        "conv13": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:blaze_powder",
+                        "nbt": "{display:{Name:'[{\"text\":\"Sparkling Blaze Powder\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_nether\"}"
+                    }
+                ]
+            }
+        },
+        "conv14": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:gold_ingot",
+                        "nbt": "{display:{Name:'[{\"text\":\"24-Karat Gold\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_mineral\"}"
+                    }
+                ]
+            }
+        },
+        "conv15": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:bookshelf",
+                        "nbt": "{display:{Name:'[{\"text\":\"Endless Bookshelf\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_furnish\"}"
+                    }
+                ]
+            }
+        },
+        "conv16": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:nautilus_shell",
+                        "nbt": "{display:{Name:'[{\"text\":\"Ancient Shell\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_ocean\"}"
+                    }
+                ]
+            }
+        },
+        "conv17": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:beef",
+                        "nbt": "{display:{Name:'[{\"text\":\"Wagyu Beef\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_chef\"}"
+                    }
+                ]
+            }
+        },
+        "conv18": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_ingot",
+                        "nbt": "{display:{Name:'[{\"text\":\"Mastercrafted Iron\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_smithy\"}"
+                    }
+                ]
+            }
+        },
+        "conv19": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:string",
+                        "nbt": "{display:{Name:'[{\"text\":\"Fine Thread\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_clothes\"}"
+                    }
+                ]
+            }
+        },
+        "conv20": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:book",
+                        "nbt": "{display:{Name:'[{\"text\":\"Book of Rituals\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_ritual\"}"
+                    }
+                ]
+            }
+        },
+        "conv21": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:glass_bottle",
+                        "nbt": "{display:{Name:'[{\"text\":\"Crystal Phial\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_alchemy\"}"
+                    }
+                ]
+            }
+        },
+        "conv22": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:brewing_stand",
+                        "nbt": "{display:{Name:'[{\"text\":\"Mixology Station\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_bartender\"}"
+                    }
+                ]
+            }
+        },
+        "conv23": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:light_weighted_pressure_plate",
+                        "nbt": "{display:{Name:'[{\"text\":\"Forgotten Scrap Metal\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_steampunk\"}"
+                    }
+                ]
+            }
+        },
+        "conv24": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:paper",
+                        "nbt": "{display:{Name:'[{\"text\":\"Drenched Score Sheet\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_game\"}"
+                    }
+                ]
+            }
+        },
+        "conv25": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:composter",
+                        "nbt": "{display:{Name:'[{\"text\":\"Rotting Recycling Bin\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_recycle\"}"
+                    }
+                ]
+            }
+        }
+    }
+}

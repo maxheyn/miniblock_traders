@@ -81,7 +81,7 @@
                 },
                 {
                     "type": "empty",
-                    "weight": 11
+                    "weight": 23
                 }
             ]
         },
@@ -101,7 +101,7 @@
                 },
                 {
                     "type": "empty",
-                    "weight": 11
+                    "weight": 23
                 }
             ]
         },
@@ -121,7 +121,67 @@
                 },
                 {
                     "type": "empty",
-                    "weight": 11
+                    "weight": 23
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:composter",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'[{\"text\":\"Rotting Recycling Bin\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_recycle\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "empty",
+                    "weight": 23
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:glass_bottle",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'[{\"text\":\"Crystal Phial\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_alchemy\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "empty",
+                    "weight": 23
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:brewing_stand",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'[{\"text\":\"Mixology Station\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_bartender\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "empty",
+                    "weight": 23
                 }
             ]
         }

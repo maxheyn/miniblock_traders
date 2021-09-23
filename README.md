@@ -10,7 +10,7 @@
 <h1>Miniblock Traders</h1>
 Datapack for Minecraft 1.16.2+! Get unique decorative miniblocks from special traders!<br>
 
-- 20+ Unique Miniblock Traders trading over 400 different Miniblocks
+- 20+ Unique Miniblock Traders trading over 500 different Miniblocks
    - Loot tables for all trader conversion items
     - Each item drops from a different source (from a block, treasure chest, or killing a mob)
     - Not all items have the same drop chance
@@ -46,30 +46,31 @@ Datapack for Minecraft 1.16.2+! Get unique decorative miniblocks from special tr
     <summary>
       [Potential Spoilers - Click to Expand] All Conversion Items with Source and Drop Rate
     </summary>
-      1. Pomologist - Enchanted Red Delicious (1/8192 from oak leaves)<br>
+      1. Pomologist - Enchanted Red Delicious (1/4096 from oak leaves)<br>
       2. Olericulturist - Overgrown Carrot (1/512 from harvesting carrots)<br>
-      3. Horticulturist - Fragrant Flower (1/3 from Pillager Outpost chests)<br>
-      4. Arboriculturalist - Cultivated Sapling (1/8192 from spruce leaves)<br>
+      3. Horticulturist - Fragrant Flower (1/2 from Pillager Outpost chests)<br>
+      4. Arboriculturalist - Cultivated Sapling (1/4096 from spruce leaves)<br>
       5. Mineralogist - 24-Karat Gold (1/4 from Spawner Dungeon chests)<br>
-      6. Petrologist - Unusually Dense Rock (1/16 from Abandoned Mineshaft chests)<br>
+      6. Petrologist - Unusually Dense Rock (1/12 from Abandoned Mineshaft chests)<br>
       7. Netherographer - Sparkling Blaze Powder (1/4 from Ruined Portal chests)<br>
-      8. Oceanographer - Ancient Shell (1/4 from Big Underwater Ruin chests)<br>
+      8. Oceanographer - Ancient Shell (1/3 from Big Underwater Ruin chests)<br>
       9. Eremologist - Budding Cactus (1/12 from Desert Pyramid chests)<br>
       10. Furnisher - Endless Bookshelf (1/3 from Stronghold Library chests)<br>
-      11. Steampunker - Forgotten Scrap (1/12 chance when fishing up a Treasure)<br>
+      11. Steampunker - Forgotten Scrap Metal (1/24 chance when fishing up a Treasure)<br>
       12. Engineer - Radiating Redstone (1/256 from mining redstone ore)<br>
-      13. Alchemist - Crystal Phial (1/64 drop from Witches)<br>
-      14. Sculptor - Sculpting Clay (1/128 from harvesting clay)<br>
-      15. Tailor - Fine Thread (1/96 drop from Spiders (not Cave Spiders))<br>
-      16. Beekeeper - Prismatic Honeycomb (1/3 from Jungle Temple chests)<br>
-      17. Blacksmith - Mastercrafted Iron (1/256 drop from Iron Golems)<br>
-      18. Ritualist - Book of Rituals (1/12 drop from Vexes)<br>
-      19. Baker - Shimmering Wheat (1/512 from harvesting wheat)<br>
-      20. Chef - Wagyu Beef (1/128 drop from Cows)<br>
-      21. Bartender - Mixology Station (1/64 drop from Witches)<br>
+      13. Alchemist - Crystal Phial (1/24 chance when fishing up a Treasure)<br>
+      14. Sculptor - Sculpting Clay (1/256 from harvesting clay)<br>
+      15. Tailor - Fine Thread (1/4 from Village Shepherd chests)<br>
+      16. Beekeeper - Prismatic Honeycomb (100% from Jungle Temple chests)<br>
+      17. Blacksmith - Mastercrafted Iron (1/4 from Village Armorer chests)<br>
+      18. Ritualist - Book of Rituals (1/3 from Stronghold Library chests)<br>
+      19. Baker - Shimmering Wheat (1/512 from harvesting Wheat)<br>
+      20. Chef - Wagyu Beef (1/4 from Village Butcher chests)<br>
+      21. Bartender - Mixology Station (1/24 chance when fishing up a Treasure)<br>
       22. Astronomer - Galilean Spyglass (100% from Igloo chests)<br>
-      23. Plushie Maniac - Soaked Villager Plushie (1/12 chance when fishing up a Treasure)<br>
-      24. Gamemaster - Drenched Score Sheet (1/12 chance when fishing up a Treasure)
+      23. Plushie Maniac - Soaked Villager Plushie (1/24 chance when fishing up a Treasure)<br>
+      24. Gamemaster - Drenched Score Sheet (1/24 chance when fishing up a Treasure)<br>
+      25. Recycler - Rotting Recycling Bin (1/24 chance when fishing up a Treasure)
 </details>
 
 <h3>Sample Trades</h3>

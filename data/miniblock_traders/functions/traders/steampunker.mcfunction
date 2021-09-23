@@ -15,6 +15,7 @@ playsound minecraft:entity.experience_orb.pickup ambient @a[distance=..8] ~ ~ ~ 
 
 # Relevant Tags for utility and compatibility
 tag @s add mt_trader
+tag @s add mt_trader_steampunk
 tag @s add global.ignore
 tag @s add global.ignore.pos
 tag @s add global.ignore.gui

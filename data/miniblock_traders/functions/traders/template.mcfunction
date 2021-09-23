@@ -15,6 +15,7 @@ playsound minecraft:entity.experience_orb.pickup ambient @a[distance=..8] ~ ~ ~ 
 
 # Relevant Tags for utility and compatibility
 tag @s add mt_trader
+tag @s add mt_trader_tag
 tag @s add global.ignore
 tag @s add global.ignore.pos
 tag @s add global.ignore.gui
@@ -22,7 +23,6 @@ tag @s add global.ignore.kill
 
 # The below command split into lines to make it easier to read. It will not run unless it is a single line.
 # data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},PersistenceRequired:1,CustomName:"\"TemplateNameHere\"",Offers:{Recipes:[
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:REPLACEMEWITHTHECOPYPASTETEXTREPLACEMEWITHTHECOPYPASTETEXTREPLACEMEWITHTHECOPYPASTETEXTREPLACEMEWITHTHECOPYPASTETEXTREPLACEMEWITHTHECOPYPASTETEXTREPLACEMEWITHTHECOPYPASTETEXT,Count:1},rewardExp:0b,maxUses:9999999},
 #     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:REPLACEMEWITHTHECOPYPASTETEXTREPLACEMEWITHTHECOPYPASTETEXTREPLACEMEWITHTHECOPYPASTETEXTREPLACEMEWITHTHECOPYPASTETEXTREPLACEMEWITHTHECOPYPASTETEXTREPLACEMEWITHTHECOPYPASTETEXT,Count:1},rewardExp:0b,maxUses:9999999},
 #     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:REPLACEMEWITHTHECOPYPASTETEXTREPLACEMEWITHTHECOPYPASTETEXTREPLACEMEWITHTHECOPYPASTETEXTREPLACEMEWITHTHECOPYPASTETEXTREPLACEMEWITHTHECOPYPASTETEXTREPLACEMEWITHTHECOPYPASTETEXT,Count:1},rewardExp:0b,maxUses:9999999},
 #     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:REPLACEMEWITHTHECOPYPASTETEXTREPLACEMEWITHTHECOPYPASTETEXTREPLACEMEWITHTHECOPYPASTETEXTREPLACEMEWITHTHECOPYPASTETEXTREPLACEMEWITHTHECOPYPASTETEXTREPLACEMEWITHTHECOPYPASTETEXT,Count:1},rewardExp:0b,maxUses:9999999},

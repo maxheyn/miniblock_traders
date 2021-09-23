@@ -15,6 +15,7 @@ execute if entity @e[type=player,distance=..2] run playsound minecraft:entity.ex
 
 # Relevant Tags for utility and compatibility
 execute if entity @e[type=player,distance=..2] run tag @s add mt_trader
+execute if entity @e[type=player,distance=..2] run tag @s add mt_trader_carrot
 execute if entity @e[type=player,distance=..2] run tag @s add global.ignore
 execute if entity @e[type=player,distance=..2] run tag @s add global.ignore.pos
 execute if entity @e[type=player,distance=..2] run tag @s add global.ignore.gui

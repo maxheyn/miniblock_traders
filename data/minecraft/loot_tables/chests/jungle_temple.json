@@ -156,10 +156,6 @@
               "tag": "{display:{Name:'[{\"text\":\"Prismatic Honeycomb\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_bees\"}"
             }
           ]
-        },
-        {
-          "type": "empty",
-          "weight": 2
         }
       ]
     }

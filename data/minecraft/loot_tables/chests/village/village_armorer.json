@@ -1,0 +1,75 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": {
+                "type": "minecraft:uniform",
+                "min": 1.0,
+                "max": 5.0
+            },
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1.0,
+                                "max": 3.0
+                            },
+                            "add": false
+                        }
+                    ],
+                    "name": "minecraft:iron_ingot"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1.0,
+                                "max": 4.0
+                            },
+                            "add": false
+                        }
+                    ],
+                    "name": "minecraft:bread"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_helmet"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:emerald"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:iron_ingot",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'[{\"text\":\"Mastercrafted Iron\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_smithy\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "empty",
+                    "weight": 3
+                }
+            ]
+        }
+    ]
+}
