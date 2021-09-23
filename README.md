@@ -43,7 +43,6 @@ Datapack for Minecraft 1.16.2+! Get unique decorative miniblocks from special tr
 <p align="center">Creative mode players can access a special chest with the<br><code>/function miniblock_traders:creative/give_conversion_chest</code><br>command, giving them all of the conversion items for easy access.</p> 
 
 <h3>Conversion Item Locations and Drop Chances</h3>
-<details>
       1. Pomologist - Enchanted Red Delicious (1/4096 from oak leaves)<br>
       2. Olericulturist - Overgrown Carrot (1/512 from harvesting carrots)<br>
       3. Horticulturist - Fragrant Flower (1/2 from Pillager Outpost chests)<br>
@@ -69,7 +68,6 @@ Datapack for Minecraft 1.16.2+! Get unique decorative miniblocks from special tr
       23. Plushie Maniac - Soaked Villager Plushie (1/24 chance when fishing up a Treasure)<br>
       24. Gamemaster - Drenched Score Sheet (1/24 chance when fishing up a Treasure)<br>
       25. Recycler - Rotting Recycling Bin (1/24 chance when fishing up a Treasure)
-</details>
 
 <h3>Sample Trades</h3>
 <img src=".github\resources\Arborculturalist.PNG">
