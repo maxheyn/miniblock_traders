@@ -44,9 +44,6 @@ Datapack for Minecraft 1.16.2+! Get unique decorative miniblocks from special tr
 
 <h3>Conversion Item Locations and Drop Chances</h3>
 <details>
-    <summary>
-      [Potential Spoilers - Click to Expand] All Conversion Items with Source and Drop Rate
-    </summary>
       1. Pomologist - Enchanted Red Delicious (1/4096 from oak leaves)<br>
       2. Olericulturist - Overgrown Carrot (1/512 from harvesting carrots)<br>
       3. Horticulturist - Fragrant Flower (1/2 from Pillager Outpost chests)<br>
