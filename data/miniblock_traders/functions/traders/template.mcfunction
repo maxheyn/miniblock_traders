@@ -49,3 +49,7 @@ tag @s add global.ignore.kill
 # ]}}
 
 # Apply villager trades.
+
+
+# Talk to me
+tellraw @e[type=player,distance=..16] [{"text":"<","color":"white"},{"text":"TRADERNAMETRADERNAMETRADERNAME","color":"gold"},{"text":">","color":"white"},{"text":" TRADERTEXTTRADERTEXTTRADERTEXTTRADERTEXT","color":"green"}]
