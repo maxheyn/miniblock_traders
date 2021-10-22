@@ -57,12 +57,12 @@ Datapack for Minecraft 1.16.2+! Get unique decorative miniblocks from special tr
       12. Engineer - Radiating Redstone (1/256 from mining redstone ore)<br>
       13. Alchemist - Crystal Phial (1/24 chance when fishing up a Treasure)<br>
       14. Sculptor - Sculpting Clay (1/256 from harvesting clay)<br>
-      15. Tailor - Fine Thread (1/4 from Village Shepherd chests)<br>
+      15. Tailor - Fine Thread (1/2 from Village Shepherd chests)<br>
       16. Beekeeper - Prismatic Honeycomb (100% from Jungle Temple chests)<br>
-      17. Blacksmith - Mastercrafted Iron (1/4 from Village Armorer chests)<br>
+      17. Blacksmith - Mastercrafted Iron (1/2 from Village Armorer chests)<br>
       18. Ritualist - Book of Rituals (1/3 from Stronghold Library chests)<br>
       19. Baker - Shimmering Wheat (1/512 from harvesting Wheat)<br>
-      20. Chef - Wagyu Beef (1/4 from Village Butcher chests)<br>
+      20. Chef - Wagyu Beef (1/2 from Village Butcher chests)<br>
       21. Bartender - Mixology Station (1/24 chance when fishing up a Treasure)<br>
       22. Astronomer - Galilean Spyglass (100% from Igloo chests)<br>
       23. Plushie Maniac - Soaked Villager Plushie (1/24 chance when fishing up a Treasure)<br>
