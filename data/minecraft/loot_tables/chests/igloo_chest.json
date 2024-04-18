@@ -4,68 +4,68 @@
         {
             "rolls": {
                 "type": "minecraft:uniform",
-                "min": 2.0,
-                "max": 8.0
+                "min": 2,
+                "max": 8
             },
-            "bonus_rolls": 0.0,
+            "bonus_rolls": 0,
             "entries": [
                 {
                     "type": "minecraft:item",
+                    "name": "minecraft:apple",
                     "weight": 15,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
                                 "type": "minecraft:uniform",
-                                "min": 1.0,
-                                "max": 3.0
+                                "min": 1,
+                                "max": 3
                             },
                             "add": false
                         }
-                    ],
-                    "name": "minecraft:apple"
+                    ]
                 },
                 {
                     "type": "minecraft:item",
+                    "name": "minecraft:coal",
                     "weight": 15,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
                                 "type": "minecraft:uniform",
-                                "min": 1.0,
-                                "max": 4.0
+                                "min": 1,
+                                "max": 4
                             },
                             "add": false
                         }
-                    ],
-                    "name": "minecraft:coal"
+                    ]
                 },
                 {
                     "type": "minecraft:item",
+                    "name": "minecraft:gold_nugget",
                     "weight": 10,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
                                 "type": "minecraft:uniform",
-                                "min": 1.0,
-                                "max": 3.0
+                                "min": 1,
+                                "max": 3
                             },
                             "add": false
                         }
-                    ],
-                    "name": "minecraft:gold_nugget"
+                    ]
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 2,
-                    "name": "minecraft:stone_axe"
+                    "name": "minecraft:stone_axe",
+                    "weight": 2
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 10,
-                    "name": "minecraft:rotten_flesh"
+                    "name": "minecraft:rotten_flesh",
+                    "weight": 10
                 },
                 {
                     "type": "minecraft:item",
@@ -73,25 +73,25 @@
                 },
                 {
                     "type": "minecraft:item",
+                    "name": "minecraft:wheat",
                     "weight": 10,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
                                 "type": "minecraft:uniform",
-                                "min": 2.0,
-                                "max": 3.0
+                                "min": 2,
+                                "max": 3
                             },
                             "add": false
                         }
-                    ],
-                    "name": "minecraft:wheat"
+                    ]
                 }
             ]
         },
         {
-            "rolls": 1.0,
-            "bonus_rolls": 0.0,
+            "rolls": 1,
+            "bonus_rolls": 0,
             "entries": [
                 {
                     "type": "minecraft:item",
@@ -103,17 +103,18 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "item",
-                    "weight": 1,
+                    "type": "minecraft:item",
                     "name": "minecraft:spyglass",
+                    "weight": 1,
                     "functions": [
                         {
-                            "function": "set_nbt",
+                            "function": "minecraft:set_nbt",
                             "tag": "{display:{Name:'[{\"text\":\"Galilean Telescope\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_astronomy\"}"
                         }
                     ]
                 }
             ]
         }
-    ]
+    ],
+    "random_sequence": "minecraft:chests/igloo_chest"
 }

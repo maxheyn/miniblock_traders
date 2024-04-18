@@ -4,10 +4,10 @@
         {
             "rolls": {
                 "type": "minecraft:uniform",
-                "min": 1.0,
-                "max": 5.0
+                "min": 1,
+                "max": 5
             },
-            "bonus_rolls": 0.0,
+            "bonus_rolls": 0,
             "entries": [
                 {
                     "type": "minecraft:item",
@@ -15,83 +15,83 @@
                 },
                 {
                     "type": "minecraft:item",
+                    "name": "minecraft:porkchop",
                     "weight": 6,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
                                 "type": "minecraft:uniform",
-                                "min": 1.0,
-                                "max": 3.0
+                                "min": 1,
+                                "max": 3
                             },
                             "add": false
                         }
-                    ],
-                    "name": "minecraft:porkchop"
+                    ]
                 },
                 {
                     "type": "minecraft:item",
+                    "name": "minecraft:wheat",
                     "weight": 6,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
                                 "type": "minecraft:uniform",
-                                "min": 1.0,
-                                "max": 3.0
+                                "min": 1,
+                                "max": 3
                             },
                             "add": false
                         }
-                    ],
-                    "name": "minecraft:wheat"
+                    ]
                 },
                 {
                     "type": "minecraft:item",
+                    "name": "minecraft:beef",
                     "weight": 6,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
                                 "type": "minecraft:uniform",
-                                "min": 1.0,
-                                "max": 3.0
+                                "min": 1,
+                                "max": 3
                             },
                             "add": false
                         }
-                    ],
-                    "name": "minecraft:beef"
+                    ]
                 },
                 {
                     "type": "minecraft:item",
+                    "name": "minecraft:mutton",
                     "weight": 6,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
                                 "type": "minecraft:uniform",
-                                "min": 1.0,
-                                "max": 3.0
+                                "min": 1,
+                                "max": 3
                             },
                             "add": false
                         }
-                    ],
-                    "name": "minecraft:mutton"
+                    ]
                 },
                 {
                     "type": "minecraft:item",
+                    "name": "minecraft:coal",
                     "weight": 3,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
                                 "type": "minecraft:uniform",
-                                "min": 1.0,
-                                "max": 3.0
+                                "min": 1,
+                                "max": 3
                             },
                             "add": false
                         }
-                    ],
-                    "name": "minecraft:coal"
+                    ]
                 }
             ]
         },
@@ -99,21 +99,22 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "item",
-                    "weight": 1,
+                    "type": "minecraft:empty",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
                     "name": "minecraft:beef",
+                    "weight": 1,
                     "functions": [
                         {
-                            "function": "set_nbt",
+                            "function": "minecraft:set_nbt",
                             "tag": "{display:{Name:'[{\"text\":\"Wagyu Beef\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_chef\"}"
                         }
                     ]
-                },
-                {
-                    "type": "empty",
-                    "weight": 1
                 }
             ]
         }
-    ]
+    ],
+    "random_sequence": "minecraft:chests/village/village_butcher"
 }
