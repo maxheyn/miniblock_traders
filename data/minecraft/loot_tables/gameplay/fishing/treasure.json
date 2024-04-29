@@ -140,8 +140,18 @@
                     ]
                 },
                 {
+                    "type": "minecraft:item",
+                    "name": "minecraft:string",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{Name:'[{\"text\":\"Fine Thread\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_clothes\"}"
+                        }
+                    ]
+                },
+                {
                     "type": "minecraft:empty",
-                    "weight": 23
+                    "weight": 11
                 }
             ]
         }
