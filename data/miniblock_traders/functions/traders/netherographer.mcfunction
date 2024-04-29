@@ -22,36 +22,411 @@ tag @s add global.ignore.gui
 tag @s add global.ignore.kill
 
 # The below command split into lines to make it easier to read. It will not run unless it is a single line.
-# data merge entity @s {VillagerData:{profession:cartographer,level:5,type:savanna},PersistenceRequired:1,CustomName:"\"Netherographer\"",Offers:{Recipes:[
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Netherrack\"}"},SkullOwner:{Id:[I;-1696461021,-1396682981,-1685500882,189325391],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWRkMzBlMmZjNWNiMDQ0NjFiYWJjMzk0MjMzODAxODdkMzUyNjUwOWNkNmQ0YzM1YzA0ZjYxNmYzMWIxYjkxZiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Nether Gold Ore\"}"},SkullOwner:{Id:[I;-1883409119,-1479062779,-1977877739,1385525164],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmEyZjA1ZTZkNmQ1OThkYTZiZGVjYjI2ZTc3MGRiNDE3NTdjYWI1OGU2ZWQzOTJiYjE0ZTNjNjc0NWIwZDcyMCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Nether Quartz Ore\"}"},SkullOwner:{Id:[I;351783933,1232489776,-1385409704,-1822148250],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjRkNjljNGNkZGY5MDNmYmNjNWE4YzY3Y2MyMmU0ZDkzMjQyNzJkNTJhNDc5NmQ2NjcyNDM1ZDEwMTU5ODk4NSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Glowstone\"}"},SkullOwner:{Id:[I;2147121861,91114455,-1462856359,1142260608],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Q5ZDE5NWYwOTJlNDM1MDViNTQ5OWU3MzJkY2RiOWU4NTIwNjlkNWFkMzVjMTE0MzJjOTkwYWZjZmU2NDAzNyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Shroomlight\"}"},SkullOwner:{Id:[I;-109251789,-1365753401,-1862920879,907552147],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGNjNDQ0ZGM3NDM4Yjk3OTYzNTdkMGFiOWY1ZTc0NGZlMDhlNDQ2ZDZkNzg2ODIzNzM1OTM3MDQ3NTYzYzkxOSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Soul Sand\"}"},SkullOwner:{Id:[I;1768888717,1061178787,-1152501958,-1196413702],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjFjZjVhMzRhNzcyMWUyOTk4N2E5YjI5ZTFhNWJmMzI0MTgzNTNlYWQwOTgxZmMzOGJmZmQ4MDJjZGQzYzYzMiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Soul Soil\"}"},SkullOwner:{Id:[I;-45924942,358697278,-1111289537,-2000790055],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZlMjBkZmI3YzlmZjgzYmI2MmY2MzA3MThlNTNjZTAyYTMzM2I2YmI2YjA4ZGM2ZmE4MGEyYTUxZWQwY2E4In19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Crimson Stem\"}"},SkullOwner:{Id:[I;1793782074,1857439110,-1905542052,-743519303],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQzYjRjODdmOTc4MThkNzFmMTNhZmE2ZGI5NDZmYjBhMjM1Y2Q3NzFhZTg2OTkyNGM5OGIzZDE3ZDc2NDk5YiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Warped Stem\"}"},SkullOwner:{Id:[I;918256636,690376638,-1595561728,728587839],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGFhNGJiNGE3ODJhNjM2NzJhMzM5YTc0Y2QxNzMxMTlkYjA5YTA0NTY4NTA0MDVhMzRjN2MwZjRiZmRiOWQxNSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Crimson Nylium\"}"},SkullOwner:{Id:[I;-548042647,-1692906314,-1417413401,198314810],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGU0NDcxMWUzZTgyMjZiMmMwY2Q1ZGM5ODgwYzNhNzkzYjM3NzVkMmM2ZTk1OWFlMzUyODBiZThiZTZmYmM5In19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Warped Nylium\"}"},SkullOwner:{Id:[I;-1554844132,-1103542442,-2003132317,-1423705635],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWVjNjkyNzhmMzNiOGZjZTJhYmIzNjJkOTA4ZDYwYWNhNWQ1N2M2NWY5NGUwZDY2YWFmMDYwODhiZDcyMDdiYyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Nether Wart Block\"}"},SkullOwner:{Id:[I;355335389,-1870774045,-1527444966,1861544407],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg5MTJiYzFhZDNkZGJlMzlhMTliNzM0YTQyZDg1NDg5NjRiYjBhOWNlNThhNTJmMWE2YWUzNzEyMTUyNCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Warped Wart Block\"}"},SkullOwner:{Id:[I;624097158,1114063721,-2101271654,2122089751],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjAwYjExNGI4OWM3MzdiZjI3YjNhNzFlY2MxMmFjMGIzNGQ3NjUyZDg0ODU5NWE3ODg3M2ViMmQzMWEzYmQxNyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Crimson Hyphae\"}"},SkullOwner:{Id:[I;685776085,1858685416,-1316173161,938231287],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzFlNDQ5YWIzYjk0YTQ2NmUyZDA4ZDZiNTI2OThiODYxZDY1NTgyZGFlYjkyZGM1ZDYyYTJjNTdkZGYwNmI2NCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Warped Hyphae\"}"},SkullOwner:{Id:[I;-700933268,1075333996,-1156945916,-859483202],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjA5NmIwZDdlZGRmN2IwNTlmYjQwY2ExNmZmMjllOGZjYWU4NTI3NTEyZTJjN2UwZjY3MTdjNGZlYmQ3YjBjNSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Blackstone\"}"},SkullOwner:{Id:[I;667528434,1364804242,-1600015651,758932226],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmODJjNTRjOTdlNzFlZGFkZTY5MmQ0NzUzZGY1NjAxMzI5Nzk0ZWM1MGFmMWRmNWZmYmMxMDM0ZWM5YmIyNyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Gilded Blackstone\"}"},SkullOwner:{Id:[I;1575730194,775964324,-1610503867,163413616],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7ImlkIjoiZGNjOTBjYzkzZWRhNDQ5YTk1Y2U5MGU0NjBkZjJiYjkiLCJ0eXBlIjoiU0tJTiIsInVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzQ4MmQxYmE0YmRhYzk5MGY2ZWE5ODc3MDM1ODdmZDc5ZmU1NTU1NTM2MzI1MTk4NDY3OWQ0ZjI3OWNjMGMyYSIsInByb2ZpbGVJZCI6IjgwMThhYjAwYjJhZTQ0Y2FhYzliZjYwZWY5MGY0NWU1IiwidGV4dHVyZUlkIjoiYzQ4MmQxYmE0YmRhYzk5MGY2ZWE5ODc3MDM1ODdmZDc5ZmU1NTU1NTM2MzI1MTk4NDY3OWQ0ZjI3OWNjMGMyYSJ9fSwic2tpbiI6eyJpZCI6ImRjYzkwY2M5M2VkYTQ0OWE5NWNlOTBlNDYwZGYyYmI5IiwidHlwZSI6IlNLSU4iLCJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2M0ODJkMWJhNGJkYWM5OTBmNmVhOTg3NzAzNTg3ZmQ3OWZlNTU1NTUzNjMyNTE5ODQ2NzlkNGYyNzljYzBjMmEiLCJwcm9maWxlSWQiOiI4MDE4YWIwMGIyYWU0NGNhYWM5YmY2MGVmOTBmNDVlNSIsInRleHR1cmVJZCI6ImM0ODJkMWJhNGJkYWM5OTBmNmVhOTg3NzAzNTg3ZmQ3OWZlNTU1NTUzNjMyNTE5ODQ2NzlkNGYyNzljYzBjMmEifSwiY2FwZSI6bnVsbH0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Crying Obsidian\"}"},SkullOwner:{Id:[I;590124071,1680163456,-1377778235,2063408198],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGE1Yzg2ODY0MTFkNDQ2YzkwYzE5MWM5M2Y4MGI5ZmZiMWNkMjQ3YWExMmEyMjZmODk3OTk4MWFkNDM4OGJlZSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Basalt\"}"},SkullOwner:{Id:[I;792327766,603079390,-1626595123,1700934471],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2ZlNDgwNmQxODVhYzA4MDNjMjMyNjE5NDFiM2Q0N2M5YzA2NWYyZDJhYmQyYzY2YjFkN2EwYTdkYTM2NjQzMCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Polished Basalt\"}"},SkullOwner:{Id:[I;-1548816686,-487111630,-1977325983,-652034382],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWUxNWI3MDhmYjU5YjMzOTNjYTQ0Y2RjYzQwZjlmZGQ5MTg2NjdjMWZmYzMxYjMyZmQ3ZjIwYWE3YTk2YWI5ZiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Ancient Debris\"}"},SkullOwner:{Id:[I;-314841336,-438940491,-1201343389,-1275161951],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZhMjYxMDU0NWM1MTkzYjE3NzZmYWU2ZjVkNmYxNzU3OWQ2MDAyYWVhMDMyZjlmNTJiNTRiZDNiZmY1OWE1MSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Nether Wart\"}"},SkullOwner:{Id:[I;-1337244671,562120200,-1508450293,2011608202],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTExYTNjZWM3YWFmOTA0MjEyY2NmOTNiYjY3YTNjYWYzZDY0OTc4M2JhOTBiOGI2MGJiNjNjNzY4N2ViMzlmIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Crimson Fungus\"}"},SkullOwner:{Id:[I;1066769412,-1463267488,-1687174407,1687170222],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWIyMDY0MzkwZTc5ZDllNTRjY2I0MThiMDczMzE1M2NmOTkyM2ZjNGE4ZDE0YWIxZDJiN2VmNTk2ODgzMWM5MyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Warped Fungus\"}"},SkullOwner:{Id:[I;418030412,-1197912851,-1997806740,-1175113468],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDUzZWJiZmU4NjIwYmI5OGUyZjQzYzE0MTZkZDdlYmMxMjZjYTQxZGNmZjg5N2VkZTM0YjA0ZmM5ZWUzMDM2ZSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Nether Orb\"}"},SkullOwner:{Id:[I;1185639029,1846363053,-1787704507,813969860],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDUwMDI5MmY0YWZlNTJkMTBmMjk5ZGZiMjYwMzYzMjI4MzA0NTAzMzFlMDAzMDg0YmIyMjAzMzM1MzA2NjRlMSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-# ]}}
-
-# Apply villager trades.
-data merge entity @s {VillagerData:{profession:cartographer,level:5,type:savanna},PersistenceRequired:1,CustomName:"\"Netherographer\"",Offers:{Recipes:[{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Netherrack\"}"},SkullOwner:{Id:[I;-1696461021,-1396682981,-1685500882,189325391],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWRkMzBlMmZjNWNiMDQ0NjFiYWJjMzk0MjMzODAxODdkMzUyNjUwOWNkNmQ0YzM1YzA0ZjYxNmYzMWIxYjkxZiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Nether Gold Ore\"}"},SkullOwner:{Id:[I;-1883409119,-1479062779,-1977877739,1385525164],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmEyZjA1ZTZkNmQ1OThkYTZiZGVjYjI2ZTc3MGRiNDE3NTdjYWI1OGU2ZWQzOTJiYjE0ZTNjNjc0NWIwZDcyMCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Nether Quartz Ore\"}"},SkullOwner:{Id:[I;351783933,1232489776,-1385409704,-1822148250],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjRkNjljNGNkZGY5MDNmYmNjNWE4YzY3Y2MyMmU0ZDkzMjQyNzJkNTJhNDc5NmQ2NjcyNDM1ZDEwMTU5ODk4NSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Glowstone\"}"},SkullOwner:{Id:[I;2147121861,91114455,-1462856359,1142260608],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Q5ZDE5NWYwOTJlNDM1MDViNTQ5OWU3MzJkY2RiOWU4NTIwNjlkNWFkMzVjMTE0MzJjOTkwYWZjZmU2NDAzNyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Shroomlight\"}"},SkullOwner:{Id:[I;-109251789,-1365753401,-1862920879,907552147],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGNjNDQ0ZGM3NDM4Yjk3OTYzNTdkMGFiOWY1ZTc0NGZlMDhlNDQ2ZDZkNzg2ODIzNzM1OTM3MDQ3NTYzYzkxOSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Soul Sand\"}"},SkullOwner:{Id:[I;1768888717,1061178787,-1152501958,-1196413702],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjFjZjVhMzRhNzcyMWUyOTk4N2E5YjI5ZTFhNWJmMzI0MTgzNTNlYWQwOTgxZmMzOGJmZmQ4MDJjZGQzYzYzMiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Soul Soil\"}"},SkullOwner:{Id:[I;-45924942,358697278,-1111289537,-2000790055],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZlMjBkZmI3YzlmZjgzYmI2MmY2MzA3MThlNTNjZTAyYTMzM2I2YmI2YjA4ZGM2ZmE4MGEyYTUxZWQwY2E4In19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Crimson Stem\"}"},SkullOwner:{Id:[I;1793782074,1857439110,-1905542052,-743519303],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQzYjRjODdmOTc4MThkNzFmMTNhZmE2ZGI5NDZmYjBhMjM1Y2Q3NzFhZTg2OTkyNGM5OGIzZDE3ZDc2NDk5YiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Warped Stem\"}"},SkullOwner:{Id:[I;918256636,690376638,-1595561728,728587839],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGFhNGJiNGE3ODJhNjM2NzJhMzM5YTc0Y2QxNzMxMTlkYjA5YTA0NTY4NTA0MDVhMzRjN2MwZjRiZmRiOWQxNSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Crimson Nylium\"}"},SkullOwner:{Id:[I;-548042647,-1692906314,-1417413401,198314810],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGU0NDcxMWUzZTgyMjZiMmMwY2Q1ZGM5ODgwYzNhNzkzYjM3NzVkMmM2ZTk1OWFlMzUyODBiZThiZTZmYmM5In19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Warped Nylium\"}"},SkullOwner:{Id:[I;-1554844132,-1103542442,-2003132317,-1423705635],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWVjNjkyNzhmMzNiOGZjZTJhYmIzNjJkOTA4ZDYwYWNhNWQ1N2M2NWY5NGUwZDY2YWFmMDYwODhiZDcyMDdiYyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Nether Wart Block\"}"},SkullOwner:{Id:[I;355335389,-1870774045,-1527444966,1861544407],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg5MTJiYzFhZDNkZGJlMzlhMTliNzM0YTQyZDg1NDg5NjRiYjBhOWNlNThhNTJmMWE2YWUzNzEyMTUyNCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Warped Wart Block\"}"},SkullOwner:{Id:[I;624097158,1114063721,-2101271654,2122089751],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjAwYjExNGI4OWM3MzdiZjI3YjNhNzFlY2MxMmFjMGIzNGQ3NjUyZDg0ODU5NWE3ODg3M2ViMmQzMWEzYmQxNyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Crimson Hyphae\"}"},SkullOwner:{Id:[I;685776085,1858685416,-1316173161,938231287],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzFlNDQ5YWIzYjk0YTQ2NmUyZDA4ZDZiNTI2OThiODYxZDY1NTgyZGFlYjkyZGM1ZDYyYTJjNTdkZGYwNmI2NCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Warped Hyphae\"}"},SkullOwner:{Id:[I;-700933268,1075333996,-1156945916,-859483202],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjA5NmIwZDdlZGRmN2IwNTlmYjQwY2ExNmZmMjllOGZjYWU4NTI3NTEyZTJjN2UwZjY3MTdjNGZlYmQ3YjBjNSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Blackstone\"}"},SkullOwner:{Id:[I;667528434,1364804242,-1600015651,758932226],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmODJjNTRjOTdlNzFlZGFkZTY5MmQ0NzUzZGY1NjAxMzI5Nzk0ZWM1MGFmMWRmNWZmYmMxMDM0ZWM5YmIyNyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Gilded Blackstone\"}"},SkullOwner:{Id:[I;1575730194,775964324,-1610503867,163413616],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7ImlkIjoiZGNjOTBjYzkzZWRhNDQ5YTk1Y2U5MGU0NjBkZjJiYjkiLCJ0eXBlIjoiU0tJTiIsInVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzQ4MmQxYmE0YmRhYzk5MGY2ZWE5ODc3MDM1ODdmZDc5ZmU1NTU1NTM2MzI1MTk4NDY3OWQ0ZjI3OWNjMGMyYSIsInByb2ZpbGVJZCI6IjgwMThhYjAwYjJhZTQ0Y2FhYzliZjYwZWY5MGY0NWU1IiwidGV4dHVyZUlkIjoiYzQ4MmQxYmE0YmRhYzk5MGY2ZWE5ODc3MDM1ODdmZDc5ZmU1NTU1NTM2MzI1MTk4NDY3OWQ0ZjI3OWNjMGMyYSJ9fSwic2tpbiI6eyJpZCI6ImRjYzkwY2M5M2VkYTQ0OWE5NWNlOTBlNDYwZGYyYmI5IiwidHlwZSI6IlNLSU4iLCJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2M0ODJkMWJhNGJkYWM5OTBmNmVhOTg3NzAzNTg3ZmQ3OWZlNTU1NTUzNjMyNTE5ODQ2NzlkNGYyNzljYzBjMmEiLCJwcm9maWxlSWQiOiI4MDE4YWIwMGIyYWU0NGNhYWM5YmY2MGVmOTBmNDVlNSIsInRleHR1cmVJZCI6ImM0ODJkMWJhNGJkYWM5OTBmNmVhOTg3NzAzNTg3ZmQ3OWZlNTU1NTUzNjMyNTE5ODQ2NzlkNGYyNzljYzBjMmEifSwiY2FwZSI6bnVsbH0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Crying Obsidian\"}"},SkullOwner:{Id:[I;590124071,1680163456,-1377778235,2063408198],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGE1Yzg2ODY0MTFkNDQ2YzkwYzE5MWM5M2Y4MGI5ZmZiMWNkMjQ3YWExMmEyMjZmODk3OTk4MWFkNDM4OGJlZSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Basalt\"}"},SkullOwner:{Id:[I;792327766,603079390,-1626595123,1700934471],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2ZlNDgwNmQxODVhYzA4MDNjMjMyNjE5NDFiM2Q0N2M5YzA2NWYyZDJhYmQyYzY2YjFkN2EwYTdkYTM2NjQzMCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Polished Basalt\"}"},SkullOwner:{Id:[I;-1548816686,-487111630,-1977325983,-652034382],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWUxNWI3MDhmYjU5YjMzOTNjYTQ0Y2RjYzQwZjlmZGQ5MTg2NjdjMWZmYzMxYjMyZmQ3ZjIwYWE3YTk2YWI5ZiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Ancient Debris\"}"},SkullOwner:{Id:[I;-314841336,-438940491,-1201343389,-1275161951],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZhMjYxMDU0NWM1MTkzYjE3NzZmYWU2ZjVkNmYxNzU3OWQ2MDAyYWVhMDMyZjlmNTJiNTRiZDNiZmY1OWE1MSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Nether Wart\"}"},SkullOwner:{Id:[I;-1337244671,562120200,-1508450293,2011608202],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTExYTNjZWM3YWFmOTA0MjEyY2NmOTNiYjY3YTNjYWYzZDY0OTc4M2JhOTBiOGI2MGJiNjNjNzY4N2ViMzlmIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Crimson Fungus\"}"},SkullOwner:{Id:[I;1066769412,-1463267488,-1687174407,1687170222],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWIyMDY0MzkwZTc5ZDllNTRjY2I0MThiMDczMzE1M2NmOTkyM2ZjNGE4ZDE0YWIxZDJiN2VmNTk2ODgzMWM5MyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Warped Fungus\"}"},SkullOwner:{Id:[I;418030412,-1197912851,-1997806740,-1175113468],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDUzZWJiZmU4NjIwYmI5OGUyZjQzYzE0MTZkZDdlYmMxMjZjYTQxZGNmZjg5N2VkZTM0YjA0ZmM5ZWUzMDM2ZSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Nether Orb\"}"},SkullOwner:{Id:[I;1185639029,1846363053,-1787704507,813969860],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDUwMDI5MmY0YWZlNTJkMTBmMjk5ZGZiMjYwMzYzMjI4MzA0NTAzMzFlMDAzMDg0YmIyMjAzMzM1MzA2NjRlMSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999}]}}
+data merge entity @s {VillagerData:{profession:cartographer,level:5,type:savanna},PersistenceRequired:1,CustomName:"\"Netherographer\"",\
+    Offers: {\
+        Recipes: [\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Netherrack\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWRkMzBlMmZjNWNiMDQ0NjFiYWJjMzk0MjMzODAxODdkMzUyNjUwOWNkNmQ0YzM1YzA0ZjYxNmYzMWIxYjkxZiJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Nether Gold Ore\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmEyZjA1ZTZkNmQ1OThkYTZiZGVjYjI2ZTc3MGRiNDE3NTdjYWI1OGU2ZWQzOTJiYjE0ZTNjNjc0NWIwZDcyMCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Nether Quartz Ore\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjRkNjljNGNkZGY5MDNmYmNjNWE4YzY3Y2MyMmU0ZDkzMjQyNzJkNTJhNDc5NmQ2NjcyNDM1ZDEwMTU5ODk4NSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Glowstone\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Q5ZDE5NWYwOTJlNDM1MDViNTQ5OWU3MzJkY2RiOWU4NTIwNjlkNWFkMzVjMTE0MzJjOTkwYWZjZmU2NDAzNyJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Shroomlight\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGNjNDQ0ZGM3NDM4Yjk3OTYzNTdkMGFiOWY1ZTc0NGZlMDhlNDQ2ZDZkNzg2ODIzNzM1OTM3MDQ3NTYzYzkxOSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Soul Sand\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjFjZjVhMzRhNzcyMWUyOTk4N2E5YjI5ZTFhNWJmMzI0MTgzNTNlYWQwOTgxZmMzOGJmZmQ4MDJjZGQzYzYzMiJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Soul Soil\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZlMjBkZmI3YzlmZjgzYmI2MmY2MzA3MThlNTNjZTAyYTMzM2I2YmI2YjA4ZGM2ZmE4MGEyYTUxZWQwY2E4In19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Crimson Stem\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQzYjRjODdmOTc4MThkNzFmMTNhZmE2ZGI5NDZmYjBhMjM1Y2Q3NzFhZTg2OTkyNGM5OGIzZDE3ZDc2NDk5YiJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Warped Stem\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGFhNGJiNGE3ODJhNjM2NzJhMzM5YTc0Y2QxNzMxMTlkYjA5YTA0NTY4NTA0MDVhMzRjN2MwZjRiZmRiOWQxNSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Crimson Nylium\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGU0NDcxMWUzZTgyMjZiMmMwY2Q1ZGM5ODgwYzNhNzkzYjM3NzVkMmM2ZTk1OWFlMzUyODBiZThiZTZmYmM5In19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Warped Nylium\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWVjNjkyNzhmMzNiOGZjZTJhYmIzNjJkOTA4ZDYwYWNhNWQ1N2M2NWY5NGUwZDY2YWFmMDYwODhiZDcyMDdiYyJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Nether Wart Block\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg5MTJiYzFhZDNkZGJlMzlhMTliNzM0YTQyZDg1NDg5NjRiYjBhOWNlNThhNTJmMWE2YWUzNzEyMTUyNCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Warped Wart Block\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjAwYjExNGI4OWM3MzdiZjI3YjNhNzFlY2MxMmFjMGIzNGQ3NjUyZDg0ODU5NWE3ODg3M2ViMmQzMWEzYmQxNyJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Crimson Hyphae\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzFlNDQ5YWIzYjk0YTQ2NmUyZDA4ZDZiNTI2OThiODYxZDY1NTgyZGFlYjkyZGM1ZDYyYTJjNTdkZGYwNmI2NCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Warped Hyphae\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjA5NmIwZDdlZGRmN2IwNTlmYjQwY2ExNmZmMjllOGZjYWU4NTI3NTEyZTJjN2UwZjY3MTdjNGZlYmQ3YjBjNSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Blackstone\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmODJjNTRjOTdlNzFlZGFkZTY5MmQ0NzUzZGY1NjAxMzI5Nzk0ZWM1MGFmMWRmNWZmYmMxMDM0ZWM5YmIyNyJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Gilded Blackstone\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7ImlkIjoiZGNjOTBjYzkzZWRhNDQ5YTk1Y2U5MGU0NjBkZjJiYjkiLCJ0eXBlIjoiU0tJTiIsInVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzQ4MmQxYmE0YmRhYzk5MGY2ZWE5ODc3MDM1ODdmZDc5ZmU1NTU1NTM2MzI1MTk4NDY3OWQ0ZjI3OWNjMGMyYSIsInByb2ZpbGVJZCI6IjgwMThhYjAwYjJhZTQ0Y2FhYzliZjYwZWY5MGY0NWU1IiwidGV4dHVyZUlkIjoiYzQ4MmQxYmE0YmRhYzk5MGY2ZWE5ODc3MDM1ODdmZDc5ZmU1NTU1NTM2MzI1MTk4NDY3OWQ0ZjI3OWNjMGMyYSJ9fSwic2tpbiI6eyJpZCI6ImRjYzkwY2M5M2VkYTQ0OWE5NWNlOTBlNDYwZGYyYmI5IiwidHlwZSI6IlNLSU4iLCJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2M0ODJkMWJhNGJkYWM5OTBmNmVhOTg3NzAzNTg3ZmQ3OWZlNTU1NTUzNjMyNTE5ODQ2NzlkNGYyNzljYzBjMmEiLCJwcm9maWxlSWQiOiI4MDE4YWIwMGIyYWU0NGNhYWM5YmY2MGVmOTBmNDVlNSIsInRleHR1cmVJZCI6ImM0ODJkMWJhNGJkYWM5OTBmNmVhOTg3NzAzNTg3ZmQ3OWZlNTU1NTUzNjMyNTE5ODQ2NzlkNGYyNzljYzBjMmEifSwiY2FwZSI6bnVsbH0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Crying Obsidian\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGE1Yzg2ODY0MTFkNDQ2YzkwYzE5MWM5M2Y4MGI5ZmZiMWNkMjQ3YWExMmEyMjZmODk3OTk4MWFkNDM4OGJlZSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Basalt\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2ZlNDgwNmQxODVhYzA4MDNjMjMyNjE5NDFiM2Q0N2M5YzA2NWYyZDJhYmQyYzY2YjFkN2EwYTdkYTM2NjQzMCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Polished Basalt\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWUxNWI3MDhmYjU5YjMzOTNjYTQ0Y2RjYzQwZjlmZGQ5MTg2NjdjMWZmYzMxYjMyZmQ3ZjIwYWE3YTk2YWI5ZiJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Ancient Debris\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZhMjYxMDU0NWM1MTkzYjE3NzZmYWU2ZjVkNmYxNzU3OWQ2MDAyYWVhMDMyZjlmNTJiNTRiZDNiZmY1OWE1MSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Nether Wart\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTExYTNjZWM3YWFmOTA0MjEyY2NmOTNiYjY3YTNjYWYzZDY0OTc4M2JhOTBiOGI2MGJiNjNjNzY4N2ViMzlmIn19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Crimson Fungus\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWIyMDY0MzkwZTc5ZDllNTRjY2I0MThiMDczMzE1M2NmOTkyM2ZjNGE4ZDE0YWIxZDJiN2VmNTk2ODgzMWM5MyJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Warped Fungus\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDUzZWJiZmU4NjIwYmI5OGUyZjQzYzE0MTZkZDdlYmMxMjZjYTQxZGNmZjg5N2VkZTM0YjA0ZmM5ZWUzMDM2ZSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Nether Orb\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDUwMDI5MmY0YWZlNTJkMTBmMjk5ZGZiMjYwMzYzMjI4MzA0NTAzMzFlMDAzMDg0YmIyMjAzMzM1MzA2NjRlMSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        }]\
+    }\
+}
 
 # Talk to me
 tellraw @e[type=player,distance=..16] [{"text":"<","color":"white"},{"text":"Netherographer","color":"gold"},{"text":">","color":"white"},{"text":" The Nether is a scary place, but I've been documenting it for years. Here's what I've been researching.","color":"green"}]

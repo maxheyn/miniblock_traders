@@ -21,44 +21,525 @@ tag @s add global.ignore.pos
 tag @s add global.ignore.gui
 tag @s add global.ignore.kill
 
-# The below command split into lines to make it easier to read. It will not run unless it is a single line.
-# data merge entity @s {VillagerData:{profession:leatherworker,level:5,type:taiga},PersistenceRequired:1,CustomName:"\"Arborculturalist\"",Offers:{Recipes:[
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Oak Log\"}"},SkullOwner:{Id:[I;-55379546,753746504,-1517949859,-1306493605],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTRhYWRhNGQ5ZmNlZGE5MDE4NjkxOGQ2Y2EzNWI5YTBlYWQ4ZTRiMTRjOWQ5NDI3MTU3ZWU5YjkzMzlkN2IxIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Rounded Oak Log\"}"},SkullOwner:{Id:[I;2045552266,-1956040570,-1809882858,-852453119],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBjZDEzMjIzYThkOWMxNzNjZWRjZTZjNGJlYmViYTA2YTI0YTFiYTI3NWRkM2ViNWM3OTMzZjlhNzRiYTAxMSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Stripped Oak Log\"}"},SkullOwner:{Id:[I;-2025414481,-1437646155,-1282854958,978735206],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmRlYTIxZmQzMGQ3ZThjYTIyOTZiMjA1ZjhiMjZjMmViYzA2NWUxOGRjZDNkYzIyNjM3MDI1NTYxNjZmMGRhZiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Spruce Log\"}"},SkullOwner:{Id:[I;1349485467,-383237432,-1824964149,-1976645057],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2I0YTJmM2VkYTE2ZjM2OGQ0YWI1YjFhMWIwNzI1Y2JmODA3M2Q1MDhlZDY5MzVmMzU5OWFmMzlkNGU1YzM3YiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Rounded Spruce Log\"}"},SkullOwner:{Id:[I;1360199959,-940321832,1004466807,785496199],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzcxZGFkZWM1ZTc2NTY3YjQ4OTkzOWRmNmIyMjAyMjJmMzlkZGE2NmQ1MzRkYmExYWIyZDAzNmNkODRmOSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Stripped Spruce Log\"}"},SkullOwner:{Id:[I;1601747767,338119275,-1099367423,-724251095],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjlmMTUyNDdlZTI1MjBlOWJjOGYwZDJmYmJlODVjZTY1ZTJkYjNlZjI4MmM5MTA4ZmNjMDQyZDQ4OTVhYTFjYSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Birch Log\"}"},SkullOwner:{Id:[I;-123375397,-1791930735,-1501284478,-372709120],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTRmZjUyZjQyNDA4M2JmOTdiNjQ4NGFjODJlNTFmM2MzMjdkZDVlNDNhNGNkZjMwMTZkZWI5Y2YwNWNiNzM4MiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Rounded Birch Log\"}"},SkullOwner:{Id:[I;-1995297093,-599676290,-584911279,823209457],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODJkMWE3ZWZlNWQ5ZmFmY2U0N2UxZDg5ODZiYjZlZjVjZTY0Njk1ZjA2N2Y4YWM5ZGZiYzIzYjVmYjU3MiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Stripped Birch Log\"}"},SkullOwner:{Id:[I;1053913243,1162168074,-1460394405,-1695336143],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGIxODJjN2U4MzVlZjgxYTZmZTc2NTdhYmNiYjZhNmRiOTdhYTY0MjE2OGQwZjRlZGQzNTRjZWNhOGYzOTQyMCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Jungle Log\"}"},SkullOwner:{Id:[I;1113017486,-1958393227,-1749291293,1892159491],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTk3NjU1ZGEyM2Q0MmUxYTFjNDFkYTM4OWFhOWExNTJkN2U5ZjZhZGNkZTk3MjI5NmRiMjQ0ZWQ4MjU2MDk1NiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Rounded Jungle Log\"}"},SkullOwner:{Id:[I;-1848054596,-1635500402,-1841670076,-1605606522],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmRmMTQzN2ExMTNhOGI2NjM2NmNhMjI1NGI0NWM0ZmY1OGU4Nzg4NzNjNmUyZmFmODgzNjI3NzRlMmYxNDYifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Stripped Jungle Log\"}"},SkullOwner:{Id:[I;1436781520,-2072164030,-1956538856,-853602641],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2FjZWJkMjg4ZDc2NzI4ZDY2OTczZmYwMDdhMGQyNjJkOTE1MmNlMDRkMWQ0MmVkM2U0YmZhYmYzMTNkYTQyMSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Acacia Log\"}"},SkullOwner:{Id:[I;-1236844199,-414429724,-1634966174,-1055185143],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTE5MzFlY2U1MjBjZGFkNjI0NDZiYWMxODZjZWRjZTYyYmE0ZTE1ZDUzZGRjODVmZmRjZjM0ZTk3MDQ0Y2EzMyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Rounded Acacia Log\"}"},SkullOwner:{Id:[I;1103690018,-150530775,-2116784803,395086904],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzg4NzI1MzdiNmNlNTc0NjU5ZGMxNzZhMWQ4ZGZlOWMxZTU5OWY2ZjE0MWMxODIyNjI4MzQ3ZGQ1MzhiOWUyIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Stripped Acacia Log\"}"},SkullOwner:{Id:[I;1014598334,-767340914,-1630471878,-1558192553],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjVmNzNmMjBiOTI1YjJlMDJmZmYxNTdmNDgzOWNjOThjYjRhNWRlYTlhY2VkNGNkMmUzNTk0YTE1MDc4ZDg3YyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Dark Oak Log\"}"},SkullOwner:{Id:[I;-952079159,38684809,-1860071899,906466709],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzI2NDE4ZjMwMDgxNjQxNzk4NDgzM2YyYjI3YjNhNzU2NTA5N2I2MmE1NmFlNjg3YzY0YTRmNTdhYWRiZWIyIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Rounded Dark Oak Log\"}"},SkullOwner:{Id:[I;-1936599752,748254883,747354463,-826710386],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTc4YmM5ZTMxNzhiNTY4ZmU2ZjlmNGViOTQ5YTM2NzEzNjM5ZTIwZDBjMmRmYWI3NmFhNjNlMjVmYWYzOWVmIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Stripped Dark Oak Log\"}"},SkullOwner:{Id:[I;-596925946,2133609766,-1105639130,1746820661],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjUzZDgxMDY4NDNjZGI1YjgyYmI0Mzc1YmU1MDBlMTc5MGJiZGZlNWIzMTY2N2IwZmM4ZGM2NjU2MWM0ZTdlYSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Oak Sapling\"}"},SkullOwner:{Id:[I;-1057877351,1874480470,-2056149743,-1058463779],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTdiMjQ1ZjNmMTUwYmE2MjE2NzU5MTZhMjlkMDA2OTA5OTBkZGQ4ZGU2MDMyOTNkZDJmNWY4MDA3MGEyOTA4In19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Birch Sapling\"}"},SkullOwner:{Id:[I;-559489967,-658618958,-1927175709,-1080728166],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmYxMjBiZGQwNDdlNWU1ZGVlZDkzYzU3ZjhmZDE1Y2JkMGZjOWRhZDBmZmYwMWIxYjY3MzMyMGFhZmVhMGY5In19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Jungle Sapling\"}"},SkullOwner:{Id:[I;1774113235,953303712,-1631206441,-1859619404],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzg3YzMzNTQ1NDNiNjUyNGUzMDUzOTQ0ZjZmOTNmNTFjMjc0M2Q5ODk4NjY5M2I3NjY5MmFiMGVmNjYxZTliZiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Acacia Sapling\"}"},SkullOwner:{Id:[I;1028569108,81020185,-1829237449,-1350641915],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTExMjRkYmE3NjZkN2Q2MGNlYWRmMGU0NDVjMGViMDZmOTQ0YmIzMDNjZjhmYTI3YzI0NWZmZWQ4YTgzZjQxOCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Azalea Sapling\"}"},SkullOwner:{Id:[I;-149822906,623526652,-1564753412,-2042149036],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjAxMzU1OTJjZGIzNjdjNTljNjhkYzhmODIxMjM3ZGJhMThmZDUxN2MzYWIyYjc2MDBiZjQyOWYyN2JmMDYxIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Dark Oak Sapling\"}"},SkullOwner:{Id:[I;-1451819504,-1699920244,-1703222495,-440324640],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWI5MzMzNjEwYjRkNWM1MDI1MTQzNTA1MmIzOWUwNzIzZjc4YjY4YzExNDYyM2I1ODcyMDJjMjhmNWViYWZkMCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Log with Leaves\"}"},SkullOwner:{Id:[I;-1338159288,587419024,-1650080858,-273439014],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTZlMzI0ODZlYTJlZjI4NmYyZWQ2OGVhMTFhYTUwNjM1M2I1MWMzYjEzNGJhMGRmYTNhMjk1MGUyOTQ3YTIifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Log with Leaves\"}"},SkullOwner:{Id:[I;-906247116,-1721939406,-1425868858,-992817844],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmYjkwNTE3OWRlMmE4NjIzMjJiNmQ5ZGM0ZjY1ZjM0MWJjN2M4NDhjMmVmNDllZDNkNWI4NTNmZmQwNmYifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Log with Leaves\"}"},SkullOwner:{Id:[I;865863214,-94024140,-1788497655,1883662715],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjE5YWQ1MjE1YmE2YzdlNGU0ZDA2NjhmMDJkM2E5YzkzN2FjNTM2YWNjNzVhYzQ5ZTdiZDdiMWM4Y2NmODAifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Bush\"}"},SkullOwner:{Id:[I;-1239468483,1909345535,-1634926214,-578524017],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTFjM2FmZWMzNmNmY2U0NDUzNDg4ZTNjZDYxZTBmZDgyYmI5NzRjNDU4ZDRhYzQ3MmM4ZWM4NDRiMDNhNzQifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Spruce Bush\"}"},SkullOwner:{Id:[I;1821110547,-1555739119,-1797479810,1171346203],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjNhZmM2YjgyYWFjMzAzNjk3MzM4MGU4MTMzMTcwZDA2YTdmYmQyOGNkNWM4MzFkNDUzNzZhYmQyYWY0NTZhMyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Spruce Sapling\"}"},SkullOwner:{Id:[I;364565918,-1539880395,-1679179384,-922808441],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjdmYTY0YmJiNGJkNTE0Zjc5ZDdlYTQzNGI1MGMwYmQzNDJkOWY4MDdiZTllMTA4NDZkMGU4NTA1MTY2MzlmYyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Acorn\"}"},SkullOwner:{Id:[I;-1941682614,-1651294118,-1552524500,-1063220409],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWJlNzIzMjY2Y2Q2ZGU2YWNmODYzOTA4M2NmZGZkNzEyNDUzNGZhN2E2M2E5MmY3ZTIxOGVkOTNmY2YzOGIzIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Fir Cone\"}"},SkullOwner:{Id:[I;122709924,593466750,-1994325822,-174546356],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTRlMjg4OTBlODY1YzdkOTUwYjE1MTMxYTQzZDc2Yzk0ZGUzODk5NWQ2MDlmZWZiNGYyOTczNjJmZWQxMjE4In19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-# ]}}
-
 # Apply villager trades.
-data merge entity @s {VillagerData:{profession:leatherworker,level:5,type:taiga},PersistenceRequired:1,CustomName:"\"Arborculturalist\"",Offers:{Recipes:[{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Oak Log\"}"},SkullOwner:{Id:[I;-55379546,753746504,-1517949859,-1306493605],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTRhYWRhNGQ5ZmNlZGE5MDE4NjkxOGQ2Y2EzNWI5YTBlYWQ4ZTRiMTRjOWQ5NDI3MTU3ZWU5YjkzMzlkN2IxIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Rounded Oak Log\"}"},SkullOwner:{Id:[I;2045552266,-1956040570,-1809882858,-852453119],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBjZDEzMjIzYThkOWMxNzNjZWRjZTZjNGJlYmViYTA2YTI0YTFiYTI3NWRkM2ViNWM3OTMzZjlhNzRiYTAxMSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Stripped Oak Log\"}"},SkullOwner:{Id:[I;-2025414481,-1437646155,-1282854958,978735206],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmRlYTIxZmQzMGQ3ZThjYTIyOTZiMjA1ZjhiMjZjMmViYzA2NWUxOGRjZDNkYzIyNjM3MDI1NTYxNjZmMGRhZiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Spruce Log\"}"},SkullOwner:{Id:[I;1349485467,-383237432,-1824964149,-1976645057],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2I0YTJmM2VkYTE2ZjM2OGQ0YWI1YjFhMWIwNzI1Y2JmODA3M2Q1MDhlZDY5MzVmMzU5OWFmMzlkNGU1YzM3YiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Rounded Spruce Log\"}"},SkullOwner:{Id:[I;1360199959,-940321832,1004466807,785496199],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzcxZGFkZWM1ZTc2NTY3YjQ4OTkzOWRmNmIyMjAyMjJmMzlkZGE2NmQ1MzRkYmExYWIyZDAzNmNkODRmOSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Stripped Spruce Log\"}"},SkullOwner:{Id:[I;1601747767,338119275,-1099367423,-724251095],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjlmMTUyNDdlZTI1MjBlOWJjOGYwZDJmYmJlODVjZTY1ZTJkYjNlZjI4MmM5MTA4ZmNjMDQyZDQ4OTVhYTFjYSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Birch Log\"}"},SkullOwner:{Id:[I;-123375397,-1791930735,-1501284478,-372709120],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTRmZjUyZjQyNDA4M2JmOTdiNjQ4NGFjODJlNTFmM2MzMjdkZDVlNDNhNGNkZjMwMTZkZWI5Y2YwNWNiNzM4MiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Rounded Birch Log\"}"},SkullOwner:{Id:[I;-1995297093,-599676290,-584911279,823209457],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODJkMWE3ZWZlNWQ5ZmFmY2U0N2UxZDg5ODZiYjZlZjVjZTY0Njk1ZjA2N2Y4YWM5ZGZiYzIzYjVmYjU3MiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Stripped Birch Log\"}"},SkullOwner:{Id:[I;1053913243,1162168074,-1460394405,-1695336143],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGIxODJjN2U4MzVlZjgxYTZmZTc2NTdhYmNiYjZhNmRiOTdhYTY0MjE2OGQwZjRlZGQzNTRjZWNhOGYzOTQyMCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Jungle Log\"}"},SkullOwner:{Id:[I;1113017486,-1958393227,-1749291293,1892159491],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTk3NjU1ZGEyM2Q0MmUxYTFjNDFkYTM4OWFhOWExNTJkN2U5ZjZhZGNkZTk3MjI5NmRiMjQ0ZWQ4MjU2MDk1NiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Rounded Jungle Log\"}"},SkullOwner:{Id:[I;-1848054596,-1635500402,-1841670076,-1605606522],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmRmMTQzN2ExMTNhOGI2NjM2NmNhMjI1NGI0NWM0ZmY1OGU4Nzg4NzNjNmUyZmFmODgzNjI3NzRlMmYxNDYifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Stripped Jungle Log\"}"},SkullOwner:{Id:[I;1436781520,-2072164030,-1956538856,-853602641],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2FjZWJkMjg4ZDc2NzI4ZDY2OTczZmYwMDdhMGQyNjJkOTE1MmNlMDRkMWQ0MmVkM2U0YmZhYmYzMTNkYTQyMSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Acacia Log\"}"},SkullOwner:{Id:[I;-1236844199,-414429724,-1634966174,-1055185143],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTE5MzFlY2U1MjBjZGFkNjI0NDZiYWMxODZjZWRjZTYyYmE0ZTE1ZDUzZGRjODVmZmRjZjM0ZTk3MDQ0Y2EzMyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Rounded Acacia Log\"}"},SkullOwner:{Id:[I;1103690018,-150530775,-2116784803,395086904],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzg4NzI1MzdiNmNlNTc0NjU5ZGMxNzZhMWQ4ZGZlOWMxZTU5OWY2ZjE0MWMxODIyNjI4MzQ3ZGQ1MzhiOWUyIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Stripped Acacia Log\"}"},SkullOwner:{Id:[I;1014598334,-767340914,-1630471878,-1558192553],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjVmNzNmMjBiOTI1YjJlMDJmZmYxNTdmNDgzOWNjOThjYjRhNWRlYTlhY2VkNGNkMmUzNTk0YTE1MDc4ZDg3YyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Dark Oak Log\"}"},SkullOwner:{Id:[I;-952079159,38684809,-1860071899,906466709],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzI2NDE4ZjMwMDgxNjQxNzk4NDgzM2YyYjI3YjNhNzU2NTA5N2I2MmE1NmFlNjg3YzY0YTRmNTdhYWRiZWIyIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Rounded Dark Oak Log\"}"},SkullOwner:{Id:[I;-1936599752,748254883,747354463,-826710386],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTc4YmM5ZTMxNzhiNTY4ZmU2ZjlmNGViOTQ5YTM2NzEzNjM5ZTIwZDBjMmRmYWI3NmFhNjNlMjVmYWYzOWVmIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Stripped Dark Oak Log\"}"},SkullOwner:{Id:[I;-596925946,2133609766,-1105639130,1746820661],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjUzZDgxMDY4NDNjZGI1YjgyYmI0Mzc1YmU1MDBlMTc5MGJiZGZlNWIzMTY2N2IwZmM4ZGM2NjU2MWM0ZTdlYSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Oak Sapling\"}"},SkullOwner:{Id:[I;-1057877351,1874480470,-2056149743,-1058463779],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTdiMjQ1ZjNmMTUwYmE2MjE2NzU5MTZhMjlkMDA2OTA5OTBkZGQ4ZGU2MDMyOTNkZDJmNWY4MDA3MGEyOTA4In19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Birch Sapling\"}"},SkullOwner:{Id:[I;-559489967,-658618958,-1927175709,-1080728166],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmYxMjBiZGQwNDdlNWU1ZGVlZDkzYzU3ZjhmZDE1Y2JkMGZjOWRhZDBmZmYwMWIxYjY3MzMyMGFhZmVhMGY5In19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Jungle Sapling\"}"},SkullOwner:{Id:[I;1774113235,953303712,-1631206441,-1859619404],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzg3YzMzNTQ1NDNiNjUyNGUzMDUzOTQ0ZjZmOTNmNTFjMjc0M2Q5ODk4NjY5M2I3NjY5MmFiMGVmNjYxZTliZiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Acacia Sapling\"}"},SkullOwner:{Id:[I;1028569108,81020185,-1829237449,-1350641915],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTExMjRkYmE3NjZkN2Q2MGNlYWRmMGU0NDVjMGViMDZmOTQ0YmIzMDNjZjhmYTI3YzI0NWZmZWQ4YTgzZjQxOCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Azalea Sapling\"}"},SkullOwner:{Id:[I;-149822906,623526652,-1564753412,-2042149036],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjAxMzU1OTJjZGIzNjdjNTljNjhkYzhmODIxMjM3ZGJhMThmZDUxN2MzYWIyYjc2MDBiZjQyOWYyN2JmMDYxIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Dark Oak Sapling\"}"},SkullOwner:{Id:[I;-1451819504,-1699920244,-1703222495,-440324640],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWI5MzMzNjEwYjRkNWM1MDI1MTQzNTA1MmIzOWUwNzIzZjc4YjY4YzExNDYyM2I1ODcyMDJjMjhmNWViYWZkMCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Log with Leaves\"}"},SkullOwner:{Id:[I;-1338159288,587419024,-1650080858,-273439014],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTZlMzI0ODZlYTJlZjI4NmYyZWQ2OGVhMTFhYTUwNjM1M2I1MWMzYjEzNGJhMGRmYTNhMjk1MGUyOTQ3YTIifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Log with Leaves\"}"},SkullOwner:{Id:[I;-906247116,-1721939406,-1425868858,-992817844],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmYjkwNTE3OWRlMmE4NjIzMjJiNmQ5ZGM0ZjY1ZjM0MWJjN2M4NDhjMmVmNDllZDNkNWI4NTNmZmQwNmYifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Log with Leaves\"}"},SkullOwner:{Id:[I;865863214,-94024140,-1788497655,1883662715],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjE5YWQ1MjE1YmE2YzdlNGU0ZDA2NjhmMDJkM2E5YzkzN2FjNTM2YWNjNzVhYzQ5ZTdiZDdiMWM4Y2NmODAifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Bush\"}"},SkullOwner:{Id:[I;-1239468483,1909345535,-1634926214,-578524017],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTFjM2FmZWMzNmNmY2U0NDUzNDg4ZTNjZDYxZTBmZDgyYmI5NzRjNDU4ZDRhYzQ3MmM4ZWM4NDRiMDNhNzQifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Spruce Bush\"}"},SkullOwner:{Id:[I;1821110547,-1555739119,-1797479810,1171346203],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjNhZmM2YjgyYWFjMzAzNjk3MzM4MGU4MTMzMTcwZDA2YTdmYmQyOGNkNWM4MzFkNDUzNzZhYmQyYWY0NTZhMyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Spruce Sapling\"}"},SkullOwner:{Id:[I;364565918,-1539880395,-1679179384,-922808441],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjdmYTY0YmJiNGJkNTE0Zjc5ZDdlYTQzNGI1MGMwYmQzNDJkOWY4MDdiZTllMTA4NDZkMGU4NTA1MTY2MzlmYyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Acorn\"}"},SkullOwner:{Id:[I;-1941682614,-1651294118,-1552524500,-1063220409],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWJlNzIzMjY2Y2Q2ZGU2YWNmODYzOTA4M2NmZGZkNzEyNDUzNGZhN2E2M2E5MmY3ZTIxOGVkOTNmY2YzOGIzIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Fir Cone\"}"},SkullOwner:{Id:[I;122709924,593466750,-1994325822,-174546356],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTRlMjg4OTBlODY1YzdkOTUwYjE1MTMxYTQzZDc2Yzk0ZGUzODk5NWQ2MDlmZWZiNGYyOTczNjJmZWQxMjE4In19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999}]}}
+data merge entity @s {VillagerData:{profession:leatherworker,level:5,type:taiga},PersistenceRequired:1,CustomName:"\"Arborculturalist\"",\
+    Offers: {\
+        Recipes: [\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Oak Log\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTRhYWRhNGQ5ZmNlZGE5MDE4NjkxOGQ2Y2EzNWI5YTBlYWQ4ZTRiMTRjOWQ5NDI3MTU3ZWU5YjkzMzlkN2IxIn19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Rounded Oak Log\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBjZDEzMjIzYThkOWMxNzNjZWRjZTZjNGJlYmViYTA2YTI0YTFiYTI3NWRkM2ViNWM3OTMzZjlhNzRiYTAxMSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Stripped Oak Log\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmRlYTIxZmQzMGQ3ZThjYTIyOTZiMjA1ZjhiMjZjMmViYzA2NWUxOGRjZDNkYzIyNjM3MDI1NTYxNjZmMGRhZiJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Spruce Log\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2I0YTJmM2VkYTE2ZjM2OGQ0YWI1YjFhMWIwNzI1Y2JmODA3M2Q1MDhlZDY5MzVmMzU5OWFmMzlkNGU1YzM3YiJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Rounded Spruce Log\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzcxZGFkZWM1ZTc2NTY3YjQ4OTkzOWRmNmIyMjAyMjJmMzlkZGE2NmQ1MzRkYmExYWIyZDAzNmNkODRmOSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Stripped Spruce Log\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjlmMTUyNDdlZTI1MjBlOWJjOGYwZDJmYmJlODVjZTY1ZTJkYjNlZjI4MmM5MTA4ZmNjMDQyZDQ4OTVhYTFjYSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Birch Log\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTRmZjUyZjQyNDA4M2JmOTdiNjQ4NGFjODJlNTFmM2MzMjdkZDVlNDNhNGNkZjMwMTZkZWI5Y2YwNWNiNzM4MiJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Rounded Birch Log\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODJkMWE3ZWZlNWQ5ZmFmY2U0N2UxZDg5ODZiYjZlZjVjZTY0Njk1ZjA2N2Y4YWM5ZGZiYzIzYjVmYjU3MiJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Stripped Birch Log\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGIxODJjN2U4MzVlZjgxYTZmZTc2NTdhYmNiYjZhNmRiOTdhYTY0MjE2OGQwZjRlZGQzNTRjZWNhOGYzOTQyMCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Jungle Log\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTk3NjU1ZGEyM2Q0MmUxYTFjNDFkYTM4OWFhOWExNTJkN2U5ZjZhZGNkZTk3MjI5NmRiMjQ0ZWQ4MjU2MDk1NiJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Rounded Jungle Log\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmRmMTQzN2ExMTNhOGI2NjM2NmNhMjI1NGI0NWM0ZmY1OGU4Nzg4NzNjNmUyZmFmODgzNjI3NzRlMmYxNDYifX19"\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Stripped Jungle Log\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2FjZWJkMjg4ZDc2NzI4ZDY2OTczZmYwMDdhMGQyNjJkOTE1MmNlMDRkMWQ0MmVkM2U0YmZhYmYzMTNkYTQyMSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Acacia Log\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTE5MzFlY2U1MjBjZGFkNjI0NDZiYWMxODZjZWRjZTYyYmE0ZTE1ZDUzZGRjODVmZmRjZjM0ZTk3MDQ0Y2EzMyJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Rounded Acacia Log\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzg4NzI1MzdiNmNlNTc0NjU5ZGMxNzZhMWQ4ZGZlOWMxZTU5OWY2ZjE0MWMxODIyNjI4MzQ3ZGQ1MzhiOWUyIn19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Stripped Acacia Log\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjVmNzNmMjBiOTI1YjJlMDJmZmYxNTdmNDgzOWNjOThjYjRhNWRlYTlhY2VkNGNkMmUzNTk0YTE1MDc4ZDg3YyJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Dark Oak Log\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzI2NDE4ZjMwMDgxNjQxNzk4NDgzM2YyYjI3YjNhNzU2NTA5N2I2MmE1NmFlNjg3YzY0YTRmNTdhYWRiZWIyIn19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Rounded Dark Oak Log\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTc4YmM5ZTMxNzhiNTY4ZmU2ZjlmNGViOTQ5YTM2NzEzNjM5ZTIwZDBjMmRmYWI3NmFhNjNlMjVmYWYzOWVmIn19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Stripped Dark Oak Log\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjUzZDgxMDY4NDNjZGI1YjgyYmI0Mzc1YmU1MDBlMTc5MGJiZGZlNWIzMTY2N2IwZmM4ZGM2NjU2MWM0ZTdlYSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Oak Sapling\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTdiMjQ1ZjNmMTUwYmE2MjE2NzU5MTZhMjlkMDA2OTA5OTBkZGQ4ZGU2MDMyOTNkZDJmNWY4MDA3MGEyOTA4In19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Birch Sapling\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmYxMjBiZGQwNDdlNWU1ZGVlZDkzYzU3ZjhmZDE1Y2JkMGZjOWRhZDBmZmYwMWIxYjY3MzMyMGFhZmVhMGY5In19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Jungle Sapling\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzg3YzMzNTQ1NDNiNjUyNGUzMDUzOTQ0ZjZmOTNmNTFjMjc0M2Q5ODk4NjY5M2I3NjY5MmFiMGVmNjYxZTliZiJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Acacia Sapling\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTExMjRkYmE3NjZkN2Q2MGNlYWRmMGU0NDVjMGViMDZmOTQ0YmIzMDNjZjhmYTI3YzI0NWZmZWQ4YTgzZjQxOCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Azalea Sapling\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjAxMzU1OTJjZGIzNjdjNTljNjhkYzhmODIxMjM3ZGJhMThmZDUxN2MzYWIyYjc2MDBiZjQyOWYyN2JmMDYxIn19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Dark Oak Sapling\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWI5MzMzNjEwYjRkNWM1MDI1MTQzNTA1MmIzOWUwNzIzZjc4YjY4YzExNDYyM2I1ODcyMDJjMjhmNWViYWZkMCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Log with Leaves\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTZlMzI0ODZlYTJlZjI4NmYyZWQ2OGVhMTFhYTUwNjM1M2I1MWMzYjEzNGJhMGRmYTNhMjk1MGUyOTQ3YTIifX19"\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Log with Leaves\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmYjkwNTE3OWRlMmE4NjIzMjJiNmQ5ZGM0ZjY1ZjM0MWJjN2M4NDhjMmVmNDllZDNkNWI4NTNmZmQwNmYifX19"\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Log with Leaves\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjE5YWQ1MjE1YmE2YzdlNGU0ZDA2NjhmMDJkM2E5YzkzN2FjNTM2YWNjNzVhYzQ5ZTdiZDdiMWM4Y2NmODAifX19"\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Bush\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTFjM2FmZWMzNmNmY2U0NDUzNDg4ZTNjZDYxZTBmZDgyYmI5NzRjNDU4ZDRhYzQ3MmM4ZWM4NDRiMDNhNzQifX19"\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Spruce Bush\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjNhZmM2YjgyYWFjMzAzNjk3MzM4MGU4MTMzMTcwZDA2YTdmYmQyOGNkNWM4MzFkNDUzNzZhYmQyYWY0NTZhMyJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Spruce Sapling\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjdmYTY0YmJiNGJkNTE0Zjc5ZDdlYTQzNGI1MGMwYmQzNDJkOWY4MDdiZTllMTA4NDZkMGU4NTA1MTY2MzlmYyJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Acorn\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWJlNzIzMjY2Y2Q2ZGU2YWNmODYzOTA4M2NmZGZkNzEyNDUzNGZhN2E2M2E5MmY3ZTIxOGVkOTNmY2YzOGIzIn19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Fir Cone\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTRlMjg4OTBlODY1YzdkOTUwYjE1MTMxYTQzZDc2Yzk0ZGUzODk5NWQ2MDlmZWZiNGYyOTczNjJmZWQxMjE4In19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        }]\
+    }\
+}
+
 
 # Talk to me
 tellraw @e[type=player,distance=..16] [{"text":"<","color":"white"},{"text":"Arborculturist","color":"gold"},{"text":">","color":"white"},{"text":" Logs and log accessories, coming right at you!","color":"green"}]

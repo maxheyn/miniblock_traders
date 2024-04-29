@@ -22,27 +22,267 @@ tag @s add global.ignore.gui
 tag @s add global.ignore.kill
 
 # The below command split into lines to make it easier to read. It will not run unless it is a single line.
-# data merge entity @s {VillagerData:{profession:cartographer,level:5,type:desert},PersistenceRequired:1,CustomName:"\"Eremologist\"",Offers:{Recipes:[
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Sand\"}"},SkullOwner:{Id:[I;1381378554,1711423830,-2009393088,1937950700],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTMzOThhYjNjYjY5NmIzNDQzMGJlOTQ0YjE0YWZiZDIyN2ZkODdlOTkwMjZiY2ZjOGI3Mzg3YTg2MWJkZSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Red Sand\"}"},SkullOwner:{Id:[I;1115752381,-1932768137,-1799524842,-1635272322],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTNjYjU0NjRhYjliODUxYjlkNGFjOGI4Y2RiYjg2NWU3NGM1ODliMzQ4NWFiZWNlNTg5ZDQyOWQ4OTlhZWQifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Sandstone\"}"},SkullOwner:{Id:[I;-1180158627,-237420399,-1972249935,607001151],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFjZWJkZGNlZTg2ODhiODU3NWQ5Y2M4NWQyZDgzMmE2NGMyZGIzYWEyMzViZDdlNzZmZDJlOGUxZDY1ZSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Red Sandstone\"}"},SkullOwner:{Id:[I;604385357,1453673306,-1550438187,1696285166],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTZhM2ViODdiZmI5YjJhNTE2OWMzNjFjNTI0MjBjNTUxMjI1YTc4YmE4YTM1MjJmMWUwNDdhMWVhM2YxODUifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Chiseled Sandstone\"}"},SkullOwner:{Id:[I;-738223903,-617920487,-1326601595,1074100392],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDkxZTdmOTAzMzc2NWNlYzk2OGYyNzJmYzU4YjczNDRjNDM0YTE3MjFmOTUzN2IyNWE2YWZmNGMyNDU3NmM1In19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Chiseled Red Sandstone\"}"},SkullOwner:{Id:[I;1943159917,-2033563475,-1925338891,-1043998376],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTlkZDI4MTJkNmEzYjU2ZGE0MGRjZmY2YTEyZTQ3NmFkMmMwYTM0ZGZlNzEyNjg2ZWNjMzE0NGI2MzVmNGVkNCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Cut Sandstone\"}"},SkullOwner:{Id:[I;310626914,651248988,-1758620942,-1478433027],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTE1MzlkZGRmOWVkMjU1ZWNlNjM0ODE5M2NkNzUwMTJjODJjOTNhZWMzODFmMDU1NzJjZWNmNzM3OTcxMWIzYiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Smooth Sandstone\"}"},SkullOwner:{Id:[I;-454166730,-1600304447,-1606197352,1318686493],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmVkOGYyOGFmMzEyN2UzZDhlMGU1OThiYmMxOTkzMDE1ZDdiZDRlMjllOWY2NTg0ZGRiNTVhMzdkYTE5N2ZhYyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Smooth Red Sandstone\"}"},SkullOwner:{Id:[I;-1980850263,-1491777129,-1306344985,824664878],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjUyY2JlMDRiM2I4YjYxMGI0NjU4YzVmZDE3YjMyMGE3MzhiYjRlNTI4NzM0ZmYzZTkwMTkwNjQ5Yjk5NjlmNCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Cactus\"}"},SkullOwner:{Id:[I;-1040978244,-2049029418,-1665975767,-478998977],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmY1ODViNDFjYTVhMWI0YWMyNmY1NTY3NjBlZDExMzA3Yzk0ZjhmOGExYWRlNjE1YmQxMmNlMDc0ZjQ3OTMifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Cactus Flower\"}"},SkullOwner:{Id:[I;703104593,324485856,-1962488912,-1946301093],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTA0ZjFhNTU5NDNjNTk0ZTcxMTllODg0YzVkYTJhMmJjYThlN2U2NTE2YTA2NDlhYTdlNTU2NThlMGU5In19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"White Cactus\"}"},SkullOwner:{Id:[I;-1951865490,-1027780841,-1435857630,1551709647],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTMzMmE2YTEzMjM1NDNhZTMyODhmZGYzM2Y0NTE4OWI4MTlkZmU1N2I0N2VhZWYyZDZkYTNiYzRhYWIxNDlhMCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Potted Cactus\"}"},SkullOwner:{Id:[I;-1418164823,475090741,-2124297566,1022836654],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg0M2RlM2Q0MzYyMWIzM2Y5YmJiMDk4ODQ5N2JlYTkzMTliMDdhODJmODY4MmQzZThhMmVhZDk1NTI2N2M4YSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"T-Rex Skull\"}"},SkullOwner:{Id:[I;1892755531,-61030601,-1398801212,-1564556525],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ0OTU1OWI2ZjdlMjQ5MjBlY2RmM2JkMmU0MjVmNDM0MTU3YzIzNjMzNGY0ODJjZjk4YTEzNDlkYTE2OCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Ritual Skull\"}"},SkullOwner:{Id:[I;-1719227606,1814840296,-1798938983,1120962104],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzVkNWNhZTdlZDJmOTVjMGI3Y2ExMWYwMTQwNjQ5MDEzMjAwN2RhY2IzZDhiZTBkOWUxNjIwMTg3NDViMDFkMiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Animal Skull\"}"},SkullOwner:{Id:[I;1385607739,1527596045,-1436535224,-1199740636],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTdjNDZjZTY2MDM3Nzg0OTgzOWQyYmU2OTgwNjYwYjQ5YjNkNmIzMzUyMGE3YTRhZjlmZWVlNzVlNWJjMTBlZiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-# ]}}
-
-# Apply villager trades.
-data merge entity @s {VillagerData:{profession:cartographer,level:5,type:desert},PersistenceRequired:1,CustomName:"\"Eremologist\"",Offers:{Recipes:[{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Sand\"}"},SkullOwner:{Id:[I;1381378554,1711423830,-2009393088,1937950700],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTMzOThhYjNjYjY5NmIzNDQzMGJlOTQ0YjE0YWZiZDIyN2ZkODdlOTkwMjZiY2ZjOGI3Mzg3YTg2MWJkZSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Red Sand\"}"},SkullOwner:{Id:[I;1115752381,-1932768137,-1799524842,-1635272322],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTNjYjU0NjRhYjliODUxYjlkNGFjOGI4Y2RiYjg2NWU3NGM1ODliMzQ4NWFiZWNlNTg5ZDQyOWQ4OTlhZWQifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Sandstone\"}"},SkullOwner:{Id:[I;-1180158627,-237420399,-1972249935,607001151],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFjZWJkZGNlZTg2ODhiODU3NWQ5Y2M4NWQyZDgzMmE2NGMyZGIzYWEyMzViZDdlNzZmZDJlOGUxZDY1ZSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Red Sandstone\"}"},SkullOwner:{Id:[I;604385357,1453673306,-1550438187,1696285166],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTZhM2ViODdiZmI5YjJhNTE2OWMzNjFjNTI0MjBjNTUxMjI1YTc4YmE4YTM1MjJmMWUwNDdhMWVhM2YxODUifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Chiseled Sandstone\"}"},SkullOwner:{Id:[I;-738223903,-617920487,-1326601595,1074100392],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDkxZTdmOTAzMzc2NWNlYzk2OGYyNzJmYzU4YjczNDRjNDM0YTE3MjFmOTUzN2IyNWE2YWZmNGMyNDU3NmM1In19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Chiseled Red Sandstone\"}"},SkullOwner:{Id:[I;1943159917,-2033563475,-1925338891,-1043998376],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTlkZDI4MTJkNmEzYjU2ZGE0MGRjZmY2YTEyZTQ3NmFkMmMwYTM0ZGZlNzEyNjg2ZWNjMzE0NGI2MzVmNGVkNCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Cut Sandstone\"}"},SkullOwner:{Id:[I;310626914,651248988,-1758620942,-1478433027],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTE1MzlkZGRmOWVkMjU1ZWNlNjM0ODE5M2NkNzUwMTJjODJjOTNhZWMzODFmMDU1NzJjZWNmNzM3OTcxMWIzYiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Smooth Sandstone\"}"},SkullOwner:{Id:[I;-454166730,-1600304447,-1606197352,1318686493],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmVkOGYyOGFmMzEyN2UzZDhlMGU1OThiYmMxOTkzMDE1ZDdiZDRlMjllOWY2NTg0ZGRiNTVhMzdkYTE5N2ZhYyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Smooth Red Sandstone\"}"},SkullOwner:{Id:[I;-1980850263,-1491777129,-1306344985,824664878],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjUyY2JlMDRiM2I4YjYxMGI0NjU4YzVmZDE3YjMyMGE3MzhiYjRlNTI4NzM0ZmYzZTkwMTkwNjQ5Yjk5NjlmNCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Cactus\"}"},SkullOwner:{Id:[I;-1040978244,-2049029418,-1665975767,-478998977],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmY1ODViNDFjYTVhMWI0YWMyNmY1NTY3NjBlZDExMzA3Yzk0ZjhmOGExYWRlNjE1YmQxMmNlMDc0ZjQ3OTMifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Cactus Flower\"}"},SkullOwner:{Id:[I;703104593,324485856,-1962488912,-1946301093],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTA0ZjFhNTU5NDNjNTk0ZTcxMTllODg0YzVkYTJhMmJjYThlN2U2NTE2YTA2NDlhYTdlNTU2NThlMGU5In19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"White Cactus\"}"},SkullOwner:{Id:[I;-1951865490,-1027780841,-1435857630,1551709647],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTMzMmE2YTEzMjM1NDNhZTMyODhmZGYzM2Y0NTE4OWI4MTlkZmU1N2I0N2VhZWYyZDZkYTNiYzRhYWIxNDlhMCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Potted Cactus\"}"},SkullOwner:{Id:[I;-1418164823,475090741,-2124297566,1022836654],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg0M2RlM2Q0MzYyMWIzM2Y5YmJiMDk4ODQ5N2JlYTkzMTliMDdhODJmODY4MmQzZThhMmVhZDk1NTI2N2M4YSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"T-Rex Skull\"}"},SkullOwner:{Id:[I;1892755531,-61030601,-1398801212,-1564556525],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ0OTU1OWI2ZjdlMjQ5MjBlY2RmM2JkMmU0MjVmNDM0MTU3YzIzNjMzNGY0ODJjZjk4YTEzNDlkYTE2OCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Ritual Skull\"}"},SkullOwner:{Id:[I;-1719227606,1814840296,-1798938983,1120962104],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzVkNWNhZTdlZDJmOTVjMGI3Y2ExMWYwMTQwNjQ5MDEzMjAwN2RhY2IzZDhiZTBkOWUxNjIwMTg3NDViMDFkMiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Animal Skull\"}"},SkullOwner:{Id:[I;1385607739,1527596045,-1436535224,-1199740636],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTdjNDZjZTY2MDM3Nzg0OTgzOWQyYmU2OTgwNjYwYjQ5YjNkNmIzMzUyMGE3YTRhZjlmZWVlNzVlNWJjMTBlZiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999}]}}
+data merge entity @s {VillagerData:{profession:cartographer,level:5,type:desert},PersistenceRequired:1,CustomName:"\"Eremologist\"",\
+    Offers: {\
+        Recipes: [\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Sand\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTMzOThhYjNjYjY5NmIzNDQzMGJlOTQ0YjE0YWZiZDIyN2ZkODdlOTkwMjZiY2ZjOGI3Mzg3YTg2MWJkZSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Red Sand\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTNjYjU0NjRhYjliODUxYjlkNGFjOGI4Y2RiYjg2NWU3NGM1ODliMzQ4NWFiZWNlNTg5ZDQyOWQ4OTlhZWQifX19"\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Sandstone\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFjZWJkZGNlZTg2ODhiODU3NWQ5Y2M4NWQyZDgzMmE2NGMyZGIzYWEyMzViZDdlNzZmZDJlOGUxZDY1ZSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Red Sandstone\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTZhM2ViODdiZmI5YjJhNTE2OWMzNjFjNTI0MjBjNTUxMjI1YTc4YmE4YTM1MjJmMWUwNDdhMWVhM2YxODUifX19"\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Chiseled Sandstone\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDkxZTdmOTAzMzc2NWNlYzk2OGYyNzJmYzU4YjczNDRjNDM0YTE3MjFmOTUzN2IyNWE2YWZmNGMyNDU3NmM1In19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Chiseled Red Sandstone\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTlkZDI4MTJkNmEzYjU2ZGE0MGRjZmY2YTEyZTQ3NmFkMmMwYTM0ZGZlNzEyNjg2ZWNjMzE0NGI2MzVmNGVkNCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Cut Sandstone\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTE1MzlkZGRmOWVkMjU1ZWNlNjM0ODE5M2NkNzUwMTJjODJjOTNhZWMzODFmMDU1NzJjZWNmNzM3OTcxMWIzYiJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Smooth Sandstone\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmVkOGYyOGFmMzEyN2UzZDhlMGU1OThiYmMxOTkzMDE1ZDdiZDRlMjllOWY2NTg0ZGRiNTVhMzdkYTE5N2ZhYyJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Smooth Red Sandstone\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjUyY2JlMDRiM2I4YjYxMGI0NjU4YzVmZDE3YjMyMGE3MzhiYjRlNTI4NzM0ZmYzZTkwMTkwNjQ5Yjk5NjlmNCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Cactus\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmY1ODViNDFjYTVhMWI0YWMyNmY1NTY3NjBlZDExMzA3Yzk0ZjhmOGExYWRlNjE1YmQxMmNlMDc0ZjQ3OTMifX19"\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Cactus Flower\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTA0ZjFhNTU5NDNjNTk0ZTcxMTllODg0YzVkYTJhMmJjYThlN2U2NTE2YTA2NDlhYTdlNTU2NThlMGU5In19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"White Cactus\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTMzMmE2YTEzMjM1NDNhZTMyODhmZGYzM2Y0NTE4OWI4MTlkZmU1N2I0N2VhZWYyZDZkYTNiYzRhYWIxNDlhMCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Potted Cactus\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg0M2RlM2Q0MzYyMWIzM2Y5YmJiMDk4ODQ5N2JlYTkzMTliMDdhODJmODY4MmQzZThhMmVhZDk1NTI2N2M4YSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"T-Rex Skull\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ0OTU1OWI2ZjdlMjQ5MjBlY2RmM2JkMmU0MjVmNDM0MTU3YzIzNjMzNGY0ODJjZjk4YTEzNDlkYTE2OCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Ritual Skull\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzVkNWNhZTdlZDJmOTVjMGI3Y2ExMWYwMTQwNjQ5MDEzMjAwN2RhY2IzZDhiZTBkOWUxNjIwMTg3NDViMDFkMiJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Animal Skull\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTdjNDZjZTY2MDM3Nzg0OTgzOWQyYmU2OTgwNjYwYjQ5YjNkNmIzMzUyMGE3YTRhZjlmZWVlNzVlNWJjMTBlZiJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        }]\
+    }\
+}
 
 # Talk to me
 tellraw @e[type=player,distance=..16] [{"text":"<","color":"white"},{"text":"Eremologist","color":"gold"},{"text":">","color":"white"},{"text":" I spend all my time scavenging deserts. Come and see what I've found during my travels.","color":"green"}]

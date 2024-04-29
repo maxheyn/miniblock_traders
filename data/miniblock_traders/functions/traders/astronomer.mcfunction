@@ -21,60 +21,779 @@ tag @s add global.ignore.pos
 tag @s add global.ignore.gui
 tag @s add global.ignore.kill
 
-# The below command split into lines to make it easier to read. It will not run unless it is a single line.
-# data merge entity @s {VillagerData:{profession:cartographer,level:5,type: snow},PersistenceRequired:1,CustomName:"\"Astronomer\"",Offers:{Recipes:[
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Spyglass\"}"},SkullOwner:{Id:[I;-1054666174,-1656598702,-1876453964,-461724679],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZlM2JjYmE1N2M3YjdmOGQ0NjJiMzAwNTQzZDEzMmVjZWE5YmYyZWQ1ODdjYzlkOTk0YTM5NWFjOTU5MmVhYSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Spyglass\"}"},SkullOwner:{Id:[I;628217491,1172324583,-1342291521,-107037697],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI2ODAwMmNiMGI5N2JlZTUwOGU4N2Y5OTU0Y2YxODk5YWI5MDU2MGJkNzQ3YzQ4OWNiNTQyNTFiYTZjNTBmMyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Sun\"}"},SkullOwner:{Id:[I;29464294,160580508,-1779136758,1804506042],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWMzNzgzMmM0MTM1MjU1NTU1M2Q4NmFhYWUxMzQxOTMzMWUzYWRlOTk3YmNlMGI4MTEzN2Q1MjA0ZTRjZGU3ZSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Mercury\"}"},SkullOwner:{Id:[I;497550848,1749895286,-1496956169,382266798],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzE3OGYyMzU3NjhlZDJmMGYxYTA3YWIwMmI5MmY1OTljYzQyYzc0MWQyZjczM2U1MzY4YjVhMTA0ODRiM2NiIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Venus\"}"},SkullOwner:{Id:[I;-1979437564,-211532802,-2050033691,-1126294002],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzA1MzAxOTRkMmM2ZWRhOTM5ZjFlZDk1N2JkYzRmNjQzZTAzNzNmMjExYjdkYzBlYTIyNjgwMmViM2M4ODJkNyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Earth\"}"},SkullOwner:{Id:[I;-475097093,-1232581123,-1897520009,-1863176499],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI4OWQ1YjE3ODYyNmVhMjNkMGIwYzNkMmRmNWMwODVlODM3NTA1NmJmNjg1YjVlZDViYjQ3N2ZlODQ3MmQ5NCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Mars\"}"},SkullOwner:{Id:[I;516333036,148980946,-1866790761,-1360192148],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmY2NDdhMzUyMzIxYmRiOTAzNjI3MjYzNTJkMzI1YjVkYjg2ZjI3ZTM5NDFiYjE2OWYyYWFmNTNiMGU0M2VkYSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Jupiter\"}"},SkullOwner:{Id:[I;-1818032849,1012220503,-1426985022,-1815857567],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjhhYWE4YTM1NjFlODBlZjFmOTU2MWYxNzIxMWU3NzBkZTE4YTlmOThjMjY5MWVjZjlkNjk2NTU5YTFiOTE4YyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Saturn\"}"},SkullOwner:{Id:[I;927009390,-206026122,-2084569702,-44167616],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjY1Y2QzYTI0ZjE5MzM3MWVlYmFjOWE3MWM0OGY0MDhhOTM1YWZjNGI0MzVmMWZiN2I5ODQzZTY1ODcyOThmIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Uranus\"}"},SkullOwner:{Id:[I;1395161631,1045580569,-1897395747,1315411436],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWE2ZGQ3NWY0MWU0MjY4ZTBhMTI2OTA1MDkwN2FhNjc0NmZmZDM3YTRhOTI5ZTczMjUyNDY0MmMzMzZiYyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Neptune\"}"},SkullOwner:{Id:[I;-771129464,-489993669,-1899697336,12899924],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjZlMjk1M2VlMDVmMWE0NzlmYmRhYjRlM2FkYWQ1ZDY0ZWE4ZDMzMzY2MzhmYWU1YThmNWI4OGM0MjA0NmZkIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Pluto\"}"},SkullOwner:{Id:[I;-1796176078,2036875363,-1500236403,2817451],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY4MzcwMmY0MTMwMjE4ZGE4OGU1MDk2MjNlZDM4NmRiNDc4YWQzMjAzOWYyZDg1NDUxYWQ5N2JiMGViNjNkYyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Lkanst\"}"},SkullOwner:{Id:[I;821486573,2051949116,-2112596651,-468544471],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzE4NGM4NGNlNGZkMjgyZDM1ZWIwMTdiMzc3Y2Q0YzhiZjk2ZWYzNjY4NzVlYzNhZDIwZjg2MDhmYmExYTU1YSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Zaav\"}"},SkullOwner:{Id:[I;-7137246,-868987506,-1567040519,-1783015231],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmU1MmMwMzhmYjQyZjU5ZTBlZjU3NmZmZDAyYmFkNDJlODYzYWUzYTI4OTI4ZmNhYzVkNDllMjI5YTZjOTc1MyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Iceplanet\"}"},SkullOwner:{Id:[I;1188610083,-975484637,-1252568678,182649834],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDNlMWM1ZTY1ZTEzNTU5YmY2MGUxNTRmMTdmNmFmM2E4ZTU2MDhhNDk4N2VjZDFlMGZhZTc1MWM2ZjgyNzI2In19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Pluto\"}"},SkullOwner:{Id:[I;-1346160593,633751894,-1428310665,270855345],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjgxNzlhZjE4YjE2OWY2ODQzYTZkNzE3Y2M4MzkzNDNlYzEwMjExNzY3NWJiZGQxM2Y3ZjIxNTNmNDRlOTRhIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Europa\"}"},SkullOwner:{Id:[I;-557895298,-1753461310,-1486346832,-810130547],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjJiZjFlNDVlMzEwMTE1NjZjMDY1MWY0ZjNlMDI3YjU4M2M3NmVhNTE4ODBkNTRlNWQ3NDdjMzFiZDA3OTgwMSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Io\"}"},SkullOwner:{Id:[I;1754050150,994787548,-1073838799,900235676],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzkyNDFjMTU3MDMzN2I4NDE1MDFhMmY1MmMwY2VmYThiY2Q0NGI4MmU3NjdmZWY5OWUyNDNkYTFjYmYxZjA0MCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Haumea\"}"},SkullOwner:{Id:[I;612745721,-400276784,-1955852693,473986854],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzU3ZDg5MmZkZTRiMTBhZGFkY2E3OWM0MTZhMDgzZGYxNDcwODVjZjBmMDM1MWQzMDExMDUwOTgwMzllNmUwZiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Mimas\"}"},SkullOwner:{Id:[I;650568500,1993428110,-1825761517,-2014056225],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTJmOGUyMzA4YjQ3OTAxNmRkYmMwZjQ2NzllNmM2NzBhMTI1ZmVkMjllMzM4OTM2ZmY4MmY4NjdkOTE4YzA2NCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Ceres\"}"},SkullOwner:{Id:[I;-631266373,1472612391,-1474859596,1072796252],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTU2NWNlMmJlZDVjODBmMTQ2MjJlN2FiMDk1Mzk0ZDIzMDNiNmNmYTJmNjg1ZTE0NTEyNTlhOGI4NWZhNThiOSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Makemake\"}"},SkullOwner:{Id:[I;-559744191,-936948783,-1486657409,-242108114],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjMwYWYwOWUwZmJjNzJkYThjZGJhNDBhNmEyNDI3YmQyNTJhMzFmMjU3NjhkODdlMWU4NzQ2NjQ0NDZkMjQ1YSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Full Moon\"}"},SkullOwner:{Id:[I;863215294,-1780921430,-1773460256,1982824210],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzAwYTFhN2JiMDdmZGI0ZTZhODZlMzQxODE2ZTg4NDNkZGFmN2NmMzcxM2EzNjY2ZDc0YjcyZjk4NjE5ZjA2MyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"New Moon\"}"},SkullOwner:{Id:[I;1408465352,1405307932,-1499412764,1362748953],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDNlNWU5ZGIyOWJjYTQ1Zjg3ZGYwMzE3MmZkNzEzNTU5MDM0MDMwYjQxMWFjZDI4MjExMDc4YTdmMWU5YWEyNCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Waning Gibbous Moon\"}"},SkullOwner:{Id:[I;1407272221,-792441097,-2021647942,-212899340],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjU2ZTViODc1OGRlM2EyNjhlYzMzNjFhOWY2NTNhODdhNTEwYzY2MTRiMmZkNmQ3MzhkYTkxMjhhYWJlZWJkYSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Waxing Crescent Moon\"}"},SkullOwner:{Id:[I;-968669986,-450608398,-1426824813,2138775899],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2JjYTM2ZjFhYThkYzIyYTNhY2FhYzVmZTVlOTlmZTNiMmE4Mjc0NjI5MTA3MGY5OTg0Yjc1MzNkOWMxZjRlZSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Lunar Eclipse Moon\"}"},SkullOwner:{Id:[I;-2128657195,-1798615700,-1747474894,626076238],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmVjNThjMWVmZGJkMzMwNzYzMjAyMjYzOGQ4ZGI1YmY2MzYzNWNiYzYyMGIyNmU1ZDRkMmYzZmUzMjI4NGNmZCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Insomniac Moon\"}"},SkullOwner:{Id:[I;1844529182,400838643,-1430649761,-1323643338],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGQ1NWMzMmFjYWNlNzY2ZjljOTRiNDNkMmEzNzYyMWViODVlMDdjMDlkZWJlNWUzM2UwZTBiMzIxZDI3MDkxMiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Galaxy\"}"},SkullOwner:{Id:[I;-610086242,-179287940,-1325760886,2047505618],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmE0NGUyYjgzODhkZjU5M2E4NWY3ZDU0NDQ1Y2U3ODc5NmNlZTZiMGJjYjdhNTVhY2JkZDFjYmQ4ZjM1YWVmMiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Galaxy\"}"},SkullOwner:{Id:[I;1404869057,1763894256,-907272424,-471909012],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWQzZDI1MGUyNWJiY2EzYTYyYmU1YjNlZjAyY2ZjYWI2ZGNkYzQyNDg4NGM5YTdkNWNjOTVjOWQwIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Veldin\"}"},SkullOwner:{Id:[I;-427992920,-571457030,-1738667711,-2146093353],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2FiMTg4MzM4ZTcwNjgxNjBjYWVlYjI4NzQzZTUzNGUyMjhmODc3NjQxZmU5MzcwMmFiOWEzODY4MTFiNjQzOCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Florana\"}"},SkullOwner:{Id:[I;-200804845,1379617583,-2022526449,577512640],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWE5YTdmMDdkYTliZGEyODBiMGY5MDliNDk1ZWJjOWZiMWFlZTM1NTJjYjE3ZTM5YmExYjRjOTZkMDJhMjBjYSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Marcadia\"}"},SkullOwner:{Id:[I;-1701414884,-485732615,-1951982086,-1365678452],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2I3ZWQxNWViMjkxYzhhNzBiYTY4NDRhZmE5ZWMyYmYwMWRjYjFmZjg0ZmFkM2U4MDkyZTJlYzBmOTNiMDg3YSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Aquatos\"}"},SkullOwner:{Id:[I;-963272783,-963163322,-1084865793,-122101422],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODAzM2ZlMmY4ZGYwMWE2YjE1NzFkODU1YWQ1MjhiYzk3YzdjYTEyMDFmNzIxMzE0NjBlZTI1YmI2NjhhMjhjMSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Tyhrranosis\"}"},SkullOwner:{Id:[I;-270439505,529483553,-1939795292,-984210315],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTRjYmZmYjk3MTIyMzhjOTU2OTc3ZDFiZmRhNGIzMDhlZDQ3N2JhMzEwNmMzMTMwMmMyNDA4NjJlZjc3OWEifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Daxx\"}"},SkullOwner:{Id:[I;1186999421,-337950420,-1949792594,-395100450],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzEwNzdlODcxZDkxYjdmZWEyNGIxZjY4MDhlMDg4ZDdiODQyZGE1MTZmNjM1NmNlOTE2MTM0OTQ0MzFhZThhMCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Rilgar\"}"},SkullOwner:{Id:[I;1318140204,-458735380,-1214097096,1484341888],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzNlZDYwZWUzY2FkY2IwOGNiZDViMzM1MTczMmMxYWMyZWRjMGMwZGEwZDE3ZjRiZmU5MmY5YTQ4YmNmYTY4YSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Holostar\"}"},SkullOwner:{Id:[I;1699631987,113526387,-1361948297,-388247242],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDIzZmUzNjcxYjNjOTE2YzJmMjRmZGNiZWJkN2NmMTMxYWFkMzg2NzNhNTZiZTYzZTBlZTUwOTMyZWZhZDg0ZCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Obani Draco\"}"},SkullOwner:{Id:[I;861321188,1497057447,-1363981289,326813936],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDNlZDM2ODgyMWI0NjZkMzliZGY1N2U3OGZjMWRkZjc1ZWM5NjZjMTY5NTVlMDJlNTk0OGJlN2FkZmQxZmU1NSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Kerwan\"}"},SkullOwner:{Id:[I;1623654674,167595437,-1454623671,1785417934],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmE0YmRiNjYwZDkzNGIzZDhiZTU5OTM3OTBmMjZlZTgwNWRjYWE2NTMzNjY3MWNmZGJhN2Y2ZmUzNzc3NTE3OSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Zeldrin\"}"},SkullOwner:{Id:[I;1280420631,-704494245,-2007641691,-726249768],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2ZjZTA1OWU2MTg1MDU5NDAwMGFlMzk3Nzg1NTZiN2ViMGFmYTkyOGZhZmQ1NzNiMGQ4MjMxNGU4YmRmNDlkMyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Aridia\"}"},SkullOwner:{Id:[I;-596761260,899697741,-1585301935,-1036152616],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODU2YTRjNGJjZmM1NTc1MzJhNWQwMGFjMTliNWM3MzA3MzJiMjBlMTJkMjA2YzEyYTI1NTI1MmM4YmFmNDM3NCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Koros\"}"},SkullOwner:{Id:[I;809160552,1691829497,-1359029021,261252786],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjYxOTNjMjgzMGM1MmFmNTQ2ZmU2ZDE4MDAwYTRmMjdlNDhkMjJmMjQ5NmRkNDIwNzNiOWYyMDljOTU1ZmRiNSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Mylon\"}"},SkullOwner:{Id:[I;-1917534500,-1718401649,-1910559209,-1848888703],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDVmY2Q0MWVmNGQwMzViODQyZDY3MjY1Yzc3NjY5NTg2YzVjNWNmODRhOWI0OTNiZmE4ODRiNjVlODJjMjYyYSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Thran Asteroid\"}"},SkullOwner:{Id:[I;-784850855,877153123,-2061008753,-1917697907],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2Y0MmFhZTY1YmVmM2NiYzZkZTljZmIzMmRlZGNlYjg5YjgzZDdjZTc1ZGMxNWU5Y2U3YTc0OTk4OGJiMTM0NCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Globe\"}"},SkullOwner:{Id:[I;-485704741,-1233827990,-1082665562,741461867],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY5MTk2YjMzMGM2Yjg5NjJmMjNhZDU2MjdmYjZlY2NlNDcyZWFmNWM5ZDQ0Zjc5MWY2NzA5YzdkMGY0ZGVjZSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Old Globe\"}"},SkullOwner:{Id:[I;-333047376,2075282472,-1654557064,-1376638642],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTZlYTZjMDYwYzgzMTExMzY3MDM4NjNiNjU4ZjdkZGJmYjNhNDI3N2E0MjMzMTI3YjZlNGI4Nzc5YTFiM2YzNSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"World on Fire\"}"},SkullOwner:{Id:[I;-1195778884,212553325,-1862081928,-1360317608],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ4MjEwOTJjZTVlNzU1NzQ1MWM3MjNhMDM0MWU5MGI5M2UwNTY0ZTJiMDE0ODFkZTgxZWVhMjcxZjA0YzViNiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-# ]}}
-
-# Apply villager trades.
-data merge entity @s {VillagerData:{profession:cartographer,level:5,type: snow},PersistenceRequired:1,CustomName:"\"Astronomer\"",Offers:{Recipes:[{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Spyglass\"}"},SkullOwner:{Id:[I;-1054666174,-1656598702,-1876453964,-461724679],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZlM2JjYmE1N2M3YjdmOGQ0NjJiMzAwNTQzZDEzMmVjZWE5YmYyZWQ1ODdjYzlkOTk0YTM5NWFjOTU5MmVhYSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Spyglass\"}"},SkullOwner:{Id:[I;628217491,1172324583,-1342291521,-107037697],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI2ODAwMmNiMGI5N2JlZTUwOGU4N2Y5OTU0Y2YxODk5YWI5MDU2MGJkNzQ3YzQ4OWNiNTQyNTFiYTZjNTBmMyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Sun\"}"},SkullOwner:{Id:[I;29464294,160580508,-1779136758,1804506042],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWMzNzgzMmM0MTM1MjU1NTU1M2Q4NmFhYWUxMzQxOTMzMWUzYWRlOTk3YmNlMGI4MTEzN2Q1MjA0ZTRjZGU3ZSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Mercury\"}"},SkullOwner:{Id:[I;497550848,1749895286,-1496956169,382266798],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzE3OGYyMzU3NjhlZDJmMGYxYTA3YWIwMmI5MmY1OTljYzQyYzc0MWQyZjczM2U1MzY4YjVhMTA0ODRiM2NiIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Venus\"}"},SkullOwner:{Id:[I;-1979437564,-211532802,-2050033691,-1126294002],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzA1MzAxOTRkMmM2ZWRhOTM5ZjFlZDk1N2JkYzRmNjQzZTAzNzNmMjExYjdkYzBlYTIyNjgwMmViM2M4ODJkNyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Earth\"}"},SkullOwner:{Id:[I;-475097093,-1232581123,-1897520009,-1863176499],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI4OWQ1YjE3ODYyNmVhMjNkMGIwYzNkMmRmNWMwODVlODM3NTA1NmJmNjg1YjVlZDViYjQ3N2ZlODQ3MmQ5NCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Mars\"}"},SkullOwner:{Id:[I;516333036,148980946,-1866790761,-1360192148],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmY2NDdhMzUyMzIxYmRiOTAzNjI3MjYzNTJkMzI1YjVkYjg2ZjI3ZTM5NDFiYjE2OWYyYWFmNTNiMGU0M2VkYSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Jupiter\"}"},SkullOwner:{Id:[I;-1818032849,1012220503,-1426985022,-1815857567],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjhhYWE4YTM1NjFlODBlZjFmOTU2MWYxNzIxMWU3NzBkZTE4YTlmOThjMjY5MWVjZjlkNjk2NTU5YTFiOTE4YyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Saturn\"}"},SkullOwner:{Id:[I;927009390,-206026122,-2084569702,-44167616],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjY1Y2QzYTI0ZjE5MzM3MWVlYmFjOWE3MWM0OGY0MDhhOTM1YWZjNGI0MzVmMWZiN2I5ODQzZTY1ODcyOThmIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Uranus\"}"},SkullOwner:{Id:[I;1395161631,1045580569,-1897395747,1315411436],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWE2ZGQ3NWY0MWU0MjY4ZTBhMTI2OTA1MDkwN2FhNjc0NmZmZDM3YTRhOTI5ZTczMjUyNDY0MmMzMzZiYyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Neptune\"}"},SkullOwner:{Id:[I;-771129464,-489993669,-1899697336,12899924],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjZlMjk1M2VlMDVmMWE0NzlmYmRhYjRlM2FkYWQ1ZDY0ZWE4ZDMzMzY2MzhmYWU1YThmNWI4OGM0MjA0NmZkIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Pluto\"}"},SkullOwner:{Id:[I;-1796176078,2036875363,-1500236403,2817451],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY4MzcwMmY0MTMwMjE4ZGE4OGU1MDk2MjNlZDM4NmRiNDc4YWQzMjAzOWYyZDg1NDUxYWQ5N2JiMGViNjNkYyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Lkanst\"}"},SkullOwner:{Id:[I;821486573,2051949116,-2112596651,-468544471],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzE4NGM4NGNlNGZkMjgyZDM1ZWIwMTdiMzc3Y2Q0YzhiZjk2ZWYzNjY4NzVlYzNhZDIwZjg2MDhmYmExYTU1YSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Zaav\"}"},SkullOwner:{Id:[I;-7137246,-868987506,-1567040519,-1783015231],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmU1MmMwMzhmYjQyZjU5ZTBlZjU3NmZmZDAyYmFkNDJlODYzYWUzYTI4OTI4ZmNhYzVkNDllMjI5YTZjOTc1MyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Iceplanet\"}"},SkullOwner:{Id:[I;1188610083,-975484637,-1252568678,182649834],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDNlMWM1ZTY1ZTEzNTU5YmY2MGUxNTRmMTdmNmFmM2E4ZTU2MDhhNDk4N2VjZDFlMGZhZTc1MWM2ZjgyNzI2In19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Pluto\"}"},SkullOwner:{Id:[I;-1346160593,633751894,-1428310665,270855345],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjgxNzlhZjE4YjE2OWY2ODQzYTZkNzE3Y2M4MzkzNDNlYzEwMjExNzY3NWJiZGQxM2Y3ZjIxNTNmNDRlOTRhIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Europa\"}"},SkullOwner:{Id:[I;-557895298,-1753461310,-1486346832,-810130547],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjJiZjFlNDVlMzEwMTE1NjZjMDY1MWY0ZjNlMDI3YjU4M2M3NmVhNTE4ODBkNTRlNWQ3NDdjMzFiZDA3OTgwMSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Io\"}"},SkullOwner:{Id:[I;1754050150,994787548,-1073838799,900235676],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzkyNDFjMTU3MDMzN2I4NDE1MDFhMmY1MmMwY2VmYThiY2Q0NGI4MmU3NjdmZWY5OWUyNDNkYTFjYmYxZjA0MCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Haumea\"}"},SkullOwner:{Id:[I;612745721,-400276784,-1955852693,473986854],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzU3ZDg5MmZkZTRiMTBhZGFkY2E3OWM0MTZhMDgzZGYxNDcwODVjZjBmMDM1MWQzMDExMDUwOTgwMzllNmUwZiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Mimas\"}"},SkullOwner:{Id:[I;650568500,1993428110,-1825761517,-2014056225],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTJmOGUyMzA4YjQ3OTAxNmRkYmMwZjQ2NzllNmM2NzBhMTI1ZmVkMjllMzM4OTM2ZmY4MmY4NjdkOTE4YzA2NCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Ceres\"}"},SkullOwner:{Id:[I;-631266373,1472612391,-1474859596,1072796252],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTU2NWNlMmJlZDVjODBmMTQ2MjJlN2FiMDk1Mzk0ZDIzMDNiNmNmYTJmNjg1ZTE0NTEyNTlhOGI4NWZhNThiOSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Makemake\"}"},SkullOwner:{Id:[I;-559744191,-936948783,-1486657409,-242108114],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjMwYWYwOWUwZmJjNzJkYThjZGJhNDBhNmEyNDI3YmQyNTJhMzFmMjU3NjhkODdlMWU4NzQ2NjQ0NDZkMjQ1YSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Full Moon\"}"},SkullOwner:{Id:[I;863215294,-1780921430,-1773460256,1982824210],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzAwYTFhN2JiMDdmZGI0ZTZhODZlMzQxODE2ZTg4NDNkZGFmN2NmMzcxM2EzNjY2ZDc0YjcyZjk4NjE5ZjA2MyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"New Moon\"}"},SkullOwner:{Id:[I;1408465352,1405307932,-1499412764,1362748953],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDNlNWU5ZGIyOWJjYTQ1Zjg3ZGYwMzE3MmZkNzEzNTU5MDM0MDMwYjQxMWFjZDI4MjExMDc4YTdmMWU5YWEyNCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Waning Gibbous Moon\"}"},SkullOwner:{Id:[I;1407272221,-792441097,-2021647942,-212899340],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjU2ZTViODc1OGRlM2EyNjhlYzMzNjFhOWY2NTNhODdhNTEwYzY2MTRiMmZkNmQ3MzhkYTkxMjhhYWJlZWJkYSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Waxing Crescent Moon\"}"},SkullOwner:{Id:[I;-968669986,-450608398,-1426824813,2138775899],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2JjYTM2ZjFhYThkYzIyYTNhY2FhYzVmZTVlOTlmZTNiMmE4Mjc0NjI5MTA3MGY5OTg0Yjc1MzNkOWMxZjRlZSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Lunar Eclipse Moon\"}"},SkullOwner:{Id:[I;-2128657195,-1798615700,-1747474894,626076238],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmVjNThjMWVmZGJkMzMwNzYzMjAyMjYzOGQ4ZGI1YmY2MzYzNWNiYzYyMGIyNmU1ZDRkMmYzZmUzMjI4NGNmZCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Insomniac Moon\"}"},SkullOwner:{Id:[I;1844529182,400838643,-1430649761,-1323643338],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGQ1NWMzMmFjYWNlNzY2ZjljOTRiNDNkMmEzNzYyMWViODVlMDdjMDlkZWJlNWUzM2UwZTBiMzIxZDI3MDkxMiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Galaxy\"}"},SkullOwner:{Id:[I;-610086242,-179287940,-1325760886,2047505618],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmE0NGUyYjgzODhkZjU5M2E4NWY3ZDU0NDQ1Y2U3ODc5NmNlZTZiMGJjYjdhNTVhY2JkZDFjYmQ4ZjM1YWVmMiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Galaxy\"}"},SkullOwner:{Id:[I;1404869057,1763894256,-907272424,-471909012],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWQzZDI1MGUyNWJiY2EzYTYyYmU1YjNlZjAyY2ZjYWI2ZGNkYzQyNDg4NGM5YTdkNWNjOTVjOWQwIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Veldin\"}"},SkullOwner:{Id:[I;-427992920,-571457030,-1738667711,-2146093353],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2FiMTg4MzM4ZTcwNjgxNjBjYWVlYjI4NzQzZTUzNGUyMjhmODc3NjQxZmU5MzcwMmFiOWEzODY4MTFiNjQzOCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Florana\"}"},SkullOwner:{Id:[I;-200804845,1379617583,-2022526449,577512640],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWE5YTdmMDdkYTliZGEyODBiMGY5MDliNDk1ZWJjOWZiMWFlZTM1NTJjYjE3ZTM5YmExYjRjOTZkMDJhMjBjYSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Marcadia\"}"},SkullOwner:{Id:[I;-1701414884,-485732615,-1951982086,-1365678452],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2I3ZWQxNWViMjkxYzhhNzBiYTY4NDRhZmE5ZWMyYmYwMWRjYjFmZjg0ZmFkM2U4MDkyZTJlYzBmOTNiMDg3YSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Aquatos\"}"},SkullOwner:{Id:[I;-963272783,-963163322,-1084865793,-122101422],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODAzM2ZlMmY4ZGYwMWE2YjE1NzFkODU1YWQ1MjhiYzk3YzdjYTEyMDFmNzIxMzE0NjBlZTI1YmI2NjhhMjhjMSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Tyhrranosis\"}"},SkullOwner:{Id:[I;-270439505,529483553,-1939795292,-984210315],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTRjYmZmYjk3MTIyMzhjOTU2OTc3ZDFiZmRhNGIzMDhlZDQ3N2JhMzEwNmMzMTMwMmMyNDA4NjJlZjc3OWEifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Daxx\"}"},SkullOwner:{Id:[I;1186999421,-337950420,-1949792594,-395100450],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzEwNzdlODcxZDkxYjdmZWEyNGIxZjY4MDhlMDg4ZDdiODQyZGE1MTZmNjM1NmNlOTE2MTM0OTQ0MzFhZThhMCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Rilgar\"}"},SkullOwner:{Id:[I;1318140204,-458735380,-1214097096,1484341888],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzNlZDYwZWUzY2FkY2IwOGNiZDViMzM1MTczMmMxYWMyZWRjMGMwZGEwZDE3ZjRiZmU5MmY5YTQ4YmNmYTY4YSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Holostar\"}"},SkullOwner:{Id:[I;1699631987,113526387,-1361948297,-388247242],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDIzZmUzNjcxYjNjOTE2YzJmMjRmZGNiZWJkN2NmMTMxYWFkMzg2NzNhNTZiZTYzZTBlZTUwOTMyZWZhZDg0ZCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Obani Draco\"}"},SkullOwner:{Id:[I;861321188,1497057447,-1363981289,326813936],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDNlZDM2ODgyMWI0NjZkMzliZGY1N2U3OGZjMWRkZjc1ZWM5NjZjMTY5NTVlMDJlNTk0OGJlN2FkZmQxZmU1NSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Kerwan\"}"},SkullOwner:{Id:[I;1623654674,167595437,-1454623671,1785417934],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmE0YmRiNjYwZDkzNGIzZDhiZTU5OTM3OTBmMjZlZTgwNWRjYWE2NTMzNjY3MWNmZGJhN2Y2ZmUzNzc3NTE3OSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Zeldrin\"}"},SkullOwner:{Id:[I;1280420631,-704494245,-2007641691,-726249768],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2ZjZTA1OWU2MTg1MDU5NDAwMGFlMzk3Nzg1NTZiN2ViMGFmYTkyOGZhZmQ1NzNiMGQ4MjMxNGU4YmRmNDlkMyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Aridia\"}"},SkullOwner:{Id:[I;-596761260,899697741,-1585301935,-1036152616],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODU2YTRjNGJjZmM1NTc1MzJhNWQwMGFjMTliNWM3MzA3MzJiMjBlMTJkMjA2YzEyYTI1NTI1MmM4YmFmNDM3NCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Koros\"}"},SkullOwner:{Id:[I;809160552,1691829497,-1359029021,261252786],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjYxOTNjMjgzMGM1MmFmNTQ2ZmU2ZDE4MDAwYTRmMjdlNDhkMjJmMjQ5NmRkNDIwNzNiOWYyMDljOTU1ZmRiNSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Planet Mylon\"}"},SkullOwner:{Id:[I;-1917534500,-1718401649,-1910559209,-1848888703],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDVmY2Q0MWVmNGQwMzViODQyZDY3MjY1Yzc3NjY5NTg2YzVjNWNmODRhOWI0OTNiZmE4ODRiNjVlODJjMjYyYSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Thran Asteroid\"}"},SkullOwner:{Id:[I;-784850855,877153123,-2061008753,-1917697907],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2Y0MmFhZTY1YmVmM2NiYzZkZTljZmIzMmRlZGNlYjg5YjgzZDdjZTc1ZGMxNWU5Y2U3YTc0OTk4OGJiMTM0NCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Globe\"}"},SkullOwner:{Id:[I;-485704741,-1233827990,-1082665562,741461867],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY5MTk2YjMzMGM2Yjg5NjJmMjNhZDU2MjdmYjZlY2NlNDcyZWFmNWM5ZDQ0Zjc5MWY2NzA5YzdkMGY0ZGVjZSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Old Globe\"}"},SkullOwner:{Id:[I;-333047376,2075282472,-1654557064,-1376638642],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTZlYTZjMDYwYzgzMTExMzY3MDM4NjNiNjU4ZjdkZGJmYjNhNDI3N2E0MjMzMTI3YjZlNGI4Nzc5YTFiM2YzNSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"World on Fire\"}"},SkullOwner:{Id:[I;-1195778884,212553325,-1862081928,-1360317608],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ4MjEwOTJjZTVlNzU1NzQ1MWM3MjNhMDM0MWU5MGI5M2UwNTY0ZTJiMDE0ODFkZTgxZWVhMjcxZjA0YzViNiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999}]}}
+data merge entity @s {VillagerData:{profession:cartographer,level:5,type: snow},PersistenceRequired:1,CustomName:"\"Astronomer\"",\
+    Offers: {\
+        Recipes: [\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Spyglass\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZlM2JjYmE1N2M3YjdmOGQ0NjJiMzAwNTQzZDEzMmVjZWE5YmYyZWQ1ODdjYzlkOTk0YTM5NWFjOTU5MmVhYSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Spyglass\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI2ODAwMmNiMGI5N2JlZTUwOGU4N2Y5OTU0Y2YxODk5YWI5MDU2MGJkNzQ3YzQ4OWNiNTQyNTFiYTZjNTBmMyJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Sun\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWMzNzgzMmM0MTM1MjU1NTU1M2Q4NmFhYWUxMzQxOTMzMWUzYWRlOTk3YmNlMGI4MTEzN2Q1MjA0ZTRjZGU3ZSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Mercury\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzE3OGYyMzU3NjhlZDJmMGYxYTA3YWIwMmI5MmY1OTljYzQyYzc0MWQyZjczM2U1MzY4YjVhMTA0ODRiM2NiIn19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Venus\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzA1MzAxOTRkMmM2ZWRhOTM5ZjFlZDk1N2JkYzRmNjQzZTAzNzNmMjExYjdkYzBlYTIyNjgwMmViM2M4ODJkNyJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Earth\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI4OWQ1YjE3ODYyNmVhMjNkMGIwYzNkMmRmNWMwODVlODM3NTA1NmJmNjg1YjVlZDViYjQ3N2ZlODQ3MmQ5NCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Mars\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmY2NDdhMzUyMzIxYmRiOTAzNjI3MjYzNTJkMzI1YjVkYjg2ZjI3ZTM5NDFiYjE2OWYyYWFmNTNiMGU0M2VkYSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Jupiter\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjhhYWE4YTM1NjFlODBlZjFmOTU2MWYxNzIxMWU3NzBkZTE4YTlmOThjMjY5MWVjZjlkNjk2NTU5YTFiOTE4YyJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Saturn\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjY1Y2QzYTI0ZjE5MzM3MWVlYmFjOWE3MWM0OGY0MDhhOTM1YWZjNGI0MzVmMWZiN2I5ODQzZTY1ODcyOThmIn19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Uranus\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWE2ZGQ3NWY0MWU0MjY4ZTBhMTI2OTA1MDkwN2FhNjc0NmZmZDM3YTRhOTI5ZTczMjUyNDY0MmMzMzZiYyJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Neptune\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjZlMjk1M2VlMDVmMWE0NzlmYmRhYjRlM2FkYWQ1ZDY0ZWE4ZDMzMzY2MzhmYWU1YThmNWI4OGM0MjA0NmZkIn19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Pluto\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY4MzcwMmY0MTMwMjE4ZGE4OGU1MDk2MjNlZDM4NmRiNDc4YWQzMjAzOWYyZDg1NDUxYWQ5N2JiMGViNjNkYyJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Lkanst\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzE4NGM4NGNlNGZkMjgyZDM1ZWIwMTdiMzc3Y2Q0YzhiZjk2ZWYzNjY4NzVlYzNhZDIwZjg2MDhmYmExYTU1YSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Zaav\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmU1MmMwMzhmYjQyZjU5ZTBlZjU3NmZmZDAyYmFkNDJlODYzYWUzYTI4OTI4ZmNhYzVkNDllMjI5YTZjOTc1MyJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Iceplanet\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDNlMWM1ZTY1ZTEzNTU5YmY2MGUxNTRmMTdmNmFmM2E4ZTU2MDhhNDk4N2VjZDFlMGZhZTc1MWM2ZjgyNzI2In19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Pluto\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjgxNzlhZjE4YjE2OWY2ODQzYTZkNzE3Y2M4MzkzNDNlYzEwMjExNzY3NWJiZGQxM2Y3ZjIxNTNmNDRlOTRhIn19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Europa\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjJiZjFlNDVlMzEwMTE1NjZjMDY1MWY0ZjNlMDI3YjU4M2M3NmVhNTE4ODBkNTRlNWQ3NDdjMzFiZDA3OTgwMSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Io\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzkyNDFjMTU3MDMzN2I4NDE1MDFhMmY1MmMwY2VmYThiY2Q0NGI4MmU3NjdmZWY5OWUyNDNkYTFjYmYxZjA0MCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Haumea\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzU3ZDg5MmZkZTRiMTBhZGFkY2E3OWM0MTZhMDgzZGYxNDcwODVjZjBmMDM1MWQzMDExMDUwOTgwMzllNmUwZiJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Mimas\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTJmOGUyMzA4YjQ3OTAxNmRkYmMwZjQ2NzllNmM2NzBhMTI1ZmVkMjllMzM4OTM2ZmY4MmY4NjdkOTE4YzA2NCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Ceres\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTU2NWNlMmJlZDVjODBmMTQ2MjJlN2FiMDk1Mzk0ZDIzMDNiNmNmYTJmNjg1ZTE0NTEyNTlhOGI4NWZhNThiOSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Makemake\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjMwYWYwOWUwZmJjNzJkYThjZGJhNDBhNmEyNDI3YmQyNTJhMzFmMjU3NjhkODdlMWU4NzQ2NjQ0NDZkMjQ1YSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Full Moon\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzAwYTFhN2JiMDdmZGI0ZTZhODZlMzQxODE2ZTg4NDNkZGFmN2NmMzcxM2EzNjY2ZDc0YjcyZjk4NjE5ZjA2MyJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"New Moon\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDNlNWU5ZGIyOWJjYTQ1Zjg3ZGYwMzE3MmZkNzEzNTU5MDM0MDMwYjQxMWFjZDI4MjExMDc4YTdmMWU5YWEyNCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Waning Gibbous Moon\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjU2ZTViODc1OGRlM2EyNjhlYzMzNjFhOWY2NTNhODdhNTEwYzY2MTRiMmZkNmQ3MzhkYTkxMjhhYWJlZWJkYSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Waxing Crescent Moon\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2JjYTM2ZjFhYThkYzIyYTNhY2FhYzVmZTVlOTlmZTNiMmE4Mjc0NjI5MTA3MGY5OTg0Yjc1MzNkOWMxZjRlZSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Lunar Eclipse Moon\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmVjNThjMWVmZGJkMzMwNzYzMjAyMjYzOGQ4ZGI1YmY2MzYzNWNiYzYyMGIyNmU1ZDRkMmYzZmUzMjI4NGNmZCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Insomniac Moon\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGQ1NWMzMmFjYWNlNzY2ZjljOTRiNDNkMmEzNzYyMWViODVlMDdjMDlkZWJlNWUzM2UwZTBiMzIxZDI3MDkxMiJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Galaxy\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmE0NGUyYjgzODhkZjU5M2E4NWY3ZDU0NDQ1Y2U3ODc5NmNlZTZiMGJjYjdhNTVhY2JkZDFjYmQ4ZjM1YWVmMiJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Galaxy\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWQzZDI1MGUyNWJiY2EzYTYyYmU1YjNlZjAyY2ZjYWI2ZGNkYzQyNDg4NGM5YTdkNWNjOTVjOWQwIn19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Planet Veldin\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2FiMTg4MzM4ZTcwNjgxNjBjYWVlYjI4NzQzZTUzNGUyMjhmODc3NjQxZmU5MzcwMmFiOWEzODY4MTFiNjQzOCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Planet Florana\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWE5YTdmMDdkYTliZGEyODBiMGY5MDliNDk1ZWJjOWZiMWFlZTM1NTJjYjE3ZTM5YmExYjRjOTZkMDJhMjBjYSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Planet Marcadia\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2I3ZWQxNWViMjkxYzhhNzBiYTY4NDRhZmE5ZWMyYmYwMWRjYjFmZjg0ZmFkM2U4MDkyZTJlYzBmOTNiMDg3YSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Planet Aquatos\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODAzM2ZlMmY4ZGYwMWE2YjE1NzFkODU1YWQ1MjhiYzk3YzdjYTEyMDFmNzIxMzE0NjBlZTI1YmI2NjhhMjhjMSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Planet Tyhrranosis\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTRjYmZmYjk3MTIyMzhjOTU2OTc3ZDFiZmRhNGIzMDhlZDQ3N2JhMzEwNmMzMTMwMmMyNDA4NjJlZjc3OWEifX19"\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Planet Daxx\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzEwNzdlODcxZDkxYjdmZWEyNGIxZjY4MDhlMDg4ZDdiODQyZGE1MTZmNjM1NmNlOTE2MTM0OTQ0MzFhZThhMCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Planet Rilgar\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzNlZDYwZWUzY2FkY2IwOGNiZDViMzM1MTczMmMxYWMyZWRjMGMwZGEwZDE3ZjRiZmU5MmY5YTQ4YmNmYTY4YSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Planet Holostar\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDIzZmUzNjcxYjNjOTE2YzJmMjRmZGNiZWJkN2NmMTMxYWFkMzg2NzNhNTZiZTYzZTBlZTUwOTMyZWZhZDg0ZCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Planet Obani Draco\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDNlZDM2ODgyMWI0NjZkMzliZGY1N2U3OGZjMWRkZjc1ZWM5NjZjMTY5NTVlMDJlNTk0OGJlN2FkZmQxZmU1NSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Planet Kerwan\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmE0YmRiNjYwZDkzNGIzZDhiZTU5OTM3OTBmMjZlZTgwNWRjYWE2NTMzNjY3MWNmZGJhN2Y2ZmUzNzc3NTE3OSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Planet Zeldrin\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2ZjZTA1OWU2MTg1MDU5NDAwMGFlMzk3Nzg1NTZiN2ViMGFmYTkyOGZhZmQ1NzNiMGQ4MjMxNGU4YmRmNDlkMyJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Planet Aridia\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODU2YTRjNGJjZmM1NTc1MzJhNWQwMGFjMTliNWM3MzA3MzJiMjBlMTJkMjA2YzEyYTI1NTI1MmM4YmFmNDM3NCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Planet Koros\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjYxOTNjMjgzMGM1MmFmNTQ2ZmU2ZDE4MDAwYTRmMjdlNDhkMjJmMjQ5NmRkNDIwNzNiOWYyMDljOTU1ZmRiNSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Planet Mylon\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDVmY2Q0MWVmNGQwMzViODQyZDY3MjY1Yzc3NjY5NTg2YzVjNWNmODRhOWI0OTNiZmE4ODRiNjVlODJjMjYyYSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Thran Asteroid\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2Y0MmFhZTY1YmVmM2NiYzZkZTljZmIzMmRlZGNlYjg5YjgzZDdjZTc1ZGMxNWU5Y2U3YTc0OTk4OGJiMTM0NCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Globe\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY5MTk2YjMzMGM2Yjg5NjJmMjNhZDU2MjdmYjZlY2NlNDcyZWFmNWM5ZDQ0Zjc5MWY2NzA5YzdkMGY0ZGVjZSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Old Globe\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTZlYTZjMDYwYzgzMTExMzY3MDM4NjNiNjU4ZjdkZGJmYjNhNDI3N2E0MjMzMTI3YjZlNGI4Nzc5YTFiM2YzNSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"World on Fire\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ4MjEwOTJjZTVlNzU1NzQ1MWM3MjNhMDM0MWU5MGI5M2UwNTY0ZTJiMDE0ODFkZTgxZWVhMjcxZjA0YzViNiJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        }]\
+    }\
+}
 
 # Talk to me
 tellraw @e[type=player,distance=..16] [{"text":"<","color":"white"},{"text":"Astronomer","color":"gold"},{"text":">","color":"white"},{"text":" The study of other planets is quite fascinating. Care to take a look for yourself?","color":"green"}]

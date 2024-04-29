@@ -22,45 +22,539 @@ tag @s add global.ignore.gui
 tag @s add global.ignore.kill
 
 # The below command split into lines to make it easier to read. It will not run unless it is a single line.
-# data merge entity @s {VillagerData:{profession:butcher,level:5,type:desert},PersistenceRequired:1,CustomName:"\"Chef\"",Offers:{Recipes:[
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Mac and Cheese\"}"},SkullOwner:{Id:[I;-1528446196,-808237267,-2059520990,-1542307753],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmJiZWNiYTUyMzE4MDVhYWFkZGE4MWQ3NjRiMDk2ZWVlNjJlZDJlNGNiNDQ3NDQ4NTQ0ZjUxODJiMDkxZjEwMSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Bowl of Noodles\"}"},SkullOwner:{Id:[I;-854721655,-2132261734,-1268268824,-1053483058],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZThlMDEwMmE5MGRiODI5MTlmZGRlOTc2YTc2MDJjNTEzZDMwMWEwY2RhZTk3ZWYyNTkyMTg2NTBmY2VhOCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Lasagna\"}"},SkullOwner:{Id:[I;129924919,1218463286,-1755691348,131402843],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWRiMzk4ZTM5ZDM0ZWZiNjQ4YjExYzlmMzMyMWY3YTgwZWUzMjQxODAyNjQ1ZTE1YTNjOGU0NzVmZjc2MTYifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Beetroot Soup\"}"},SkullOwner:{Id:[I;989899283,-637449259,-1685687875,-918985769],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQ0NDE1MmIwZmZlNTNhY2MxZGY1ZjMyNDM3NWJkMzc4MmJkZDRmZGMwMzE1YjE0MzFhNWZiYjhhMjA0ZmEzNCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Tomato Soup\"}"},SkullOwner:{Id:[I;232002731,445530409,-1806913505,-1218633077],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzYzNjZmMTc0MjhhNDk5MDEyNjg0NGY3NGEwMmRiZjU1MjRmMzViZTEzMjNmOGZhYjBiZjYxYTU3ZmY0MWRlMyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Suspicious Stew\"}"},SkullOwner:{Id:[I;-1552266068,2036810770,-1656289206,569615553],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2ZiZGM0NGMzMTM5YzVjMGVmMzk2NjQwNzNkNmE5YzliMmQzNTA5ZDg1MDQwYTdlMjQ5YTU1ZjQ5YTQyZjJmZCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Vanilla Rice Pudding\"}"},SkullOwner:{Id:[I;-1441566481,-1047182112,-1433142572,-129920652],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGJmODhjMGNjYmYwNjk3ZjY0ZjlhN2QyMDM0NzY5ZTQ4MTg0OGZiMjJlMTk3ZGZhZTI5ZTFmNTY1ZjIwMDNlYSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Chocolate Rice Pudding\"}"},SkullOwner:{Id:[I;853942788,-2125444759,-1194099676,893154649],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzc2ZmFjYjBmNDI1NTQ5ZTRiMmI4Y2Q5MjQzMTVkOTlmMTBmMWU4MDZhYjQ2M2FjM2U4MTI3ODEzNWNhZTA5NiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Candied Yams\"}"},SkullOwner:{Id:[I;1444816557,-16759661,-1449550788,725268072],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMGFiYTU0M2Y5Zjk1ODg2NjRhYmRhOTAzZTNhOTI5MjczMjY2YjA0ODQxZGI3Zjc1NjdjZmM2NzcxMDU5In19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Ham\"}"},SkullOwner:{Id:[I;-13711728,-2052759295,-2103862104,1940091026],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmMyYzU3YTk3ZDlmY2I0MmMxZmVkNDk5NGFmN2IzNzc0YzFiYTlmMTJjMGYxZWY3NjM2YzBmZTM1NjFkYzkifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Beef Steak\"}"},SkullOwner:{Id:[I;-2119282122,-1579333855,-1411394759,1938851353],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTFjZmM3YzUzYjdiNzBiNTI2ZmIxNWZkYjJiYjM1NzljZDk3YTg5NTRlNzEyODIwYmFiNmJkM2JjYmJhOWM0In19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Turkey\"}"},SkullOwner:{Id:[I;1574346508,253707801,-1093277832,1296709662],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWJhZTllZGM2YThjYjBjYTI4ZGZmZjQzNWZlNWFjNDRjY2QwNjgxMGQ1Njg1Yzk5Mzg0MDhiMTI0ZjM3ODgxOSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Cooked Lobster\"}"},SkullOwner:{Id:[I;1228082705,597115733,-1998212003,-2136995501],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjY4YTVhZTJhYTNlZjMzM2U2YWE2NTMzYjMzMTM5NjAzOGQ3NTM3YTc0MDhhMmM1NjRjMTZmMDNlNWY4OCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Corned Beef, Cabbage, and Carrots\"}"},SkullOwner:{Id:[I;1273732880,-1866772518,-1553966375,-1715845084],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2IwMWZjNTJjMGVhYTgwYzhhNTg0NmJhNGIwM2RlYjc2Y2NkYTUyOGMwOWI3ZjM0ZmFmZjAwOGNkNTQ0Nzc2OCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Chinese Peking Duck\"}"},SkullOwner:{Id:[I;1118469135,315900021,-1823261283,-1062582081],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjIxMjVkMTI5MTkwYzg4ZjhjNDRlNDJlOGM1MWFkNWVkYmU0NDVlNjc0ZDk4YWYwNjc2Yzc0NjA5NDg1YzE1In19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Cooked Spinach\"}"},SkullOwner:{Id:[I;-1845001744,301222395,-1236154900,-1345502385],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzgxMTU4YWZlNzMwZjNhMjgzNmJlNjRjZGQ4ZDFkMWY1ODBkY2Q5NDFlMmFiNDgyNzc3MGI5NmI1M2U2MjFiYiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Potato Salad\"}"},SkullOwner:{Id:[I;862967894,1633569599,-1566225080,-1600098497],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjhjMDNlZWJmN2Q0Y2VmNzY0OGYzY2Q5NGIzYjkzMzQ4NWRkZDZkZjg0YjRhOTgyNzkyN2MxNWYzM2FkMjY0MSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Salad\"}"},SkullOwner:{Id:[I;-903744438,-1424538639,-1511394525,-1905695600],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWZlOTJlMTFhNjdiNTY5MzU0NDZhMjE0Y2FhMzcyM2QyOWU2ZGI1NmM1NWZhOGQ0MzE3OWE4YTMxNzZjNmMxIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Sushi\"}"},SkullOwner:{Id:[I;-101452533,1797406869,-1809506402,-820772792],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTQ5OTZkNDg4MmY0N2M4NzMyMDFmZDBjNzM2MmE1MzJiOWQ3OWE0YzU2YzhjZDkxMTdmMzE3MWVmNGU5In19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Sushi\"}"},SkullOwner:{Id:[I;-1570678359,-1364900723,-1873132653,-2129441819],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDkzNmE2YjQ5NDQ1OTViNGI1YjQ0YTc0ZWFlZjZkYjgxYTc1NmEyNWE2YTFjYzc2ZTY5ZGI4OWJhOTE3ODkifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Sushi (Salmon)\"}"},SkullOwner:{Id:[I;-1131486595,-1289730119,-1436633997,-1381054206],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjNiZjhmY2EyYWYzNTkyYzU1NzRiMTNlM2JjZjYxZTJmYWU4Mjk3ODg1MzVmMGRkZWFhN2EyZTQ1YjZiYTQifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Sushi (Shrimp)\"}"},SkullOwner:{Id:[I;1451297347,-1834399372,-2037167956,-433552897],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWU5ZDIyZDlhZGE2M2UyODE0MjBhZTMzNjkxODgwODY5ZmExYTE0YmZkZjg3ZDhlNTM4ZTk5OGE4ZjI5NTk1YiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Sushi (Shrimp)\"}"},SkullOwner:{Id:[I;1451297347,-1834399372,-2037167956,-433552897],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWU5ZDIyZDlhZGE2M2UyODE0MjBhZTMzNjkxODgwODY5ZmExYTE0YmZkZjg3ZDhlNTM4ZTk5OGE4ZjI5NTk1YiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Taco\"}"},SkullOwner:{Id:[I;-790487307,-894546625,-1464919218,-1327838143],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTYyOTZiZTlkY2ZlNWUyZGEwNDA4NTI5NThjMjA1YzRmNDM4NmMyZDhhYWI0NjE2N2E2ZjQxY2VlYjJlZjNlNiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Hot Dog\"}"},SkullOwner:{Id:[I;1247188884,1675578681,-1351224420,450134384],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWI1MDVjNTUwNTFjZWQzODI0ZTBlMzA3MDkyYTFkOGQ2ZTA4MzFhZGNmNWFlOGU5MWU2MDY3NGY2YjdhY2Q4OCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Sandwich\"}"},SkullOwner:{Id:[I;-2029292198,226771811,-1862936107,-2140035906],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTVmYWZkODk3MmI2Yjc2OTBmYjEzMWRjM2Y5MTdjNTU5OTkzOGY4N2I1ODRjMmY1ZTdkNDBhMGRlNDFlNTJmIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Sandwich\"}"},SkullOwner:{Id:[I;242692951,-583316162,-1114412265,-1648084412],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGEyMTJmNzBmYjY2NTQ4ZmRmMmFiY2RiY2U4ZjMxNzA0MzRiODk5NWUyMWQxNGY5YjFmZjE0OTdjNjQ4ZCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Stuffed Bell Pepper\"}"},SkullOwner:{Id:[I;156077748,1162432351,-1136369161,-844677591],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjZjOThiNDEwMTIzYjA5NDQ0MjIzMDM3OThmYzJkYjhjZWEwZmVlYjA5ZDBkYTQwZjUzNjFiNTk0OThmM2U4YiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Burger\"}"},SkullOwner:{Id:[I;-763586799,-1368504991,-1613143890,1937471535],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWZkMDE0MTEzYzQ1Yjk3OTE5MTdjMjRkYzBjMGEzMDRlODBmMWE1Njc0MTMwYmI1MTcyNGRjMTMwMzBlNDBiNSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Can of Soup\"}"},SkullOwner:{Id:[I;-287135770,-1488500554,-2047697347,-864177164],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2IyNDliNzc5NTM1ZDVmMjAyNGZkZjg4ZDUzZWI2Mjc5NWY1NzgwOWU1YWY0ZGI2NjhmNzVlMDZjZTNjMyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Fries\"}"},SkullOwner:{Id:[I;1114466780,-2057419471,-2022138025,289448976],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTBlYWNhYzQxYTllYWYwNTEzNzZlZjJmOTU5NzAxZTFiYmUxYmY0YWE2NzE1YWRjMzRiNmRjMjlhMTNlYTkifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Raw Chicken\"}"},SkullOwner:{Id:[I;-1655009910,-645575743,-1485969291,-1279746189],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDEyYzE5YjliODRiNGY1OTQ1NjA1ODA4NmM3NTIzYThkYWQ0YWM5MDcxOWZhMjQyYjIwN2RiMzJiYmFlOGY1ZCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Goblin Omlette\"}"},SkullOwner:{Id:[I;1565525140,1926251564,-1888710519,222446597],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU5NDdmZTA5ZWJiN2U3YjM3NjliYjhhNWRhNWNiNzM0NjQ2YjJjNzk3M2FiNmEzNWI2NjI3YTdkYzEyNDVkMSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-#     {buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Spicy Goblin Omlette\"}"},SkullOwner:{Id:[I;-1904708969,1650672937,-2080684324,105837649],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmM5NGM2ZWRiZDljOTFhNDUxMDViN2UxZmU5ZWI1OGYxYmVlYzU0OWI3Mzg1MDFkNzg0MWZlNzNlMDQ3NDdiOSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},
-# ]}}
-
-# Apply villager trades.
-data merge entity @s {VillagerData:{profession:butcher,level:5,type:desert},PersistenceRequired:1,CustomName:"\"Chef\"",Offers:{Recipes:[{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Mac and Cheese\"}"},SkullOwner:{Id:[I;-1528446196,-808237267,-2059520990,-1542307753],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmJiZWNiYTUyMzE4MDVhYWFkZGE4MWQ3NjRiMDk2ZWVlNjJlZDJlNGNiNDQ3NDQ4NTQ0ZjUxODJiMDkxZjEwMSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Bowl of Noodles\"}"},SkullOwner:{Id:[I;-854721655,-2132261734,-1268268824,-1053483058],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZThlMDEwMmE5MGRiODI5MTlmZGRlOTc2YTc2MDJjNTEzZDMwMWEwY2RhZTk3ZWYyNTkyMTg2NTBmY2VhOCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Lasagna\"}"},SkullOwner:{Id:[I;129924919,1218463286,-1755691348,131402843],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWRiMzk4ZTM5ZDM0ZWZiNjQ4YjExYzlmMzMyMWY3YTgwZWUzMjQxODAyNjQ1ZTE1YTNjOGU0NzVmZjc2MTYifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Beetroot Soup\"}"},SkullOwner:{Id:[I;989899283,-637449259,-1685687875,-918985769],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQ0NDE1MmIwZmZlNTNhY2MxZGY1ZjMyNDM3NWJkMzc4MmJkZDRmZGMwMzE1YjE0MzFhNWZiYjhhMjA0ZmEzNCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Tomato Soup\"}"},SkullOwner:{Id:[I;232002731,445530409,-1806913505,-1218633077],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzYzNjZmMTc0MjhhNDk5MDEyNjg0NGY3NGEwMmRiZjU1MjRmMzViZTEzMjNmOGZhYjBiZjYxYTU3ZmY0MWRlMyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Suspicious Stew\"}"},SkullOwner:{Id:[I;-1552266068,2036810770,-1656289206,569615553],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2ZiZGM0NGMzMTM5YzVjMGVmMzk2NjQwNzNkNmE5YzliMmQzNTA5ZDg1MDQwYTdlMjQ5YTU1ZjQ5YTQyZjJmZCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Vanilla Rice Pudding\"}"},SkullOwner:{Id:[I;-1441566481,-1047182112,-1433142572,-129920652],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGJmODhjMGNjYmYwNjk3ZjY0ZjlhN2QyMDM0NzY5ZTQ4MTg0OGZiMjJlMTk3ZGZhZTI5ZTFmNTY1ZjIwMDNlYSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Chocolate Rice Pudding\"}"},SkullOwner:{Id:[I;853942788,-2125444759,-1194099676,893154649],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzc2ZmFjYjBmNDI1NTQ5ZTRiMmI4Y2Q5MjQzMTVkOTlmMTBmMWU4MDZhYjQ2M2FjM2U4MTI3ODEzNWNhZTA5NiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Candied Yams\"}"},SkullOwner:{Id:[I;1444816557,-16759661,-1449550788,725268072],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMGFiYTU0M2Y5Zjk1ODg2NjRhYmRhOTAzZTNhOTI5MjczMjY2YjA0ODQxZGI3Zjc1NjdjZmM2NzcxMDU5In19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Ham\"}"},SkullOwner:{Id:[I;-13711728,-2052759295,-2103862104,1940091026],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmMyYzU3YTk3ZDlmY2I0MmMxZmVkNDk5NGFmN2IzNzc0YzFiYTlmMTJjMGYxZWY3NjM2YzBmZTM1NjFkYzkifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Beef Steak\"}"},SkullOwner:{Id:[I;-2119282122,-1579333855,-1411394759,1938851353],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTFjZmM3YzUzYjdiNzBiNTI2ZmIxNWZkYjJiYjM1NzljZDk3YTg5NTRlNzEyODIwYmFiNmJkM2JjYmJhOWM0In19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Turkey\"}"},SkullOwner:{Id:[I;1574346508,253707801,-1093277832,1296709662],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWJhZTllZGM2YThjYjBjYTI4ZGZmZjQzNWZlNWFjNDRjY2QwNjgxMGQ1Njg1Yzk5Mzg0MDhiMTI0ZjM3ODgxOSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Cooked Lobster\"}"},SkullOwner:{Id:[I;1228082705,597115733,-1998212003,-2136995501],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjY4YTVhZTJhYTNlZjMzM2U2YWE2NTMzYjMzMTM5NjAzOGQ3NTM3YTc0MDhhMmM1NjRjMTZmMDNlNWY4OCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Corned Beef, Cabbage, and Carrots\"}"},SkullOwner:{Id:[I;1273732880,-1866772518,-1553966375,-1715845084],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2IwMWZjNTJjMGVhYTgwYzhhNTg0NmJhNGIwM2RlYjc2Y2NkYTUyOGMwOWI3ZjM0ZmFmZjAwOGNkNTQ0Nzc2OCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Chinese Peking Duck\"}"},SkullOwner:{Id:[I;1118469135,315900021,-1823261283,-1062582081],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjIxMjVkMTI5MTkwYzg4ZjhjNDRlNDJlOGM1MWFkNWVkYmU0NDVlNjc0ZDk4YWYwNjc2Yzc0NjA5NDg1YzE1In19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Cooked Spinach\"}"},SkullOwner:{Id:[I;-1845001744,301222395,-1236154900,-1345502385],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzgxMTU4YWZlNzMwZjNhMjgzNmJlNjRjZGQ4ZDFkMWY1ODBkY2Q5NDFlMmFiNDgyNzc3MGI5NmI1M2U2MjFiYiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Potato Salad\"}"},SkullOwner:{Id:[I;862967894,1633569599,-1566225080,-1600098497],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjhjMDNlZWJmN2Q0Y2VmNzY0OGYzY2Q5NGIzYjkzMzQ4NWRkZDZkZjg0YjRhOTgyNzkyN2MxNWYzM2FkMjY0MSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Salad\"}"},SkullOwner:{Id:[I;-903744438,-1424538639,-1511394525,-1905695600],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWZlOTJlMTFhNjdiNTY5MzU0NDZhMjE0Y2FhMzcyM2QyOWU2ZGI1NmM1NWZhOGQ0MzE3OWE4YTMxNzZjNmMxIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Sushi\"}"},SkullOwner:{Id:[I;-101452533,1797406869,-1809506402,-820772792],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTQ5OTZkNDg4MmY0N2M4NzMyMDFmZDBjNzM2MmE1MzJiOWQ3OWE0YzU2YzhjZDkxMTdmMzE3MWVmNGU5In19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Sushi\"}"},SkullOwner:{Id:[I;-1570678359,-1364900723,-1873132653,-2129441819],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDkzNmE2YjQ5NDQ1OTViNGI1YjQ0YTc0ZWFlZjZkYjgxYTc1NmEyNWE2YTFjYzc2ZTY5ZGI4OWJhOTE3ODkifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Sushi (Salmon)\"}"},SkullOwner:{Id:[I;-1131486595,-1289730119,-1436633997,-1381054206],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjNiZjhmY2EyYWYzNTkyYzU1NzRiMTNlM2JjZjYxZTJmYWU4Mjk3ODg1MzVmMGRkZWFhN2EyZTQ1YjZiYTQifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Sushi (Shrimp)\"}"},SkullOwner:{Id:[I;1451297347,-1834399372,-2037167956,-433552897],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWU5ZDIyZDlhZGE2M2UyODE0MjBhZTMzNjkxODgwODY5ZmExYTE0YmZkZjg3ZDhlNTM4ZTk5OGE4ZjI5NTk1YiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Sushi (Shrimp)\"}"},SkullOwner:{Id:[I;1451297347,-1834399372,-2037167956,-433552897],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWU5ZDIyZDlhZGE2M2UyODE0MjBhZTMzNjkxODgwODY5ZmExYTE0YmZkZjg3ZDhlNTM4ZTk5OGE4ZjI5NTk1YiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Taco\"}"},SkullOwner:{Id:[I;-790487307,-894546625,-1464919218,-1327838143],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTYyOTZiZTlkY2ZlNWUyZGEwNDA4NTI5NThjMjA1YzRmNDM4NmMyZDhhYWI0NjE2N2E2ZjQxY2VlYjJlZjNlNiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Hot Dog\"}"},SkullOwner:{Id:[I;1247188884,1675578681,-1351224420,450134384],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWI1MDVjNTUwNTFjZWQzODI0ZTBlMzA3MDkyYTFkOGQ2ZTA4MzFhZGNmNWFlOGU5MWU2MDY3NGY2YjdhY2Q4OCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Sandwich\"}"},SkullOwner:{Id:[I;-2029292198,226771811,-1862936107,-2140035906],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTVmYWZkODk3MmI2Yjc2OTBmYjEzMWRjM2Y5MTdjNTU5OTkzOGY4N2I1ODRjMmY1ZTdkNDBhMGRlNDFlNTJmIn19fQ=="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Sandwich\"}"},SkullOwner:{Id:[I;242692951,-583316162,-1114412265,-1648084412],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGEyMTJmNzBmYjY2NTQ4ZmRmMmFiY2RiY2U4ZjMxNzA0MzRiODk5NWUyMWQxNGY5YjFmZjE0OTdjNjQ4ZCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Stuffed Bell Pepper\"}"},SkullOwner:{Id:[I;156077748,1162432351,-1136369161,-844677591],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjZjOThiNDEwMTIzYjA5NDQ0MjIzMDM3OThmYzJkYjhjZWEwZmVlYjA5ZDBkYTQwZjUzNjFiNTk0OThmM2U4YiJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Burger\"}"},SkullOwner:{Id:[I;-763586799,-1368504991,-1613143890,1937471535],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWZkMDE0MTEzYzQ1Yjk3OTE5MTdjMjRkYzBjMGEzMDRlODBmMWE1Njc0MTMwYmI1MTcyNGRjMTMwMzBlNDBiNSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Can of Soup\"}"},SkullOwner:{Id:[I;-287135770,-1488500554,-2047697347,-864177164],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2IyNDliNzc5NTM1ZDVmMjAyNGZkZjg4ZDUzZWI2Mjc5NWY1NzgwOWU1YWY0ZGI2NjhmNzVlMDZjZTNjMyJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Fries\"}"},SkullOwner:{Id:[I;1114466780,-2057419471,-2022138025,289448976],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTBlYWNhYzQxYTllYWYwNTEzNzZlZjJmOTU5NzAxZTFiYmUxYmY0YWE2NzE1YWRjMzRiNmRjMjlhMTNlYTkifX19"}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Raw Chicken\"}"},SkullOwner:{Id:[I;-1655009910,-645575743,-1485969291,-1279746189],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDEyYzE5YjliODRiNGY1OTQ1NjA1ODA4NmM3NTIzYThkYWQ0YWM5MDcxOWZhMjQyYjIwN2RiMzJiYmFlOGY1ZCJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Goblin Omlette\"}"},SkullOwner:{Id:[I;1565525140,1926251564,-1888710519,222446597],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU5NDdmZTA5ZWJiN2U3YjM3NjliYjhhNWRhNWNiNzM0NjQ2YjJjNzk3M2FiNmEzNWI2NjI3YTdkYzEyNDVkMSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999},{buy:{id:emerald,Count:1},sell:{id:"player_head",tag:{display:{Name:"{\"text\":\"Spicy Goblin Omlette\"}"},SkullOwner:{Id:[I;-1904708969,1650672937,-2080684324,105837649],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmM5NGM2ZWRiZDljOTFhNDUxMDViN2UxZmU5ZWI1OGYxYmVlYzU0OWI3Mzg1MDFkNzg0MWZlNzNlMDQ3NDdiOSJ9fX0="}]}}},Count:1},rewardExp:0b,maxUses:9999999}]}}
+data merge entity @s {VillagerData:{profession:butcher,level:5,type:desert},PersistenceRequired:1,CustomName:"\"Chef\"",\
+    Offers: {\
+        Recipes: [\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Mac and Cheese\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmJiZWNiYTUyMzE4MDVhYWFkZGE4MWQ3NjRiMDk2ZWVlNjJlZDJlNGNiNDQ3NDQ4NTQ0ZjUxODJiMDkxZjEwMSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Bowl of Noodles\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZThlMDEwMmE5MGRiODI5MTlmZGRlOTc2YTc2MDJjNTEzZDMwMWEwY2RhZTk3ZWYyNTkyMTg2NTBmY2VhOCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Lasagna\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWRiMzk4ZTM5ZDM0ZWZiNjQ4YjExYzlmMzMyMWY3YTgwZWUzMjQxODAyNjQ1ZTE1YTNjOGU0NzVmZjc2MTYifX19"\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Beetroot Soup\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQ0NDE1MmIwZmZlNTNhY2MxZGY1ZjMyNDM3NWJkMzc4MmJkZDRmZGMwMzE1YjE0MzFhNWZiYjhhMjA0ZmEzNCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Tomato Soup\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzYzNjZmMTc0MjhhNDk5MDEyNjg0NGY3NGEwMmRiZjU1MjRmMzViZTEzMjNmOGZhYjBiZjYxYTU3ZmY0MWRlMyJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Suspicious Stew\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2ZiZGM0NGMzMTM5YzVjMGVmMzk2NjQwNzNkNmE5YzliMmQzNTA5ZDg1MDQwYTdlMjQ5YTU1ZjQ5YTQyZjJmZCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Vanilla Rice Pudding\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGJmODhjMGNjYmYwNjk3ZjY0ZjlhN2QyMDM0NzY5ZTQ4MTg0OGZiMjJlMTk3ZGZhZTI5ZTFmNTY1ZjIwMDNlYSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Chocolate Rice Pudding\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzc2ZmFjYjBmNDI1NTQ5ZTRiMmI4Y2Q5MjQzMTVkOTlmMTBmMWU4MDZhYjQ2M2FjM2U4MTI3ODEzNWNhZTA5NiJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Candied Yams\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMGFiYTU0M2Y5Zjk1ODg2NjRhYmRhOTAzZTNhOTI5MjczMjY2YjA0ODQxZGI3Zjc1NjdjZmM2NzcxMDU5In19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Ham\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmMyYzU3YTk3ZDlmY2I0MmMxZmVkNDk5NGFmN2IzNzc0YzFiYTlmMTJjMGYxZWY3NjM2YzBmZTM1NjFkYzkifX19"\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Beef Steak\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTFjZmM3YzUzYjdiNzBiNTI2ZmIxNWZkYjJiYjM1NzljZDk3YTg5NTRlNzEyODIwYmFiNmJkM2JjYmJhOWM0In19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Turkey\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWJhZTllZGM2YThjYjBjYTI4ZGZmZjQzNWZlNWFjNDRjY2QwNjgxMGQ1Njg1Yzk5Mzg0MDhiMTI0ZjM3ODgxOSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Cooked Lobster\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjY4YTVhZTJhYTNlZjMzM2U2YWE2NTMzYjMzMTM5NjAzOGQ3NTM3YTc0MDhhMmM1NjRjMTZmMDNlNWY4OCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Corned Beef, Cabbage, and Carrots\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2IwMWZjNTJjMGVhYTgwYzhhNTg0NmJhNGIwM2RlYjc2Y2NkYTUyOGMwOWI3ZjM0ZmFmZjAwOGNkNTQ0Nzc2OCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Chinese Peking Duck\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjIxMjVkMTI5MTkwYzg4ZjhjNDRlNDJlOGM1MWFkNWVkYmU0NDVlNjc0ZDk4YWYwNjc2Yzc0NjA5NDg1YzE1In19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Cooked Spinach\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzgxMTU4YWZlNzMwZjNhMjgzNmJlNjRjZGQ4ZDFkMWY1ODBkY2Q5NDFlMmFiNDgyNzc3MGI5NmI1M2U2MjFiYiJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Potato Salad\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjhjMDNlZWJmN2Q0Y2VmNzY0OGYzY2Q5NGIzYjkzMzQ4NWRkZDZkZjg0YjRhOTgyNzkyN2MxNWYzM2FkMjY0MSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Salad\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWZlOTJlMTFhNjdiNTY5MzU0NDZhMjE0Y2FhMzcyM2QyOWU2ZGI1NmM1NWZhOGQ0MzE3OWE4YTMxNzZjNmMxIn19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Sushi\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTQ5OTZkNDg4MmY0N2M4NzMyMDFmZDBjNzM2MmE1MzJiOWQ3OWE0YzU2YzhjZDkxMTdmMzE3MWVmNGU5In19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Sushi\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDkzNmE2YjQ5NDQ1OTViNGI1YjQ0YTc0ZWFlZjZkYjgxYTc1NmEyNWE2YTFjYzc2ZTY5ZGI4OWJhOTE3ODkifX19"\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Sushi (Salmon)\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjNiZjhmY2EyYWYzNTkyYzU1NzRiMTNlM2JjZjYxZTJmYWU4Mjk3ODg1MzVmMGRkZWFhN2EyZTQ1YjZiYTQifX19"\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Sushi (Shrimp)\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWU5ZDIyZDlhZGE2M2UyODE0MjBhZTMzNjkxODgwODY5ZmExYTE0YmZkZjg3ZDhlNTM4ZTk5OGE4ZjI5NTk1YiJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Taco\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTYyOTZiZTlkY2ZlNWUyZGEwNDA4NTI5NThjMjA1YzRmNDM4NmMyZDhhYWI0NjE2N2E2ZjQxY2VlYjJlZjNlNiJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Hot Dog\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWI1MDVjNTUwNTFjZWQzODI0ZTBlMzA3MDkyYTFkOGQ2ZTA4MzFhZGNmNWFlOGU5MWU2MDY3NGY2YjdhY2Q4OCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Sandwich\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTVmYWZkODk3MmI2Yjc2OTBmYjEzMWRjM2Y5MTdjNTU5OTkzOGY4N2I1ODRjMmY1ZTdkNDBhMGRlNDFlNTJmIn19fQ=="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Sandwich\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGEyMTJmNzBmYjY2NTQ4ZmRmMmFiY2RiY2U4ZjMxNzA0MzRiODk5NWUyMWQxNGY5YjFmZjE0OTdjNjQ4ZCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Stuffed Bell Pepper\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjZjOThiNDEwMTIzYjA5NDQ0MjIzMDM3OThmYzJkYjhjZWEwZmVlYjA5ZDBkYTQwZjUzNjFiNTk0OThmM2U4YiJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Burger\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWZkMDE0MTEzYzQ1Yjk3OTE5MTdjMjRkYzBjMGEzMDRlODBmMWE1Njc0MTMwYmI1MTcyNGRjMTMwMzBlNDBiNSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Can of Soup\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2IyNDliNzc5NTM1ZDVmMjAyNGZkZjg4ZDUzZWI2Mjc5NWY1NzgwOWU1YWY0ZGI2NjhmNzVlMDZjZTNjMyJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Fries\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTBlYWNhYzQxYTllYWYwNTEzNzZlZjJmOTU5NzAxZTFiYmUxYmY0YWE2NzE1YWRjMzRiNmRjMjlhMTNlYTkifX19"\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Raw Chicken\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDEyYzE5YjliODRiNGY1OTQ1NjA1ODA4NmM3NTIzYThkYWQ0YWM5MDcxOWZhMjQyYjIwN2RiMzJiYmFlOGY1ZCJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Goblin Omlette\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU5NDdmZTA5ZWJiN2U3YjM3NjliYjhhNWRhNWNiNzM0NjQ2YjJjNzk3M2FiNmEzNWI2NjI3YTdkYzEyNDVkMSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            buy: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    custom_name: "\"Spicy Goblin Omlette\"",\
+                    profile: {\
+                        properties: [{\
+                            name: "textures",\
+                            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmM5NGM2ZWRiZDljOTFhNDUxMDViN2UxZmU5ZWI1OGYxYmVlYzU0OWI3Mzg1MDFkNzg0MWZlNzNlMDQ3NDdiOSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        }]\
+    }\
+}
 
 # Talk to me
 tellraw @e[type=player,distance=..16] [{"text":"<","color":"white"},{"text":"Chef","color":"gold"},{"text":">","color":"white"},{"text":" Hungry? I've got lots of food for for you at a bargain price. All made fresh with only the finest ingredients.","color":"green"}]
