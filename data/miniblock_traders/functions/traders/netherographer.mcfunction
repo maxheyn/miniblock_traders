@@ -6,14 +6,11 @@
 #                                                                 #
 # --------------------------------------------------------------- #
 
-# Destroy the item used to convert the villager.
 kill @e[type=item,nbt={Item:{tag:{tag:mt_nether}}},distance=..0.5]
 
-# Fun effects to give user feedback that the transformation worked.
 execute at @s run particle minecraft:happy_villager ~ ~ ~ 0.3 1 0.3 100 250
 playsound minecraft:entity.experience_orb.pickup ambient @a[distance=..8] ~ ~ ~ 30
 
-# Relevant Tags for utility and compatibility
 tag @s add mt_trader
 tag @s add mt_trader_nether
 tag @s add global.ignore
@@ -21,7 +18,6 @@ tag @s add global.ignore.pos
 tag @s add global.ignore.gui
 tag @s add global.ignore.kill
 
-# The below command split into lines to make it easier to read. It will not run unless it is a single line.
 data merge entity @s {VillagerData:{profession:cartographer,level:5,type:savanna},PersistenceRequired:1,CustomName:"\"Netherographer\"",\
     Offers: {\
         Recipes: [\
@@ -428,5 +424,4 @@ data merge entity @s {VillagerData:{profession:cartographer,level:5,type:savanna
     }\
 }
 
-# Talk to me
 tellraw @e[type=player,distance=..16] [{"text":"<","color":"white"},{"text":"Netherographer","color":"gold"},{"text":">","color":"white"},{"text":" The Nether is a scary place, but I've been documenting it for years. Here's what I've been researching.","color":"green"}]

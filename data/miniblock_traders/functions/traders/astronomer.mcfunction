@@ -6,14 +6,11 @@
 #                                                                 #
 # --------------------------------------------------------------- #
 
-# Destroy the item used to convert the villager.
 kill @e[type=item,nbt={Item:{tag:{tag:mt_astronomy}}},distance=..0.5]
 
-# Fun effects to give user feedback that the transformation worked.
 execute at @s run particle minecraft:happy_villager ~ ~ ~ 0.3 1 0.3 100 250
 playsound minecraft:entity.experience_orb.pickup ambient @a[distance=..8] ~ ~ ~ 30
 
-# Relevant Tags for utility and compatibility
 tag @s add mt_trader
 tag @s add mt_trader_astronomy
 tag @s add global.ignore
@@ -795,5 +792,4 @@ data merge entity @s {VillagerData:{profession:cartographer,level:5,type: snow},
     }\
 }
 
-# Talk to me
 tellraw @e[type=player,distance=..16] [{"text":"<","color":"white"},{"text":"Astronomer","color":"gold"},{"text":">","color":"white"},{"text":" The study of other planets is quite fascinating. Care to take a look for yourself?","color":"green"}]

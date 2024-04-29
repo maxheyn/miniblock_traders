@@ -6,14 +6,11 @@
 #                                                                 #
 # --------------------------------------------------------------- #
 
-# Destroy the item used to convert the villager.
 kill @e[type=item,nbt={Item:{tag:{tag:mt_mineral}}},distance=..0.5]
 
-# Fun effects to give user feedback that the transformation worked.
 execute at @s run particle minecraft:happy_villager ~ ~ ~ 0.3 1 0.3 100 250
 playsound minecraft:entity.experience_orb.pickup ambient @a[distance=..8] ~ ~ ~ 30
 
-# Relevant Tags for utility and compatibility
 tag @s add mt_trader
 tag @s add mt_trader_mineral
 tag @s add global.ignore
@@ -603,5 +600,4 @@ data merge entity @s {VillagerData:{profession:mason,level:5,type:desert},Persis
     }\
 }
 
-# Talk to me
 tellraw @e[type=player,distance=..16] [{"text":"<","color":"white"},{"text":"Mineralogist","color":"gold"},{"text":">","color":"white"},{"text":" Over the years I've obtained quite a collection of gems and minerals. I might share them with you if you can pay the asking price.","color":"green"}]

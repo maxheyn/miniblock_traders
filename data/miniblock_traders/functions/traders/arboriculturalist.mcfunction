@@ -6,14 +6,11 @@
 #                                                                 #
 # --------------------------------------------------------------- #
 
-# Destroy the item used to convert the villager.
 kill @e[type=item,nbt={Item:{tag:{tag:mt_sapling}}},distance=..0.5]
 
-# Fun effects to give user feedback that the transformation worked.
 execute at @s run particle minecraft:happy_villager ~ ~ ~ 0.3 1 0.3 100 250
 playsound minecraft:entity.experience_orb.pickup ambient @a[distance=..8] ~ ~ ~ 30
 
-# Relevant Tags for utility and compatibility
 tag @s add mt_trader
 tag @s add mt_trader_sapling
 tag @s add global.ignore
@@ -21,7 +18,6 @@ tag @s add global.ignore.pos
 tag @s add global.ignore.gui
 tag @s add global.ignore.kill
 
-# Apply villager trades.
 data merge entity @s {VillagerData:{profession:leatherworker,level:5,type:taiga},PersistenceRequired:1,CustomName:"\"Arborculturalist\"",\
     Offers: {\
         Recipes: [\
@@ -540,6 +536,4 @@ data merge entity @s {VillagerData:{profession:leatherworker,level:5,type:taiga}
     }\
 }
 
-
-# Talk to me
 tellraw @e[type=player,distance=..16] [{"text":"<","color":"white"},{"text":"Arborculturist","color":"gold"},{"text":">","color":"white"},{"text":" Logs and log accessories, coming right at you!","color":"green"}]

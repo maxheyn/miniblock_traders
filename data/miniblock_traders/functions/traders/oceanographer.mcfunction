@@ -6,14 +6,11 @@
 #                                                                 #
 # --------------------------------------------------------------- #
 
-# Destroy the item used to convert the villager.
 kill @e[type=item,nbt={Item:{tag:{tag:mt_ocean}}},distance=..0.5]
 
-# Fun effects to give user feedback that the transformation worked.
 execute at @s run particle minecraft:happy_villager ~ ~ ~ 0.3 1 0.3 100 250
 playsound minecraft:entity.experience_orb.pickup ambient @a[distance=..8] ~ ~ ~ 30
 
-# Relevant Tags for utility and compatibility
 tag @s add mt_trader
 tag @s add mt_trader_ocean
 tag @s add global.ignore
@@ -21,7 +18,6 @@ tag @s add global.ignore.pos
 tag @s add global.ignore.gui
 tag @s add global.ignore.kill
 
-# The below command split into lines to make it easier to read. It will not run unless it is a single line.
 data merge entity @s {VillagerData:{profession:cartographer,level:5,type:snow},PersistenceRequired:1,CustomName:"\"Oceanographer\"",\
     Offers: {\
         Recipes: [\
@@ -876,5 +872,4 @@ data merge entity @s {VillagerData:{profession:cartographer,level:5,type:snow},P
     }\
 }
 
-# Talk to me
 tellraw @e[type=player,distance=..16] [{"text":"<","color":"white"},{"text":"Oceanographer","color":"gold"},{"text":">","color":"white"},{"text":" The seas call to me, but these wares I could do without. Does anything look like it might interest you?","color":"green"}]
