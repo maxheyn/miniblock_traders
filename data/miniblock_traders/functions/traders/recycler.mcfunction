@@ -7,7 +7,7 @@
 # --------------------------------------------------------------- #
 
 # Destroy the item used to convert the villager.
-kill @e[type=item,nbt={Item:{tag:{tag:mt_recycle}}},distance=..0.5]
+kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{tag:"mt_recycle"}}}},distance=..0.5]
 
 # Fun effects to give user feedback that the transformation worked.
 execute at @s run particle minecraft:happy_villager ~ ~ ~ 0.3 1 0.3 100 250
@@ -21,34 +21,368 @@ tag @s add global.ignore.pos
 tag @s add global.ignore.gui
 tag @s add global.ignore.kill
 
-# The below command split into lines to make it easier to read. It will not run unless it is a single line.
-# data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},PersistenceRequired:1,CustomName:"\"Recycler\"",Offers:{Recipes:[
-#     {maxUses:9999999,buy:{id:carrot,Count:1,tag:{display:{Name:'[{"text":"Overgrown Carrot","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_carrot"}},sell:{id:emerald,Count:4}},
-#     {maxUses:9999999,buy:{id:wheat,Count:1,tag:{display:{Name:'[{"text":"Shimmering Wheat","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_bake"}},sell:{id:emerald,Count:4}},
-#     {maxUses:9999999,buy:{id:clay_ball,Count:1,tag:{display:{Name:'[{"text":"Sculpting Clay","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_sculpt"}},sell:{id:emerald,Count:12}},
-#     {maxUses:9999999,buy:{id:apple,Count:1,tag:{display:{Name:'[{"text":"Enchanted Red Delicious","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_apple"}},sell:{id:emerald,Count:12}},
-#     {maxUses:9999999,buy:{id:spruce_sapling,Count:1,tag:{display:{Name:'[{"text":"Cultivated Sapling","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_sapling"}},sell:{id:emerald,Count:12}},
-#     {maxUses:9999999,buy:{id:iron_ingot,Count:1,tag:{display:{Name:'[{"text":"Mastercrafted Iron","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_smithy"}},sell:{id:emerald,Count:12}},
-#     {maxUses:9999999,buy:{id:string,Count:1,tag:{display:{Name:'[{"text":"Fine Thread","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_clothes"}},sell:{id:emerald,Count:12}},
-#     {maxUses:9999999,buy:{id:beef,Count:1,tag:{display:{Name:'[{"text":"Wagyu Beef","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_chef"}},sell:{id:emerald,Count:12}},
-#     {maxUses:9999999,buy:{id:blaze_powder,Count:1,tag:{display:{Name:'[{"text":"Sparkling Blaze Powder","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_nether"}},sell:{id:emerald,Count:12}},
-#     {maxUses:9999999,buy:{id:glass_bottle,Count:1,tag:{display:{Name:'[{"text":"Crystal Phial","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_alchemy"}},sell:{id:emerald,Count:16}},
-#     {maxUses:9999999,buy:{id:brewing_stand,Count:1,tag:{display:{Name:'[{"text":"Mixology Station","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_bartender"}},sell:{id:emerald,Count:16}},
-#     {maxUses:9999999,buy:{id:light_weighted_pressure_plate,Count:1,tag:{display:{Name:'[{"text":"Forgotten Scrap Metal","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_steampunk"}},sell:{id:emerald,Count:16}},
-#     {maxUses:9999999,buy:{id:paper,Count:1,tag:{display:{Name:'[{"text":"Drenched Score Sheet","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_game"}},sell:{id:emerald,Count:16}},
-#     {maxUses:9999999,buy:{id:composter,Count:1,tag:{display:{Name:'[{"text":"Rotting Recycling Bin","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_recycle"}},sell:{id:emerald,Count:16}},
-#     {maxUses:9999999,buy:{id:player_head,Count:1,tag:{display:{Name:'[{"text":"Soaked Villager Plushie","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_plush",SkullOwner:{Id:[I;517903274,303778841,-1751461796,1896795803],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzkxNzc0ZThlNDNjZjUzNWUzMDk3MTZhMDNiNGE0YTgxMTA4NzkzZGU3NjhlYmQzZjEyMjRlNjgwMjFmZTk3ZSJ9fX0="}]}}}},sell:{id:emerald,Count:16}},
-#     {maxUses:9999999,buy:{id:redstone,Count:1,tag:{display:{Name:'[{"text":"Radiating Redstone","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_engineer"}},sell:{id:emerald,Count:18}},
-#     {maxUses:9999999,buy:{id:cactus,Count:1,tag:{display:{Name:'[{"text":"Budding Cactus","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_desert"}},sell:{id:emerald,Count:24}},
-#     {maxUses:9999999,buy:{id:cobblestone,Count:1,tag:{display:{Name:'[{"text":"Unusually Dense Rock","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_rock"}},sell:{id:emerald,Count:24}},
-#     {maxUses:9999999,buy:{id:gold_ingot,Count:1,tag:{display:{Name:'[{"text":"24-Karat Gold","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_mineral"}},sell:{id:emerald,Count:24}},
-#     {maxUses:9999999,buy:{id:peony,Count:1,tag:{display:{Name:'[{"text":"Fragrant Flower","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_flower"}},sell:{id:emerald,Count:36}},
-#     {maxUses:9999999,buy:{id:nautilus_shell,Count:1,tag:{display:{Name:'[{"text":"Ancient Shell","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_ocean"}},sell:{id:emerald,Count:36}},
-#     {maxUses:9999999,buy:{id:spyglass,Count:1,tag:{display:{Name:'[{"text":"Galilean Telescope","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_astronomy"}},sell:{id:emerald,Count:48}},
-#     {maxUses:9999999,buy:{id:honeycomb,Count:1,tag:{display:{Name:'[{"text":"Prismatic Honeycomb","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_bees"}},sell:{id:emerald,Count:48}},
-#     {maxUses:9999999,buy:{id:bookshelf,Count:1,tag:{display:{Name:'[{"text":"Endless Bookshelf","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_furnish"}},sell:{id:emerald,Count:48}},
-#     {maxUses:9999999,buy:{id:book,Count:1,tag:{display:{Name:'[{"text":"Book of Rituals","italic":false}]',Lore:['[{"text":"Villagers might be interested in this...","italic":false}]']},Enchantments:[{}],tag:"mt_ritual"}},sell:{id:emerald,Count:48}},
-# ]}}
+data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},PersistenceRequired:1,CustomName:"\"Recycler\"",\
+    Offers: {\
+        Recipes: [\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:glass_bottle",\
+                components: {\
+                    "minecraft:custom_name":"\"Crystal Phial\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:custom_data":{tag:"mt_alchemy"},\
+                    "minecraft:enchantment_glint_override":true\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:spruce_sapling",\
+                components: {\
+                    "minecraft:custom_name":"\"Cultivated Sapling\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:custom_data":{tag:"mt_sapling"},\
+                    "minecraft:enchantment_glint_override":true\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:spyglass",\
+                components: {\
+                    "minecraft:custom_name":"\"Galilean Telescope\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:max_stack_size": 64,\
+                    "minecraft:custom_data":{tag:"mt_astronomy"},\
+                    "minecraft:enchantment_glint_override":true\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:wheat",\
+                components: {\
+                    "minecraft:custom_name":"\"Shimmering Wheat\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:custom_data":{tag:"mt_bake"},\
+                    "minecraft:enchantment_glint_override":true\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:brewing_stand",\
+                components: {\
+                    "minecraft:custom_name":"\"Mixology Station\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:custom_data":{tag:"mt_bartender"},\
+                    "minecraft:enchantment_glint_override":true\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:honeycomb",\
+                components: {\
+                    "minecraft:custom_name":"\"Prismatic Honeycomb\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:custom_data":{tag:"mt_bees"},\
+                    "minecraft:enchantment_glint_override":true\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:beef",\
+                components: {\
+                    "minecraft:custom_name":"\"Chilled Kobe Wagyu Beef\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:custom_data":{tag:"mt_chef"},\
+                    "minecraft:enchantment_glint_override":true\
+                }\
+            }\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:redstone",\
+                components: {\
+                    "minecraft:custom_name":"\"Radiating Redstone\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:custom_data":{tag:"mt_engineer"},\
+                    "minecraft:enchantment_glint_override":true\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:prize_pottery_sherd",\
+                components: {\
+                    "minecraft:custom_name":"\"Pristine Pottery Sherd\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:custom_data":{tag:"mt_desert"},\
+                    "minecraft:enchantment_glint_override":true\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:bookshelf",\
+                components: {\
+                    "minecraft:custom_name":"\"Endless Bookshelf\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:custom_data":{tag:"mt_furnish"},\
+                    "minecraft:enchantment_glint_override":true\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:paper",\
+                components: {\
+                    "minecraft:custom_name":"\"Drenched Score Sheet\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:custom_data":{tag:"mt_game"},\
+                    "minecraft:enchantment_glint_override":true\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:torchflower_seeds",\
+                components: {\
+                    "minecraft:custom_name":"\"Potent Seed Specimen\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:custom_data":{tag:"mt_flower"},\
+                    "minecraft:enchantment_glint_override":true\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:raw_copper",\
+                components: {\
+                    "minecraft:custom_name":"\"Glistening Mineral Sample\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:custom_data":{tag:"mt_mineral"},\
+                    "minecraft:enchantment_glint_override":true\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:blaze_powder",\
+                components: {\
+                   "minecraft:custom_name":"\"Sparkling Blaze Powder\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:custom_data":{tag:"mt_nether"},\
+                    "minecraft:enchantment_glint_override":true\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:nautilus_shell",\
+                components: {\
+                    "minecraft:custom_name":"\"Ancient Shell\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:custom_data":{tag:"mt_ocean"},\
+                    "minecraft:enchantment_glint_override":true\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:carrot",\
+                components: {\
+                    "minecraft:custom_name":"\"Overgrown Carrot\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:custom_data":{tag:"mt_carrot"},\
+                    "minecraft:enchantment_glint_override":true\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:coal",\
+                components: {\
+                    "minecraft:custom_name":"\"Unusually Dense Rock\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:custom_data":{tag:"mt_rock"},\
+                    "minecraft:enchantment_glint_override":true\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:player_head",\
+                components: {\
+                    "minecraft:custom_name":"\"Soaked Villager Plushie\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:custom_data":{tag:"mt_plush"},\
+                    "minecraft:enchantment_glint_override":true,\
+                    "minecraft:profile": {\
+                        "properties": [{\
+                            "name": "textures",\
+                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzkxNzc0ZThlNDNjZjUzNWUzMDk3MTZhMDNiNGE0YTgxMTA4NzkzZGU3NjhlYmQzZjEyMjRlNjgwMjFmZTk3ZSJ9fX0="\
+                        }]\
+                    }\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:apple",\
+                components: {\
+                    "minecraft:custom_name":"\"Enchanted Red Delicious\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:custom_data":{tag:"mt_apple"},\
+                    "minecraft:enchantment_glint_override":true\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:composter",\
+                components: {\
+                    "minecraft:custom_name":"\"Rotting Recycling Bin\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:custom_data":{tag:"mt_recycle"},\
+                    "minecraft:enchantment_glint_override":true\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:book",\
+                components: {\
+                    "minecraft:custom_name":"\"Book of Rituals\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:custom_data":{tag:"mt_ritual"},\
+                    "minecraft:enchantment_glint_override":true\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:clay_ball",\
+                components: {\
+                    "minecraft:custom_name":"\"Sculpting Clay\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:custom_data":{tag:"mt_sculpt"},\
+                    "minecraft:enchantment_glint_override":true\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:iron_ingot",\
+                components: {\
+                    "minecraft:custom_name":"\"Mastercrafted Iron\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:custom_data":{tag:"mt_smithy"},\
+                    "minecraft:enchantment_glint_override":true\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:light_weighted_pressure_plate",\
+                components: {\
+                    "minecraft:custom_name":"\"Forgotten Scrap Metal\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:custom_data":{tag:"mt_steampunk"},\
+                    "minecraft:enchantment_glint_override":true\
+                }\
+            },\
+        },\
+        {\
+            maxUses: 999999,\
+            xp: 0,\
+            sell: {count: 1, id: "minecraft:emerald"},\
+            buy: {count: 1, id: "minecraft:string",\
+                components: {\
+                    "minecraft:custom_name":"\"Fine Thread\"",\
+                    "minecraft:lore":["\"Villagers might be interested in this...\""],\
+                    "minecraft:rarity":"rare",\
+                    "minecraft:custom_data":{tag:"mt_clothes"},\
+                    "minecraft:enchantment_glint_override":true\
+                }\
+            },\
+        }]\
+    }\
+}
 
 # Talk to me
 tellraw @e[type=player,distance=..16] [{"text":"<","color":"white"},{"text":"Recycler","color":"gold"},{"text":">","color":"white"},{"text":" Got some extra junk in your trunk? Your trash is my treasure.","color":"green"}]
