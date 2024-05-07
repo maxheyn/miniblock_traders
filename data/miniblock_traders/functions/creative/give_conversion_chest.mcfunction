@@ -270,7 +270,7 @@ give @p chest[custom_name="\"[MT] Converstion Chest\"",rarity="epic",enchantment
     {\
         slot:23,item:{\
             id:"minecraft:light_weighted_pressure_plate",count:64,components:{\
-                "minecraft:custom_name":"\"Forgotten Scrap Metal (Steampunker)\"",\
+                "minecraft:custom_name":"\"Forgotten Scrap (Steampunker)\"",\
                 "minecraft:lore":["\"Villagers might be interested in this...\""],\
                 "minecraft:rarity":"rare",\
                 "minecraft:custom_data":{tag:"mt_steampunk"},\

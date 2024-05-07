@@ -30,7 +30,7 @@ Get unique decorative miniblocks from special traders!<br>
 
 <h3>All Traders</h3>
 <img src=".github\resources\VillagersList.png">
-<p align="center">There are 22 (only 20 pictured) different traders and over 400 unique miniblocks that they can trade you!</p>
+<p align="center">There are 20+ different traders and over 500 unique miniblocks that they can trade you!</p>
 
 <h3>Villager Conversion Items</h3>
 <img src=".github\resources\SpecialItem.PNG">
@@ -45,29 +45,29 @@ Get unique decorative miniblocks from special traders!<br>
 <h3>Conversion Item Locations and Drop Chances</h3>
       1. Pomologist - Enchanted Red Delicious (1/4096 from oak leaves)<br>
       2. Olericulturist - Overgrown Carrot (1/512 from harvesting carrots)<br>
-      3. Horticulturist - Fragrant Flower (1/2 from Pillager Outpost chests)<br>
+      3. Horticulturist - Fragrant Flower (1/8 from Sniffer digging)<br>
       4. Arboriculturalist - Cultivated Sapling (1/4096 from spruce leaves)<br>
-      5. Mineralogist - 24-Karat Gold (1/4 from Spawner Dungeon chests)<br>
-      6. Petrologist - Unusually Dense Rock (1/12 from Abandoned Mineshaft chests)<br>
-      7. Netherographer - Sparkling Blaze Powder (1/4 from Ruined Portal chests)<br>
-      8. Oceanographer - Ancient Shell (1/3 from Big Underwater Ruin chests)<br>
-      9. Eremologist - Budding Cactus (1/12 from Desert Pyramid chests)<br>
-      10. Furnisher - Endless Bookshelf (1/3 from Stronghold Library chests)<br>
-      11. Steampunker - Forgotten Scrap Metal (1/24 chance when fishing up a Treasure)<br>
-      12. Engineer - Radiating Redstone (1/256 from mining redstone ore)<br>
-      13. Alchemist - Crystal Phial (1/24 chance when fishing up a Treasure)<br>
+      5. Mineralogist - Glistening Mineral Sample (1/3 from Spawner Dungeon chests)<br>
+      6. Petrologist - Unusually Dense Rock (1/5 from Abandoned Mineshaft chests)<br>
+      7. Netherographer - Sparkling Blaze Powder (1/2 from Ruined Portal chests)<br>
+      8. Oceanographer - Ancient Shell (1/2 from Big Underwater Ruin chests)<br>
+      9. Eremologist - Pristine Pottery Sherd (1/9 from Desert Pyramid archaeology)<br>
+      10. Furnisher - Endless Bookshelf (1/2 from Stronghold Library chests)<br>
+      11. Steampunker - Forgotten Scrap (1/20 chance when fishing up a Treasure)<br>
+      12. Engineer - Radiating Redstone (1/256 from mining any redstone ore)<br>
+      13. Alchemist - Crystal Phial (1/20 chance when fishing up a Treasure)<br>
       14. Sculptor - Sculpting Clay (1/256 from harvesting clay)<br>
-      15. Tailor - Fine Thread (1/2 from Village Shepherd chests)<br>
+      15. Tailor - Fine Thread (1/3 from Woodland Mansion chests)<br>
       16. Beekeeper - Prismatic Honeycomb (100% from Jungle Temple chests)<br>
-      17. Blacksmith - Mastercrafted Iron (1/2 from Village Armorer chests)<br>
-      18. Ritualist - Book of Rituals (1/3 from Stronghold Library chests)<br>
+      17. Blacksmith - Mastercrafted Iron (1/3 from Shipwreck Treasure chests)<br>
+      18. Ritualist - Book of Rituals (1/2 from Stronghold Library chests)<br>
       19. Baker - Shimmering Wheat (1/512 from harvesting Wheat)<br>
-      20. Chef - Wagyu Beef (1/2 from Village Butcher chests)<br>
-      21. Bartender - Mixology Station (1/24 chance when fishing up a Treasure)<br>
+      20. Chef - Chilled Kobe Wagyu Beef (100% from Ancient City ice chests)<br>
+      21. Bartender - Mixology Station (1/20 chance when fishing up a Treasure)<br>
       22. Astronomer - Galilean Spyglass (100% from Igloo chests)<br>
       23. Plushie Maniac - Soaked Villager Plushie (1/24 chance when fishing up a Treasure)<br>
-      24. Gamemaster - Drenched Score Sheet (1/24 chance when fishing up a Treasure)<br>
-      25. Recycler - Rotting Recycling Bin (1/24 chance when fishing up a Treasure)
+      24. Gamemaster - Drenched Score Sheet (1/20 chance when fishing up a Treasure)<br>
+      25. Recycler - Rotting Recycling Bin (1/20 chance when fishing up a Treasure)
 
 <h3>Sample Trades</h3>
 <img src=".github\resources\Arborculturalist.PNG">
