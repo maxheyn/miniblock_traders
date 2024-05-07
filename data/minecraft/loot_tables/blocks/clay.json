@@ -15,14 +15,16 @@
                                 {
                                     "condition": "minecraft:match_tool",
                                     "predicate": {
-                                        "enchantments": [
-                                            {
-                                                "enchantment": "minecraft:silk_touch",
-                                                "levels": {
-                                                    "min": 1
+                                        "predicates": {
+                                            "minecraft:enchantments": [
+                                                {
+                                                    "enchantment": "minecraft:silk_touch",
+                                                    "levels": {
+                                                        "min": 1
+                                                    }
                                                 }
-                                            }
-                                        ]
+                                            ]
+                                        }
                                     }
                                 }
                             ]
@@ -58,8 +60,16 @@
                     "weight": 1,
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'[{\"text\":\"Sculpting Clay\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_sculpt\"}"
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_data":{"tag":"mt_sculpt"},
+                                "minecraft:custom_name": "\"Sculpting Clay\"",
+                                "minecraft:enchantment_glint_override":true,
+                                "minecraft:rarity": "rare",
+                                "minecraft:lore": [
+                                    "\"Villagers might be interested in this...\""
+                                ]
+                            }
                         }
                     ]
                 }

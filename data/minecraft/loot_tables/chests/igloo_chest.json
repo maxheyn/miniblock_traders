@@ -108,8 +108,17 @@
                     "weight": 1,
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'[{\"text\":\"Galilean Telescope\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_astronomy\"}"
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_data":{"tag":"mt_astronomy"},
+                                "minecraft:custom_name": "\"Galilean Telescope\"",
+                                "minecraft:enchantment_glint_override":true,
+                                "minecraft:rarity": "rare",
+                                "minecraft:lore": [
+                                    "\"Villagers might be interested in this...\""
+                                ],
+                                "minecraft:max_stack_size": 64
+                            }
                         }
                     ]
                 }

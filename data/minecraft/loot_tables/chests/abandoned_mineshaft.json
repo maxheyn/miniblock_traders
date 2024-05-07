@@ -1,337 +1,345 @@
 {
-  "type": "minecraft:chest",
-  "pools": [
-      {
-          "rolls": 1,
-          "bonus_rolls": 0,
-          "entries": [
-              {
-                  "type": "minecraft:item",
-                  "name": "minecraft:golden_apple",
-                  "weight": 20
-              },
-              {
-                  "type": "minecraft:item",
-                  "name": "minecraft:enchanted_golden_apple"
-              },
-              {
-                  "type": "minecraft:item",
-                  "name": "minecraft:name_tag",
-                  "weight": 30
-              },
-              {
-                  "type": "minecraft:item",
-                  "name": "minecraft:book",
-                  "weight": 10,
-                  "functions": [
-                      {
-                          "function": "minecraft:enchant_randomly"
-                      }
-                  ]
-              },
-              {
-                  "type": "minecraft:item",
-                  "name": "minecraft:iron_pickaxe",
-                  "weight": 5
-              },
-              {
-                  "type": "minecraft:empty",
-                  "weight": 5
-              }
-          ]
-      },
-      {
-          "rolls": {
-              "type": "minecraft:uniform",
-              "min": 2,
-              "max": 4
-          },
-          "bonus_rolls": 0,
-          "entries": [
-              {
-                  "type": "minecraft:item",
-                  "name": "minecraft:iron_ingot",
-                  "weight": 10,
-                  "functions": [
-                      {
-                          "function": "minecraft:set_count",
-                          "count": {
-                              "type": "minecraft:uniform",
-                              "min": 1,
-                              "max": 5
-                          },
-                          "add": false
-                      }
-                  ]
-              },
-              {
-                  "type": "minecraft:item",
-                  "name": "minecraft:gold_ingot",
-                  "weight": 5,
-                  "functions": [
-                      {
-                          "function": "minecraft:set_count",
-                          "count": {
-                              "type": "minecraft:uniform",
-                              "min": 1,
-                              "max": 3
-                          },
-                          "add": false
-                      }
-                  ]
-              },
-              {
-                  "type": "minecraft:item",
-                  "name": "minecraft:redstone",
-                  "weight": 5,
-                  "functions": [
-                      {
-                          "function": "minecraft:set_count",
-                          "count": {
-                              "type": "minecraft:uniform",
-                              "min": 4,
-                              "max": 9
-                          },
-                          "add": false
-                      }
-                  ]
-              },
-              {
-                  "type": "minecraft:item",
-                  "name": "minecraft:lapis_lazuli",
-                  "weight": 5,
-                  "functions": [
-                      {
-                          "function": "minecraft:set_count",
-                          "count": {
-                              "type": "minecraft:uniform",
-                              "min": 4,
-                              "max": 9
-                          },
-                          "add": false
-                      }
-                  ]
-              },
-              {
-                  "type": "minecraft:item",
-                  "name": "minecraft:diamond",
-                  "weight": 3,
-                  "functions": [
-                      {
-                          "function": "minecraft:set_count",
-                          "count": {
-                              "type": "minecraft:uniform",
-                              "min": 1,
-                              "max": 2
-                          },
-                          "add": false
-                      }
-                  ]
-              },
-              {
-                  "type": "minecraft:item",
-                  "name": "minecraft:coal",
-                  "weight": 10,
-                  "functions": [
-                      {
-                          "function": "minecraft:set_count",
-                          "count": {
-                              "type": "minecraft:uniform",
-                              "min": 3,
-                              "max": 8
-                          },
-                          "add": false
-                      }
-                  ]
-              },
-              {
-                  "type": "minecraft:item",
-                  "name": "minecraft:bread",
-                  "weight": 15,
-                  "functions": [
-                      {
-                          "function": "minecraft:set_count",
-                          "count": {
-                              "type": "minecraft:uniform",
-                              "min": 1,
-                              "max": 3
-                          },
-                          "add": false
-                      }
-                  ]
-              },
-              {
-                  "type": "minecraft:item",
-                  "name": "minecraft:glow_berries",
-                  "weight": 15,
-                  "functions": [
-                      {
-                          "function": "minecraft:set_count",
-                          "count": {
-                              "type": "minecraft:uniform",
-                              "min": 3,
-                              "max": 6
-                          },
-                          "add": false
-                      }
-                  ]
-              },
-              {
-                  "type": "minecraft:item",
-                  "name": "minecraft:melon_seeds",
-                  "weight": 10,
-                  "functions": [
-                      {
-                          "function": "minecraft:set_count",
-                          "count": {
-                              "type": "minecraft:uniform",
-                              "min": 2,
-                              "max": 4
-                          },
-                          "add": false
-                      }
-                  ]
-              },
-              {
-                  "type": "minecraft:item",
-                  "name": "minecraft:pumpkin_seeds",
-                  "weight": 10,
-                  "functions": [
-                      {
-                          "function": "minecraft:set_count",
-                          "count": {
-                              "type": "minecraft:uniform",
-                              "min": 2,
-                              "max": 4
-                          },
-                          "add": false
-                      }
-                  ]
-              },
-              {
-                  "type": "minecraft:item",
-                  "name": "minecraft:beetroot_seeds",
-                  "weight": 10,
-                  "functions": [
-                      {
-                          "function": "minecraft:set_count",
-                          "count": {
-                              "type": "minecraft:uniform",
-                              "min": 2,
-                              "max": 4
-                          },
-                          "add": false
-                      }
-                  ]
-              }
-          ]
-      },
-      {
-          "rolls": 3,
-          "bonus_rolls": 0,
-          "entries": [
-              {
-                  "type": "minecraft:item",
-                  "name": "minecraft:rail",
-                  "weight": 20,
-                  "functions": [
-                      {
-                          "function": "minecraft:set_count",
-                          "count": {
-                              "type": "minecraft:uniform",
-                              "min": 4,
-                              "max": 8
-                          },
-                          "add": false
-                      }
-                  ]
-              },
-              {
-                  "type": "minecraft:item",
-                  "name": "minecraft:powered_rail",
-                  "weight": 5,
-                  "functions": [
-                      {
-                          "function": "minecraft:set_count",
-                          "count": {
-                              "type": "minecraft:uniform",
-                              "min": 1,
-                              "max": 4
-                          },
-                          "add": false
-                      }
-                  ]
-              },
-              {
-                  "type": "minecraft:item",
-                  "name": "minecraft:detector_rail",
-                  "weight": 5,
-                  "functions": [
-                      {
-                          "function": "minecraft:set_count",
-                          "count": {
-                              "type": "minecraft:uniform",
-                              "min": 1,
-                              "max": 4
-                          },
-                          "add": false
-                      }
-                  ]
-              },
-              {
-                  "type": "minecraft:item",
-                  "name": "minecraft:activator_rail",
-                  "weight": 5,
-                  "functions": [
-                      {
-                          "function": "minecraft:set_count",
-                          "count": {
-                              "type": "minecraft:uniform",
-                              "min": 1,
-                              "max": 4
-                          },
-                          "add": false
-                      }
-                  ]
-              },
-              {
-                  "type": "minecraft:item",
-                  "name": "minecraft:torch",
-                  "weight": 15,
-                  "functions": [
-                      {
-                          "function": "minecraft:set_count",
-                          "count": {
-                              "type": "minecraft:uniform",
-                              "min": 1,
-                              "max": 16
-                          },
-                          "add": false
-                      }
-                  ]
-              }
-          ]
-      },
-      {
-          "rolls": 1,
-          "entries": [
-              {
-                  "type": "minecraft:empty",
-                  "weight": 11
-              },
-              {
-                  "type": "minecraft:item",
-                  "name": "minecraft:cobblestone",
-                  "weight": 1,
-                  "functions": [
-                      {
-                          "function": "minecraft:set_nbt",
-                          "tag": "{display:{Name:'[{\"text\":\"Unusually Dense Rock\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_rock\"}"
-                      }
-                  ]
-              }
-          ]
-      }
-  ],
-  "random_sequence": "minecraft:chests/abandoned_mineshaft"
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "bonus_rolls": 0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_apple",
+                    "weight": 20
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_golden_apple"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:name_tag",
+                    "weight": 30
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:book",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_pickaxe",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:empty",
+                    "weight": 5
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 4
+            },
+            "bonus_rolls": 0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_ingot",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 5
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gold_ingot",
+                    "weight": 5,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 3
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:redstone",
+                    "weight": 5,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 4,
+                                "max": 9
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:lapis_lazuli",
+                    "weight": 5,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 4,
+                                "max": 9
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 2
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:coal",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 3,
+                                "max": 8
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:bread",
+                    "weight": 15,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 3
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:glow_berries",
+                    "weight": 15,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 3,
+                                "max": 6
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:melon_seeds",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 2,
+                                "max": 4
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:pumpkin_seeds",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 2,
+                                "max": 4
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:beetroot_seeds",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 2,
+                                "max": 4
+                            },
+                            "add": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 3,
+            "bonus_rolls": 0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:rail",
+                    "weight": 20,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 4,
+                                "max": 8
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:powered_rail",
+                    "weight": 5,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 4
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:detector_rail",
+                    "weight": 5,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 4
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:activator_rail",
+                    "weight": 5,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 4
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:torch",
+                    "weight": 15,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 16
+                            },
+                            "add": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:coal",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_data":{"tag":"mt_rock"},
+                                "minecraft:custom_name": "\"Unusually Dense Rock\"",
+                                "minecraft:enchantment_glint_override":true,
+                                "minecraft:rarity": "rare",
+                                "minecraft:lore": [
+                                    "\"Villagers might be interested in this...\""
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "random_sequence": "minecraft:chests/abandoned_mineshaft"
 }

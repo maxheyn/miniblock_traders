@@ -4,22 +4,90 @@
         {
             "rolls": {
                 "type": "minecraft:uniform",
-                "min": 1,
+                "min": 3,
+                "max": 6
+            },
+            "bonus_rolls": 0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_ingot",
+                    "weight": 90,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 5
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gold_ingot",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 5
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:emerald",
+                    "weight": 40,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 5
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:experience_bottle",
+                    "weight": 5
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "type": "minecraft:uniform",
+                "min": 2,
                 "max": 5
             },
             "bonus_rolls": 0,
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:white_wool",
-                    "weight": 6,
+                    "name": "minecraft:iron_nugget",
+                    "weight": 50,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
                                 "type": "minecraft:uniform",
                                 "min": 1,
-                                "max": 8
+                                "max": 10
                             },
                             "add": false
                         }
@@ -27,15 +95,15 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:black_wool",
-                    "weight": 3,
+                    "name": "minecraft:gold_nugget",
+                    "weight": 10,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
                                 "type": "minecraft:uniform",
                                 "min": 1,
-                                "max": 3
+                                "max": 10
                             },
                             "add": false
                         }
@@ -43,71 +111,15 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:gray_wool",
-                    "weight": 2,
+                    "name": "minecraft:lapis_lazuli",
+                    "weight": 20,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
                                 "type": "minecraft:uniform",
                                 "min": 1,
-                                "max": 3
-                            },
-                            "add": false
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:brown_wool",
-                    "weight": 2,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "type": "minecraft:uniform",
-                                "min": 1,
-                                "max": 3
-                            },
-                            "add": false
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:light_gray_wool",
-                    "weight": 2,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "type": "minecraft:uniform",
-                                "min": 1,
-                                "max": 3
-                            },
-                            "add": false
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:emerald"
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:shears"
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:wheat",
-                    "weight": 6,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "type": "minecraft:uniform",
-                                "min": 1,
-                                "max": 6
+                                "max": 10
                             },
                             "add": false
                         }
@@ -120,21 +132,29 @@
             "entries": [
                 {
                     "type": "minecraft:empty",
-                    "weight": 1
+                    "weight": 2
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:string",
+                    "name": "minecraft:iron_ingot",
                     "weight": 1,
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'[{\"text\":\"Fine Thread\",\"italic\":false}]',Lore:['[{\"text\":\"Villagers might be interested in this...\",\"italic\":false}]']},Enchantments:[{}],tag:\"mt_clothes\"}"
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_data":{"tag":"mt_smithy"},
+                                "minecraft:custom_name": "\"Mastercrafted Iron\"",
+                                "minecraft:enchantment_glint_override":true,
+                                "minecraft:rarity": "rare",
+                                "minecraft:lore": [
+                                    "\"Villagers might be interested in this...\""
+                                ]
+                            }
                         }
                     ]
                 }
             ]
         }
     ],
-    "random_sequence": "minecraft:chests/village/village_shepherd"
+    "random_sequence": "minecraft:chests/shipwreck_treasure"
 }
