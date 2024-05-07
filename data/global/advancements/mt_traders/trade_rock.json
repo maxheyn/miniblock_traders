@@ -9,14 +9,21 @@
             "color": "green"
         },
         "icon": {
-            "item": "minecraft:player_head",
-            "nbt": "{SkullOwner:{Id:[I;-1263067421,-2117550945,1733196644,-992276696],Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDU0ZDljNDg4YzNmYmRlNTQ1NGUzODYxOWY5Y2M1YjViYThjNmMwMTg2ZjhhYTFkYTYwOTAwZmNiYzNlYTYifX19'}]}}}"
+            "id": "minecraft:player_head",
+            "components": {
+                "profile": {
+                    "properties": [{
+                        "name": "textures",
+                        "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTQ0YzFlOGU4MjY3MmJiYTU4OTJmZDQ2NTlmOGRhZDg0ZDE1NDVkYjI2ZGI1MmVjYzkxOGYzMmExMzkxNTEzIn19fQ=="
+                    }]
+                }
+            }
         },
         "frame": "goal",
         "show_toast": true,
         "announce_to_chat": true
     },
-    "parent": "global:traders/trade_any",
+    "parent": "global:mt_traders/trade_any",
     "criteria": {
         "trade1": {
             "trigger": "minecraft:villager_trade",

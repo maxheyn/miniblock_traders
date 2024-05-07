@@ -1,0 +1,327 @@
+{
+    "display": {
+        "title": {
+            "text": "Miniblock Tycoon",
+            "italic": false
+        },
+        "description": {
+            "text": "Obtain ALL Miniblock Traders conversion items!",
+            "color": "dark_purple"
+        },
+        "icon": {
+            "id": "minecraft:player_head",
+            "components": {
+                "profile": {
+                    "properties": [{
+                        "name": "textures",
+                        "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmQwYmRmMzliNTRmNDk2OTJmYjM3OWI0ZWIwNGQxZWI0YTAwZTc4ZWQzOTExYWQzYjYzYTdlNWJmMzE3NjgzNyJ9fX0="
+                    }]
+                }
+            }
+        },
+        "frame": "challenge"
+    },
+    "parent": "global:mt_items/obtain_conv",
+    "criteria": {
+        "mt_apple": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_apple"}
+                        }
+                    }
+                ]
+            }
+        },
+        "mt_sapling": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_sapling"}
+                        }
+                    }
+                ]
+            }
+        },
+        "mt_carrot": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_carrot"}
+                        }
+                    }
+                ]
+            }
+        },
+        "mt_flower": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_flower"}
+                        }
+                    }
+                ]
+            }
+        },
+        "mt_bees": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_bees"}
+                        }
+                    }
+                ]
+            }
+        },
+        "mt_mineral": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_mineral"}
+                        }
+                    }
+                ]
+            }
+        },
+        "mt_rock": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_rock"}
+                        }
+                    }
+                ]
+            }
+        },
+        "mt_nether": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_nether"}
+                        }
+                    }
+                ]
+            }
+        },
+        "mt_ocean": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_ocean"}
+                        }
+                    }
+                ]
+            }
+        },
+        "mt_desert": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_desert"}
+                        }
+                    }
+                ]
+            }
+        },
+        "mt_astronomy": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_astronomy"}
+                        }
+                    }
+                ]
+            }
+        },
+        "mt_furnish": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_furnish"}
+                        }
+                    }
+                ]
+            }
+        },
+        "mt_sculpt": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_sculpt"}
+                        }
+                    }
+                ]
+            }
+        },
+        "mt_clothes": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_clothes"}
+                        }
+                    }
+                ]
+            }
+        },
+        "mt_plush": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_plush"}
+                        }
+                    }
+                ]
+            }
+        },
+        "mt_game": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_game"}
+                        }
+                    }
+                ]
+            }
+        },
+        "mt_smithy": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_smithy"}
+                        }
+                    }
+                ]
+            }
+        },
+        "mt_alchemy": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_alchemy"}
+                        }
+                    }
+                ]
+            }
+        },
+        "mt_engineer": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_engineer"}
+                        }
+                    }
+                ]
+            }
+        },
+        "mt_steampunk": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_steampunk"}
+                        }
+                    }
+                ]
+            }
+        },
+        "mt_ritual": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_ritual"}
+                        }
+                    }
+                ]
+            }
+        },
+        "mt_chef": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_chef"}
+                        }
+                    }
+                ]
+            }
+        },
+        "mt_bake": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_bake"}
+                        }
+                    }
+                ]
+            }
+        },
+        "mt_bartender": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_bartender"}
+                        }
+                    }
+                ]
+            }
+        },
+        "mt_recycle": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data":{"tag":"mt_recycle"}
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

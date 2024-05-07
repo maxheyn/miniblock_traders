@@ -39,14 +39,21 @@
 				"color": "green"
 			}
 		],
-		"icon": {
-			"item": "minecraft:player_head",
-			"nbt": "{SkullOwner:{Id:[I;517903274,303778841,-1751461796,1896795803],Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzkxNzc0ZThlNDNjZjUzNWUzMDk3MTZhMDNiNGE0YTgxMTA4NzkzZGU3NjhlYmQzZjEyMjRlNjgwMjFmZTk3ZSJ9fX0='}]}}}"
-		},
+        "icon": {
+            "id": "minecraft:player_head",
+            "components": {
+                "profile": {
+                    "properties": [{
+                        "name": "textures",
+                        "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzkxNzc0ZThlNDNjZjUzNWUzMDk3MTZhMDNiNGE0YTgxMTA4NzkzZGU3NjhlYmQzZjEyMjRlNjgwMjFmZTk3ZSJ9fX0="
+                    }]
+                }
+            }
+        },
 		"announce_to_chat": false,
 		"show_toast": false
 	},
-	"parent": "global:maxheyn",
+	"parent": "global:maxypoo",
 	"criteria": {
 		"trigger": {
 			"trigger": "minecraft:tick"

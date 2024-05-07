@@ -1,28 +1,35 @@
 {
     "display": {
         "title": {
-            "text": "Fuuuuutuuuureee!!!",
+            "text": "I'm Lovin' It",
             "italic": false
         },
         "description": {
-            "text": "Trade with all future/fantasy Miniblock Traders.",
+            "text": "Trade with all food Miniblock Traders.",
             "color": "green"
         },
         "icon": {
-            "item": "minecraft:player_head",
-            "nbt": "{SkullOwner:{Id:[I;-610086242,-179287940,-1325760886,2047505618],Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmE0NGUyYjgzODhkZjU5M2E4NWY3ZDU0NDQ1Y2U3ODc5NmNlZTZiMGJjYjdhNTVhY2JkZDFjYmQ4ZjM1YWVmMiJ9fX0='}]}}}"
+            "id": "minecraft:player_head",
+            "components": {
+                "profile": {
+                    "properties": [{
+                        "name": "textures",
+                        "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzhmYWE0Y2U3OTA1NGNjOWI4ZTFjOWRlNDgyM2MyMmNjMDY5ODRhOGE0ZjZkZTYyYmRhOTBiNTJjNWZlY2RkNiJ9fX0="
+                    }]
+                }
+            }
         },
         "frame": "goal",
         "show_toast": true,
         "announce_to_chat": true
     },
-    "parent": "global:traders/trade_any",
+    "parent": "global:mt_traders/trade_any",
     "criteria": {
         "trade1": {
             "trigger": "minecraft:villager_trade",
             "conditions": {
                 "villager": {
-                    "nbt": "{Tags:[\"mt_trader_engineer\"]}"
+                    "nbt": "{Tags:[\"mt_trader_chef\"]}"
                 }
             }
         },
@@ -30,7 +37,7 @@
             "trigger": "minecraft:villager_trade",
             "conditions": {
                 "villager": {
-                    "nbt": "{Tags:[\"mt_trader_steampunk\"]}"
+                    "nbt": "{Tags:[\"mt_trader_bake\"]}"
                 }
             }
         },
@@ -38,7 +45,7 @@
             "trigger": "minecraft:villager_trade",
             "conditions": {
                 "villager": {
-                    "nbt": "{Tags:[\"mt_trader_ritual\"]}"
+                    "nbt": "{Tags:[\"mt_trader_bartender\"]}"
                 }
             }
         }
