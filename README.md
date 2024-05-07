@@ -65,7 +65,7 @@ Get unique decorative miniblocks from special traders!<br>
       20. Chef - Chilled Kobe Wagyu Beef (100% from Ancient City ice chests)<br>
       21. Bartender - Mixology Station (1/20 chance when fishing up a Treasure)<br>
       22. Astronomer - Galilean Spyglass (100% from Igloo chests)<br>
-      23. Plushie Maniac - Soaked Villager Plushie (1/24 chance when fishing up a Treasure)<br>
+      23. Plushie Maniac - Soaked Villager Plushie (1/20 chance when fishing up a Treasure)<br>
       24. Gamemaster - Drenched Score Sheet (1/20 chance when fishing up a Treasure)<br>
       25. Recycler - Rotting Recycling Bin (1/20 chance when fishing up a Treasure)
 
