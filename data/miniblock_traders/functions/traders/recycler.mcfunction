@@ -27,7 +27,7 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 16, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:glass_bottle",\
                 components: {\
                     "minecraft:custom_name":"\"Crystal Phial\"",\
@@ -41,7 +41,7 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 6, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:spruce_sapling",\
                 components: {\
                     "minecraft:custom_name":"\"Cultivated Sapling\"",\
@@ -55,7 +55,7 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 64, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:spyglass",\
                 components: {\
                     "minecraft:custom_name":"\"Galilean Telescope\"",\
@@ -70,7 +70,7 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 8, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:wheat",\
                 components: {\
                     "minecraft:custom_name":"\"Shimmering Wheat\"",\
@@ -84,7 +84,7 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 16, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:brewing_stand",\
                 components: {\
                     "minecraft:custom_name":"\"Mixology Station\"",\
@@ -98,7 +98,7 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 64, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:honeycomb",\
                 components: {\
                     "minecraft:custom_name":"\"Prismatic Honeycomb\"",\
@@ -112,7 +112,7 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 24, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:beef",\
                 components: {\
                     "minecraft:custom_name":"\"Chilled Kobe Wagyu Beef\"",\
@@ -126,7 +126,7 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 16, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:redstone",\
                 components: {\
                     "minecraft:custom_name":"\"Radiating Redstone\"",\
@@ -140,7 +140,7 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 24, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:prize_pottery_sherd",\
                 components: {\
                     "minecraft:custom_name":"\"Pristine Pottery Sherd\"",\
@@ -154,7 +154,7 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 32, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:bookshelf",\
                 components: {\
                     "minecraft:custom_name":"\"Endless Bookshelf\"",\
@@ -168,7 +168,7 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 16, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:paper",\
                 components: {\
                     "minecraft:custom_name":"\"Drenched Score Sheet\"",\
@@ -182,7 +182,7 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 8, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:torchflower_seeds",\
                 components: {\
                     "minecraft:custom_name":"\"Potent Seed Specimen\"",\
@@ -196,7 +196,7 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 16, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:raw_copper",\
                 components: {\
                     "minecraft:custom_name":"\"Glistening Mineral Sample\"",\
@@ -210,7 +210,7 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 16, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:blaze_powder",\
                 components: {\
                    "minecraft:custom_name":"\"Sparkling Blaze Powder\"",\
@@ -224,7 +224,7 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 16, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:nautilus_shell",\
                 components: {\
                     "minecraft:custom_name":"\"Ancient Shell\"",\
@@ -238,7 +238,7 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 8, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:carrot",\
                 components: {\
                     "minecraft:custom_name":"\"Overgrown Carrot\"",\
@@ -252,7 +252,7 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 24, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:coal",\
                 components: {\
                     "minecraft:custom_name":"\"Unusually Dense Rock\"",\
@@ -266,7 +266,7 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 16, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:player_head",\
                 components: {\
                     "minecraft:custom_name":"\"Soaked Villager Plushie\"",\
@@ -286,7 +286,7 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 6, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:apple",\
                 components: {\
                     "minecraft:custom_name":"\"Enchanted Red Delicious\"",\
@@ -300,7 +300,7 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 16, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:composter",\
                 components: {\
                     "minecraft:custom_name":"\"Rotting Recycling Bin\"",\
@@ -314,7 +314,7 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 32, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:book",\
                 components: {\
                     "minecraft:custom_name":"\"Book of Rituals\"",\
@@ -328,7 +328,7 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 8, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:clay_ball",\
                 components: {\
                     "minecraft:custom_name":"\"Sculpting Clay\"",\
@@ -342,7 +342,7 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 8, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:iron_ingot",\
                 components: {\
                     "minecraft:custom_name":"\"Mastercrafted Iron\"",\
@@ -356,10 +356,10 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 16, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:light_weighted_pressure_plate",\
                 components: {\
-                    "minecraft:custom_name":"\"Forgotten Scrap Metal\"",\
+                    "minecraft:custom_name":"\"Forgotten Scrap\"",\
                     "minecraft:lore":["\"Villagers might be interested in this...\""],\
                     "minecraft:rarity":"rare",\
                     "minecraft:custom_data":{tag:"mt_steampunk"},\
@@ -370,7 +370,7 @@ data merge entity @s {VillagerData:{profession:nitwit,level:5,type:plains},Persi
         {\
             maxUses: 999999,\
             xp: 0,\
-            sell: {count: 1, id: "minecraft:emerald"},\
+            sell: {count: 32, id: "minecraft:emerald"},\
             buy: {count: 1, id: "minecraft:string",\
                 components: {\
                     "minecraft:custom_name":"\"Fine Thread\"",\
