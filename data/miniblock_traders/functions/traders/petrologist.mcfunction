@@ -6,7 +6,7 @@
 #                                                                 #
 # --------------------------------------------------------------- #
 
-kill @e[type=item,nbt={Item:{tag:{tag:mt_rock}}},distance=..0.5]
+kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{tag:"mt_rock"}}}},distance=..0.5]
 
 execute at @s run particle minecraft:happy_villager ~ ~ ~ 0.3 1 0.3 100 250
 playsound minecraft:entity.experience_orb.pickup ambient @a[distance=..8] ~ ~ ~ 30

@@ -12,7 +12,7 @@ execute as @a if score @s mt_help matches 1.. run function miniblock_traders:uti
 # Garden Traders
 execute as @e[type=minecraft:villager,tag=!global.ignore] at @s if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{tag:"mt_apple"}}}},distance=..0.5] run function miniblock_traders:traders/pomologist
 execute as @e[type=minecraft:villager,tag=!global.ignore] at @s if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{tag:"mt_sapling"}}}},distance=..0.5] run function miniblock_traders:traders/arboriculturalist
-execute as @e[type=minecraft:villager,tag=!global.ignore] at @s if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{tag:"mt_carrot"}}}},distance=..0.5] run function miniblock_traders:traders/olericulturist
+execute as @e[type=minecraft:villager,tag=!global.ignore] at @s if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{tag:"mt_carrot"}}}},distance=..0.5] if entity @e[type=player,distance=..2] run function miniblock_traders:traders/olericulturist
 execute as @e[type=minecraft:villager,tag=!global.ignore] at @s if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{tag:"mt_flower"}}}},distance=..0.5] run function miniblock_traders:traders/horticulturist
 execute as @e[type=minecraft:villager,tag=!global.ignore] at @s if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{tag:"mt_bees"}}}},distance=..0.5] run function miniblock_traders:traders/beekeeper
 
@@ -44,7 +44,7 @@ execute as @e[type=minecraft:villager,tag=!global.ignore] at @s if entity @e[typ
 
 # Food Traders
 execute as @e[type=minecraft:villager,tag=!global.ignore] at @s if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{tag:"mt_chef"}}}},distance=..0.5] run function miniblock_traders:traders/chef
-execute as @e[type=minecraft:villager,tag=!global.ignore] at @s if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{tag:"mt_bake"}}}},distance=..0.5] run function miniblock_traders:traders/baker
+execute as @e[type=minecraft:villager,tag=!global.ignore] at @s if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{tag:"mt_bake"}}}},distance=..0.5] if entity @e[type=player,distance=..2] run function miniblock_traders:traders/baker
 execute as @e[type=minecraft:villager,tag=!global.ignore] at @s if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{tag:"mt_bartender"}}}},distance=..0.5] run function miniblock_traders:traders/bartender
 
 # Misc Traders
