@@ -45,7 +45,7 @@ Get unique decorative miniblocks from special traders!<br>
 <h3>Conversion Item Locations and Drop Chances</h3>
       1. Pomologist - Enchanted Red Delicious (1/4096 from oak leaves)<br>
       2. Olericulturist - Overgrown Carrot (1/512 from harvesting carrots)<br>
-      3. Horticulturist - Fragrant Flower (1/8 from Sniffer digging)<br>
+      3. Horticulturist - Potent Seed Specimen (1/8 from Sniffer digging)<br>
       4. Arboriculturalist - Cultivated Sapling (1/4096 from spruce leaves)<br>
       5. Mineralogist - Glistening Mineral Sample (1/3 from Spawner Dungeon chests)<br>
       6. Petrologist - Unusually Dense Rock (1/5 from Abandoned Mineshaft chests)<br>
@@ -65,7 +65,7 @@ Get unique decorative miniblocks from special traders!<br>
       20. Chef - Chilled Kobe Wagyu Beef (100% from Ancient City ice chests)<br>
       21. Bartender - Mixology Station (1/20 chance when fishing up a Treasure)<br>
       22. Astronomer - Galilean Spyglass (100% from Igloo chests)<br>
-      23. Plushie Maniac - Soaked Villager Plushie (1/20 chance when fishing up a Treasure)<br>
+      23. Plushie Maniac - Soaked Villager Plushie (1/4 chance when fishing up a Treasure)<br>
       24. Gamemaster - Drenched Score Sheet (1/20 chance when fishing up a Treasure)<br>
       25. Recycler - Rotting Recycling Bin (1/20 chance when fishing up a Treasure)
 
