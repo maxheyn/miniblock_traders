@@ -1,0 +1,47 @@
+{
+  "display": {
+    "title": {
+      "text": "Ye Olde Shoppe",
+      "italic": false
+    },
+    "description": {
+      "text": "Trade with all medieval Miniblock Traders.",
+      "color": "green"
+    },
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "profile": {
+          "properties": [
+            {
+              "name": "textures",
+              "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWI0MjVhYTNkOTQ2MThhODdkYWM5Yzk0ZjM3N2FmNmNhNDk4NGMwNzU3OTY3NGZhZDkxN2Y2MDJiN2JmMjM1In19fQ=="
+            }
+          ]
+        }
+      }
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "global:mt_traders/trade_any",
+  "criteria": {
+    "trade1": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+          "nbt": "{Tags:[mt_trader_smithy]}"
+        }
+      }
+    },
+    "trade2": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+          "nbt": "{Tags:[mt_trader_alchemy]}"
+        }
+      }
+    }
+  }
+}
